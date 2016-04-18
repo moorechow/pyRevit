@@ -10,14 +10,14 @@ Do you know a good resource for that?
 Take a look at [pyRevit](https://github.com/eirannejad/pyRevit).
 
 ***pyRevit*** is an IronPython script library for Revit.
-However, it is not really written as an example library.
+However, it is not really written as an examples library.
 It is a working set of tools fully written in IronPython that explores the power of scripting for Revit and also adds some cool functionality.
 
-Download and install it, launch Revit and you will note the new ***pyRevit*** tab that hosts buttons to launch all the scripts provided by the package to easily run them without the need to load them in [RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell) or some similar IronPython console.
+Download and install it, launch Revit and you will note the new ***pyRevit*** tab that hosts buttons to launch all the scripts provided by the package to easily run them without the need to load the scripts in [RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell) or other similar IronPython consoles.
 
 You can also write your own scripts and add them to the tab.
 
-There is even a Reload Scripts button than dynamically adds the new scripts to the current Revit session without the need to restart Revit.
+There is also a Reload Scripts button that dynamically adds the new scripts to the current Revit session without the need to restart Revit.
 
 All the scripts are provided in the `pyRevit` folder which is downloaded at installation.
 You can look into them and learn how to use IronPython for Revit to perform different tasks.
@@ -102,7 +102,7 @@ There are two ways to achieve this:
 [RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell) has an option under `Configuration` to run an IronPython script at Revit startup. Just download the [pyRevit](https://github.com/eirannejad/pyRevit) repository, set the ***RevitPythonShell*** startup script address to the file address of the `__init__.py` script, and restart Revit. Voila, the ***pyRevit*** tab appears.
 
 - The even easier way:
-Download the setup package from the [pyRevit](https://github.com/eirannejad/pyRevit) GitHub repository and install. Done! Launch your Revit and ***pyRevit*** will be there.
+Download the setup package from the [pyRevit](https://github.com/eirannejad/pyRevit) GitHub repository and install. Done!
 
 If you'd like to find out more about ***pyRevit*** and how to add your own scripts, go to its GitHub home page and everything you want to know about it is provided.
 
