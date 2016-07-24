@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+{% include head.html %}
+  <body>
+    <header class="site-header"></header>
+    <div class="wrapper">
+      <header class="sidebar">
+        <a href="{{ site.baseurl }}/">
+          <img class="logo" src="/pyRevitLogo.svg">
+        </a>
+        <p><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></p>
+
+        <p>{{ site.description }}</p>
+
+        <ul>
+          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/Setup/pyRevitPackage.zip">Download <strong>Installer</strong></a></li>
+          <li><a href="https://github.com/eirannejad/pyRevit">View On <strong>GitHub</strong></a></li>
+        </ul>
+
+        <div class="trigger">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <p class="menu-item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></p>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <p></p>
+      </header>
+      <section>
+        <div class="page-content">
+            {{ content }}
+        </div>
+      </section>
+      <footer class="sidebar">
+        <p><small>
+          This project is maintained by <a href="https://github.com/eirannejad">eirannejad</a><br>
+          subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a><br>
+          Powered by GitHub Pages and Jekyll<br>
+          Theme by <a href="https://github.com/orderedlist">orderedlist</a> with my mods
+        </small></p>
+      </footer>
+    </div>
+  </body>
+</html>

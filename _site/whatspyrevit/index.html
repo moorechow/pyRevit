@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>What&#39;s pyRevit</title>
+  <meta name="description" content="IronPython scripts for Autodesk Revit
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://eirannejad.github.io/pyRevit/whatspyrevit/">
+  <link rel="alternate" type="application/rss+xml" title="pyRevit blog" href="http://eirannejad.github.io/pyRevit/feed.xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+  <body>
+    <header class="site-header"></header>
+    <div class="wrapper">
+      <header class="sidebar">
+        <a href="/">
+          <img class="logo" src="/pyRevitLogo.svg">
+        </a>
+        <p><a class="site-title" href="/">pyRevit blog</a></p>
+
+        <p>IronPython scripts for Autodesk Revit
+</p>
+
+        <ul>
+          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/Setup/pyRevitPackage.zip">Download <strong>Installer</strong></a></li>
+          <li><a href="https://github.com/eirannejad/pyRevit">View On <strong>GitHub</strong></a></li>
+        </ul>
+
+        <div class="trigger">
+          
+            
+            <p class="menu-item"><a class="page-link" href="/whatspyrevit/">What's pyRevit</a></p>
+            
+          
+            
+            <p class="menu-item"><a class="page-link" href="/installation/">Installation and Removal</a></p>
+            
+          
+            
+            <p class="menu-item"><a class="page-link" href="/howtouse/">Using and staying updated</a></p>
+            
+          
+            
+            <p class="menu-item"><a class="page-link" href="/howtoaddscriptsandtabs/">Adding your own scripts</a></p>
+            
+          
+            
+            <p class="menu-item"><a class="page-link" href="/contribute/">Contribute</a></p>
+            
+          
+            
+            <p class="menu-item"><a class="page-link" href="/credits/">Credits</a></p>
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+        <p></p>
+      </header>
+      <section>
+        <div class="page-content">
+            <article class="post">
+
+  <!-- <header class="post-header">
+    <h1 class="post-title">What's pyRevit</h1>
+  </header> -->
+
+  <div class="post-content">
+    <p><strong><em>pyRevit</em></strong> is an IronPython script library for Revit.
+However, it is not really written as an example library.
+It is a working set of tools fully written in IronPython that explores the power of scripting for Revit and also adds some cool functionality.</p>
+
+<p>Download and install it, launch Revit and you will note the new <strong><em>pyRevit</em></strong> tab that hosts buttons to launch all the scripts provided by the package to easily run them without the need to load them in <a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell</a> or some similar IronPython console.</p>
+
+<p>You can also write your own scripts and add them to the tab.</p>
+
+<p>There is even a Reload Scripts button than dynamically adds the new scripts to the current Revit session without the need to restart Revit.</p>
+
+<p>All the scripts are provided in the <code class="highlighter-rouge">pyRevit</code> folder which is downloaded at installation.
+You can look into them and learn how to use IronPython for Revit to perform different tasks.</p>
+
+<p>Please refer to the <a href="https://github.com/eirannejad/pyRevit">pyRevit</a> GitHub repository for links and instructions on how to install on your machine.</p>
+
+<h2 id="a-quick-look-at-some-pyrevit-scripts">A Quick Look at some pyRevit Scripts</h2>
+
+<p>Let’s take a quick look at some of the more useful scripts in this library:</p>
+
+<h3 id="selection-memory">Selection Memory</h3>
+
+<p>A couple of scripts help you select object more efficiently in Revit. They are similar to the M+, M-, buttons on calculators where you can add or deduct values from memory and read the final value using the MR button.</p>
+
+<p>Under the <strong><em>pyRevit</em></strong> tab, you’ll find MAppend, MAppendOverwrite, MRead, MDeduct, and MClear buttons that add, add and overwrite, read, deduct, and clear the contents of the selection memory. Using these tools, you can navigate between multiple views and select objects, add them to the memory and when you’re done, recall the selection. These tools work really well in combination with other selection tools under <strong><em>pyRevit</em></strong> tab. See images here for the tools and tooltips.</p>
+
+<p>Each tooltip shows the button name, the script that the button is associated with and a description of what the script does.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/mappendoverwrite.png" alt="MAppendOverWrite" />
+<img src="http://eirannejad.github.io/pyRevit/images/mread.png" alt="MRead" />
+<img src="http://eirannejad.github.io/pyRevit/images/othermemory.png" alt="OtherMemory" /></p>
+
+<h3 id="copy-and-convert-legend-views">Copy and Convert Legend Views</h3>
+
+<p>This set of scripts help you copy Legend Views to all other project open within a Revit session.
+You can copy the Legends as Legend views or as Drafting views.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/copylegends.png" alt="CopyLegends" /></p>
+
+<p>Two more scripts duplicate and convert Legend views to Drafting views and vice versa within the same project.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/convertlegends.png" alt="DuplicateLegends" /></p>
+
+<h3 id="matching-element-graphic-overrides">Matching Element Graphic Overrides</h3>
+
+<p>This one is pretty obvious. Run the script, select your source object to pick up the style, and then one by one, select the destination objects to apply the graphic overrides. You can also navigate to other views and apply to objects within that view.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/matchgraphicoverrides.png" alt="MatchGraphicOverrides" /></p>
+
+<p><strong><em>pyRevit</em></strong> provides many other powerful scripts, and most of them are really useful in a production environment.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/analysisandmodifypallete.png" alt="AnalsisAndModifyPallete" />
+<img src="http://eirannejad.github.io/pyRevit/images/projectpallete.png" alt="ProjectPallete" />
+<img src="http://eirannejad.github.io/pyRevit/images/desktoppallete.png" alt="DesktopPallete" /></p>
+
+<h2 id="an-even-quicker-but-deeper-look-at-setting-up-pyrevit">An Even Quicker but Deeper Look at Setting up pyRevit</h2>
+
+<p>Now let’s take an even quicker and slightly deeper look at setting up <a href="https://github.com/eirannejad/pyRevit">pyRevit</a>:</p>
+
+<p>In it’s simplest form, it’s a folder filled with <code class="highlighter-rouge">.py</code> IronPython scripts for Revit.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/pyrevitfolder.png" alt="pyrevitFolder" /></p>
+
+<p>Since Revit itself does not provide an IronPython console, you
+need <a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell</a> to
+run them.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/revitpythonshellconsole.png" alt="RPSconsole" /></p>
+
+<p>Let’s say you have written a script that automatically designs amazing buildings and creates the Revit model and construction documents for it, and let’s say you want to run this script as fast as you can and make a whole buncha money really quickly, but it takes time to open the command prompt every time, browse to the script file, open it and run it, so you naturally want something faster!</p>
+
+<p>In order to make <a href="https://github.com/eirannejad/pyRevit">pyRevit</a> more user friendly, it includes a helper script that finds all the other scripts and creates buttons for them in the Revit user interface.
+This way. you can just click on the buttons instead of using the command prompt.</p>
+
+<p>This script is appropriately called <code class="highlighter-rouge">__init__.py</code> and lives in
+the <a href="https://github.com/eirannejad/pyRevit">pyRevit</a> library root folder.</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/initscript.png" alt="initscript" /></p>
+
+<p>What’s neat about this is that the user interface buttons only store the address to each script.
+The script is reloaded and run every time the user clicks on the button.</p>
+
+<p>This means that you can change a script on the fly while Revit is running, and the next time you click on the button, Revit will run the modified script.</p>
+
+<p>But how do you tell Revit to run this script during start-up?</p>
+
+<p>There are two ways to achieve this:</p>
+
+<ul>
+  <li>
+    <p>The easy way:
+<a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell</a> has
+an option under <code class="highlighter-rouge">Configuration</code> to run an IronPython script at Revit start-up. Just download
+the <a href="https://github.com/eirannejad/pyRevit">pyRevit</a> repository,
+set the <strong><em>RevitPythonShell</em></strong> start-up script address to the file address of the <code class="highlighter-rouge">__init__.py</code> script, and restart Revit.
+Voila, the <strong><em>pyRevit</em></strong> tab appears.</p>
+  </li>
+  <li>
+    <p>The even easier way:
+Download the setup package from
+the <a href="https://github.com/eirannejad/pyRevit">pyRevit</a> GitHub repository and install.
+Done! Launch your Revit and <strong><em>pyRevit</em></strong> will be there.</p>
+  </li>
+</ul>
+
+<p>If you’d like to find out more about <strong><em>pyRevit</em></strong> and how to add your own scripts, visit the <a href="https://github.com/eirannejad/pyRevit">pyRevit GitHub home page</a> and everything you want to know about it is provided.</p>
+
+<p>Happy scripting!</p>
+
+  </div>
+
+</article>
+
+        </div>
+      </section>
+      <footer class="sidebar">
+        <p><small>
+          This project is maintained by <a href="https://github.com/eirannejad">eirannejad</a><br>
+          subscribe <a href="/feed.xml">via RSS</a><br>
+          Powered by GitHub Pages and Jekyll<br>
+          Theme by <a href="https://github.com/orderedlist">orderedlist</a> with my mods
+        </small></p>
+      </footer>
+    </div>
+  </body>
+</html>

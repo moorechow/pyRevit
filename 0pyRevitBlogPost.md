@@ -1,13 +1,8 @@
-**Question:** I'm an architect and engineer and love coding.
-Unfortunately, I don't have the time and experience to code in complex languages that require special coding environments (e.g. Visual Studio) or need to be compiled and reloaded after each change.
-I therefore like scripts.
-I can create or modify them for a highly specific task, in the least amount of time, and get the job done.
-I want to learn how to use IronPython for Revit and I need examples.
-Do you know a good resource for that?
-
-**Response:** Yes, definitely!
-
-Take a look at [pyRevit](https://github.com/eirannejad/pyRevit).
+---
+layout: page
+title: What's pyRevit
+permalink: /whatspyrevit/
+---
 
 ***pyRevit*** is an IronPython script library for Revit.
 However, it is not really written as an example library.
@@ -25,7 +20,7 @@ You can look into them and learn how to use IronPython for Revit to perform diff
 Please refer to the [pyRevit](https://github.com/eirannejad/pyRevit) GitHub repository for links and instructions on how to install on your machine.
 
 
-## Quick Look at some pyRevit Scripts
+## A Quick Look at some pyRevit Scripts
 
 Let's take a quick look at some of the more useful scripts in this library:
 

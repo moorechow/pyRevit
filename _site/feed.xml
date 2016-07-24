@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pyRevit blog</title>
+    <description>IronPython scripts for Autodesk Revit
+</description>
+    <link>http://eirannejad.github.io/pyRevit/</link>
+    <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 23 Jul 2016 20:54:13 -0700</pubDate>
+    <lastBuildDate>Sat, 23 Jul 2016 20:54:13 -0700</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>First post: Welcome!</title>
+        <description>&lt;p&gt;Hello!!&lt;/p&gt;
+
+&lt;p&gt;Welcome to the pyRevit blog. I’ve been publishing changes and news to the github repository page for the past year but I feel it’s time for pyRevit to have its own blog now.&lt;/p&gt;
+
+&lt;p&gt;So here is the first post :)&lt;/p&gt;
+
+&lt;p&gt;And oh btw, pyRevit has a nice logo now! It’s an origami python since the new Revit logo is like an origami and python language logo is obviously two pythons.&lt;/p&gt;
+
+&lt;p&gt;From the sidebar, you can download the current installer and see a list of pages documenting different aspects of pyRevit.&lt;/p&gt;
+
+&lt;p&gt;From now on I’ll post all the new changes and work-in-progress tools here.&lt;/p&gt;
+
+&lt;p&gt;Keep me posted on your thoughts!&lt;/p&gt;
+
+&lt;p&gt;Best,&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Jul 2016 10:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/07/23/welcome-to-pyrevit.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/07/23/welcome-to-pyrevit.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
