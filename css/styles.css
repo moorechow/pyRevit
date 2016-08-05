@@ -118,7 +118,9 @@ img {
 }
 
 img.logo {
-     width: 240px;
+     width: 180px;
+     margin-left: 60px;
+     margin-bottom: -20px;
 }
 
 header.sidebar {
@@ -283,7 +285,8 @@ footer.sidebar {
 
   img.logo {
        width: 50%;
-       margin-bottom: 20px;
+       margin-left: 20%;
+       margin-bottom: 10px;
   }
 
   pre, code {
