@@ -4,7 +4,16 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-2.47.51 (current)
+2.49.55 (current)
+------
+-	`Memory > Memory_copyViewportPlacement.py`: Copies the location of the selected viewport to memory. This can be later applied to other viewports on other sheets.
+
+-	`Memory > Memory_pasteViewportPlacement.py`: Pastes a Viewport placement from memory.
+
+-	Tooltip now shows the script Author.
+-	Misc changes
+
+2.47.51
 ------
 -	`Revisions > Revisions_listAllSheetsNotShowingRevisionCloudsOnViews.py`: Sometimes when a revision cloud is placed inside a view (instead of a sheet) and the view is placed on a sheet, the revision schedule on the sheet does not get updated with the revision number of the cloud inside the sheeted view. This script verifies that the sheet revision schedule is actually listing all the revisions shown inside the views of that sheet.
 
