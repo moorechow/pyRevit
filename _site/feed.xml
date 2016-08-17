@@ -6,9 +6,40 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Aug 2016 18:37:08 -0700</pubDate>
-    <lastBuildDate>Tue, 16 Aug 2016 18:37:08 -0700</lastBuildDate>
+    <pubDate>Tue, 16 Aug 2016 23:27:54 -0700</pubDate>
+    <lastBuildDate>Tue, 16 Aug 2016 23:27:54 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Why python?</title>
+        <description>&lt;p&gt;Someone asked me why did I use python to program the tools and create this library. Here are my thoughts:&lt;/p&gt;
+
+&lt;p&gt;You can select between a couple of programming langauges to develop addins and tools for Revit. They’re: C#, Visual Basic, Ruby, and python.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby is heavily web oriented and has a less readable syntax for a newbie. It’s still no doubt incredibly powerful.&lt;/li&gt;
+  &lt;li&gt;Visual Basic is old. It’s not worth the time invesment for a newbie and you can only use it withing the Microsoft ecosystem.&lt;/li&gt;
+  &lt;li&gt;C# is a proper langauge built for enterprise applications. It has a steep learning curve and deals with very complex programming concepts. Also C# programmers are expensive.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;but python, has a human readable syntax. It’s very easy to learn. It runs on most of the operating systems and is used as the scripting language for many professional CAD/BIM programs. It’s very easy to setup and it even comes pre-installed on Mac and Linux systems. You can use it to program your own personal computer (Mac, Windows, or Linux). It has a very simple I/O framework that you can utilize to keep your files and projects in decent order. You can use it in Revit, Dynamo for Revit, Rhino with Grasshopper, Blender for 3D graphics, and many more. You can even use it as a very powerful and handy calculator…It’s a better language if you’re an Architect…&lt;/p&gt;
+
+&lt;p&gt;In my opinion, learning python is a good start and a better investment for an Architect overall. Of course you still have to learn how to use the Revit API (or API of other software using python for scripting) but still, python, is like a x-acto knife.&lt;/p&gt;
+
+&lt;p&gt;Besides, Architecture companies are not very rich. They can’t afford C# programmers and this means that they’re mostly stuck with out-of-the-box software which especially in case of Revit, lack some of the most basic tools (by 2016 standards e.g. proper selection tools).&lt;/p&gt;
+
+&lt;p&gt;I’m hoping that this library encourages more architects to get into programming and start taking control of the programs that, right now, have total control over their whole industry.&lt;/p&gt;
+
+&lt;p&gt;Rise hackers, rise.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Aug 2016 16:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/2016/08/16/whypython.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/2016/08/16/whypython.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+      </item>
     
       <item>
         <title>Semantic Versioning and pyRevit v3</title>
@@ -18,13 +49,13 @@
 
 &lt;p&gt;With the current versioning method, the X is for major backward-incompatible changes; Y is for new scripts added to the library; and Z is for all the minor patches and fixes to any of the scripts.&lt;/p&gt;
 
-&lt;p&gt;Now to the more exsiting part:&lt;/p&gt;
+&lt;p&gt;Now to the more exciting part:&lt;/p&gt;
 
 &lt;p&gt;We’re testing the pyRevit v3.0.0-alpha right now. The beta will be available soon and it has a few important changes:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;pyRevit now supports Extensions! There is a package manager that handles installation/update/and removal of thrid-party extensions. &lt;a href=&quot;&quot;&gt;Gui Talarico&lt;/a&gt; is working on the first of them and it’s called &lt;strong&gt;&lt;em&gt;PyRevitPlus&lt;/em&gt;&lt;/strong&gt;. Each extension will get its own tab. This means that you can create your own libraries of scripts and share them on github and other users can install them using the package manager.&lt;/li&gt;
-  &lt;li&gt;If the current file naming convention is confusing for you, we’ve modified the startup script to work with scripts organized in folders. This means that instead of properly naming &lt;code class=&quot;highlighter-rouge&quot;&gt;*.png&lt;/code&gt; files to create panels and pulldown buttons, you can throw the scripts in a folder for the pulldown button and place that inside another folder for the panel. I’ll publish the details of this later. &lt;a href=&quot;&quot;&gt;PyRevitPlus&lt;/a&gt; will be organized under this system and it’s a great example.&lt;/li&gt;
+  &lt;li&gt;pyRevit now supports Extensions! There is a package manager that handles installation/update/and removal of thrid-party extensions. &lt;a href=&quot;https://github.com/gtalarico&quot;&gt;Gui Talarico&lt;/a&gt; is working on the first of them and it’s called &lt;strong&gt;&lt;em&gt;PyRevitPlus&lt;/em&gt;&lt;/strong&gt;. Each extension will get its own tab. This means that you can create your own libraries of scripts and share them on github and other users can install them using the package manager.&lt;/li&gt;
+  &lt;li&gt;If the current file naming convention is confusing for you, we’ve modified the startup script to work with scripts organized in folders. This means that instead of properly naming &lt;code class=&quot;highlighter-rouge&quot;&gt;*.png&lt;/code&gt; files to create panels and pulldown buttons, you can throw the scripts in a folder for the pulldown button and place that inside another folder for the panel. I’ll publish the details of this later.  &lt;strong&gt;&lt;em&gt;PyRevitPlus&lt;/em&gt;&lt;/strong&gt; will be organized under this system and it’s a great example.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;pyRevit now has a settings window. You can enable/disable Verbose reporting at startup, and the usage log system as of now.&lt;/p&gt;
 
@@ -35,7 +66,7 @@
 
     &lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/2016-08-16 18_17_54-About pyRevit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;pyRevit v3 also has a better Install and Uninstall system. The setup package is a smaller download, it’s easier to use, and installs pyRevit in the %appdata% folder by default. This means that pyRevit lives in the user roaming directory and follows a user about in an Active Directory environment. It is also only available to just the user that installs it. This can be useful if, for example, you have multiple Revit users on the same machine, who may need to run different configurations of pyRevit based on their Revit level of expertise.&lt;/li&gt;
+  &lt;li&gt;pyRevit v3 also has a better Install and Uninstall system. The setup package is a smaller download, it’s easier to use, and installs pyRevit in the &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%&lt;/code&gt; folder by default. This means that pyRevit lives in the user roaming directory and follows a user about in an Active Directory environment. It is also only available to just the user that installs it. This can be useful if, for example, you have multiple Revit users on the same machine, who may need to run different configurations of pyRevit based on their Revit level of expertise.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Back to the semantic versioning. I’ll use it the right way starting with version 3.0.0 :)&lt;/p&gt;
