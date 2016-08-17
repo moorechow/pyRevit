@@ -8,11 +8,11 @@ comments: true
 
 Someone asked me why did I use python to program the tools and create this library. Here are my thoughts:
 
-You can select between a couple of programming langauges to develop addins and tools for Revit. They're: C#, Visual Basic, Ruby, and python.
+You can select between a couple of programming languages to develop addins and tools for Revit. They're: C#, Visual Basic, Ruby, and python.
 
 - Ruby is heavily web oriented and has a less readable syntax for a newbie. It's still no doubt incredibly powerful.
-- Visual Basic is old. It's not worth the time invesment for a newbie and you can only use it withing the Microsoft ecosystem.
-- C# is a proper langauge built for enterprise applications. It has a steep learning curve and deals with very complex programming concepts. Also C# programmers are expensive.
+- Visual Basic is old. It's not worth the time investment for a newbie and you can only use it within the Microsoft ecosystem.
+- C# is a proper language built for enterprise applications. It has a steep learning curve and deals with very complex programming concepts. Also C# programmers are expensive.
 
 but python, has a human readable syntax. It's very easy to learn. It runs on most of the operating systems and is used as the scripting language for many professional CAD/BIM programs. It's very easy to setup and it even comes pre-installed on Mac and Linux systems. You can use it to program your own personal computer (Mac, Windows, or Linux). It has a very simple I/O framework that you can utilize to keep your files and projects in decent order. You can use it in Revit, Dynamo for Revit, Rhino with Grasshopper, Blender for 3D graphics, and many more. You can even use it as a very powerful and handy calculator...It's a better language if you're an Architect...
 
