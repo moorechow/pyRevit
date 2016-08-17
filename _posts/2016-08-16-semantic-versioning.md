@@ -20,11 +20,11 @@ We're testing the pyRevit v3.0.0-alpha right now. The beta will be available soo
 - If the current file naming convention is confusing for you, we've modified the startup script to work with scripts organized in folders. This means that instead of properly naming `*.png` files to create panels and pulldown buttons, you can throw the scripts in a folder for the pulldown button and place that inside another folder for the panel. I'll publish the details of this later. [PyRevitPlus]() will be organized under this system and it's a great example.
 - pyRevit now has a settings window. You can enable/disable Verbose reporting at startup, and the usage log system as of now.
 
-![]({{ site.url }}/pyRevit/images/2016-08-16 18_18_07-pyRevit user settings.png)
+	![]({{ site.url }}/pyRevit/images/2016-08-16 18_18_07-pyRevit user settings.png)
 
 - There is also a nicer About window with links to this website and credits.
 
-![]({{ site.url }}/pyRevit/images/2016-08-16 18_17_54-About pyRevit.png)
+	![]({{ site.url }}/pyRevit/images/2016-08-16 18_17_54-About pyRevit.png)
 
 - pyRevit v3 also has a better Install and Uninstall system. The setup package is a smaller download, it's easier to use, and installs pyRevit in the %appdata% folder by default. This means that pyRevit lives in the user roaming directory and follows a user about in an Active Directory environment. It is also only available to just the user that installs it. This can be useful if, for example, you have multiple Revit users on the same machine, who may need to run different configurations of pyRevit based on their Revit level of expertise.
 
