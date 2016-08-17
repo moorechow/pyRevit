@@ -3,6 +3,7 @@ layout: post
 title:  "First post: Welcome!"
 date:   2016-07-23 08:00:00 -0900
 categories: pyrevit update
+comments: true
 ---
 
 
