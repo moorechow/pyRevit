@@ -3,6 +3,7 @@ layout: post
 title:  "Copy/Paste Viewport placement tools"
 date:   2016-08-12 08:00:00 -0900
 categories: pyrevit update
+comments: true
 ---
 
 

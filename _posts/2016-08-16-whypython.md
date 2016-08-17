@@ -3,6 +3,7 @@ layout: post
 title:  "Why python?"
 date:   2016-08-16 14:00:00 -0900
 categories: pyrevit
+comments: true
 ---
 
 Someone asked me why did I use python to program the tools and create this library. Here are my thoughts:

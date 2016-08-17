@@ -3,6 +3,7 @@ layout: post
 title:  "Semantic Versioning and pyRevit v3"
 date:   2016-08-16 8:00:00 -0900
 categories: pyrevit update
+comments: true
 ---
 
 
