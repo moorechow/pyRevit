@@ -4,11 +4,56 @@
     <title>pyRevit blog</title>
     <description>IronPython scripts for Autodesk Revit
 </description>
-    <link>http://eirannejad.github.io//pyRevit/</link>
-    <atom:link href="http://eirannejad.github.io//pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Aug 2016 20:31:05 -0700</pubDate>
-    <lastBuildDate>Sat, 13 Aug 2016 20:31:05 -0700</lastBuildDate>
+    <link>http://eirannejad.github.io/pyRevit/</link>
+    <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Aug 2016 18:35:55 -0700</pubDate>
+    <lastBuildDate>Tue, 16 Aug 2016 18:35:55 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Semantic Versioning and pyRevit v3</title>
+        <description>&lt;p&gt;Today I learned more about &lt;a href=&quot;http://semver.org&quot;&gt;Semantic Versioning &lt;/a&gt; and realized I’m incrementing the version numbers incorrectly in pyRevit.&lt;/p&gt;
+
+&lt;p&gt;Semantic versioning proposes X.Y.Z (Major.Minor.Patch) format but also says when Y is incremented, Z must be reset to zero. But until now, I did not do any such resetting on the values.&lt;/p&gt;
+
+&lt;p&gt;With the current versioning method, the X is for major backward-incompatible changes; Y is for new scripts added to the library; and Z is for all the minor patches and fixes to any of the scripts.&lt;/p&gt;
+
+&lt;p&gt;Now to the more exsiting part:&lt;/p&gt;
+
+&lt;p&gt;We’re testing the pyRevit v3.0.0-alpha right now. The beta will be available soon and it has a few important changes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pyRevit now supports Extensions! There is a package manager that handles installation/update/and removal of thrid-party extensions. &lt;a href=&quot;&quot;&gt;Gui Talarico&lt;/a&gt; is working on the first of them and it’s called &lt;strong&gt;&lt;em&gt;PyRevitPlus&lt;/em&gt;&lt;/strong&gt;. Each extension will get its own tab. This means that you can create your own libraries of scripts and share them on github and other users can install them using the package manager.&lt;/li&gt;
+  &lt;li&gt;If the current file naming convention is confusing for you, we’ve modified the startup script to work with scripts organized in folders. This means that instead of properly naming &lt;code class=&quot;highlighter-rouge&quot;&gt;*.png&lt;/code&gt; files to create panels and pulldown buttons, you can throw the scripts in a folder for the pulldown button and place that inside another folder for the panel. I’ll publish the details of this later. &lt;a href=&quot;&quot;&gt;PyRevitPlus&lt;/a&gt; will be organized under this system and it’s a great example.&lt;/li&gt;
+  &lt;li&gt;pyRevit now has a settings window. You can enable/disable Verbose reporting at startup, and the usage log system as of now.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/2016-08-16 18_18_07-pyRevit user settings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There is also a nicer About window with links to this website and credits.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/2016-08-16 18_17_54-About pyRevit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pyRevit v3 also has a better Install and Uninstall system. The setup package is a smaller download, it’s easier to use, and installs pyRevit in the %appdata% folder by default. This means that pyRevit lives in the user roaming directory and follows a user about in an Active Directory environment. It is also only available to just the user that installs it. This can be useful if, for example, you have multiple Revit users on the same machine, who may need to run different configurations of pyRevit based on their Revit level of expertise.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Back to the semantic versioning. I’ll use it the right way starting with version 3.0.0 :)&lt;/p&gt;
+
+&lt;p&gt;Stay tuned.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Aug 2016 10:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/16/semantic-versioning.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/16/semantic-versioning.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Copy/Paste Viewport placement tools</title>
@@ -35,8 +80,8 @@
 &lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pasteviewportplacement.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Aug 2016 10:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io//pyRevit/pyrevit/update/2016/08/12/copypasteviewporttools.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io//pyRevit/pyrevit/update/2016/08/12/copypasteviewporttools.html</guid>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/12/copypasteviewporttools.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/12/copypasteviewporttools.html</guid>
         
         
         <category>pyrevit</category>
@@ -64,8 +109,8 @@
 &lt;p&gt;Best,&lt;/p&gt;
 </description>
         <pubDate>Sat, 23 Jul 2016 10:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io//pyRevit/pyrevit/update/2016/07/23/welcome-to-pyrevit.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io//pyRevit/pyrevit/update/2016/07/23/welcome-to-pyrevit.html</guid>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/07/23/welcome-to-pyrevit.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/07/23/welcome-to-pyrevit.html</guid>
         
         
         <category>pyrevit</category>
