@@ -12,7 +12,7 @@ Semantic versioning proposes X.Y.Z (Major.Minor.Patch) format but also says when
 
 With the current versioning method, the X is for major backward-incompatible changes; Y is for new scripts added to the library; and Z is for all the minor patches and fixes to any of the scripts.
 
-Now to the more exsiting part:
+Now to the more exciting part:
 
 We're testing the pyRevit v3.0.0-alpha right now. The beta will be available soon and it has a few important changes:
 
