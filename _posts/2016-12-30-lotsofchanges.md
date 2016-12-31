@@ -11,4 +11,6 @@ I've been improving the pyRevit core for the past 4 months and I'm ready now to 
 I'll upload the installer tomorrow.
 
 Oh, btw,
-The output window is in html now and has full emoji support! :D
+The output window now has full emoji support! :D
+
+![]({{ site.url }}/pyRevit/images/2016-12-30 23_49_04-pyRevitinfooutput.png)

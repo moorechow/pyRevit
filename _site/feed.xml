@@ -6,9 +6,31 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Sep 2016 17:31:24 -0700</pubDate>
-    <lastBuildDate>Sat, 24 Sep 2016 17:31:24 -0700</lastBuildDate>
+    <pubDate>Fri, 30 Dec 2016 23:54:23 -0800</pubDate>
+    <lastBuildDate>Fri, 30 Dec 2016 23:54:23 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Straight to 4! Lots of changes coming up...</title>
+        <description>&lt;p&gt;I’ve been improving the pyRevit core for the past 4 months and I’m ready now to publish the new pyRevit. The loader has been re-written from ground up (again) and is now much faster and more powerful.&lt;/p&gt;
+
+&lt;p&gt;I’ll upload the installer tomorrow.&lt;/p&gt;
+
+&lt;p&gt;Oh, btw,
+The output window now has full emoji support! :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/2016-12-30 23_49_04-pyRevitinfooutput.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Dec 2016 14:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/12/30/lotsofchanges.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/12/30/lotsofchanges.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Version 3 Beta is out!</title>
