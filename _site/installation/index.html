@@ -39,19 +39,7 @@
             
           
             
-            <p class="menu-item"><a class="page-link" href="/pyRevit/whatspyrevit/">What's pyRevit</a></p>
-            
-          
-            
             <p class="menu-item"><a class="page-link" href="/pyRevit/installation/">Installation and Removal</a></p>
-            
-          
-            
-            <p class="menu-item"><a class="page-link" href="/pyRevit/installation/">Installation and Removal</a></p>
-            
-          
-            
-            <p class="menu-item"><a class="page-link" href="/pyRevit/howtouse/">Using and staying updated</a></p>
             
           
             
@@ -63,27 +51,11 @@
             
           
             
-            <p class="menu-item"><a class="page-link" href="/pyRevit/howtoaddscriptsandtabs/">Adding your own scripts</a></p>
-            
-          
-            
-            <p class="menu-item"><a class="page-link" href="/pyRevit/contribute/">Contribute</a></p>
-            
-          
-            
             <p class="menu-item"><a class="page-link" href="/pyRevit/contribute/">Contribute</a></p>
             
           
             
             <p class="menu-item"><a class="page-link" href="/pyRevit/releasenotes/">Release Notes</a></p>
-            
-          
-            
-            <p class="menu-item"><a class="page-link" href="/pyRevit/releasenotes/">Release Notes</a></p>
-            
-          
-            
-            <p class="menu-item"><a class="page-link" href="/pyRevit/credits/">Credits</a></p>
             
           
             
@@ -111,57 +83,24 @@
     <h2 id="installation-using-the-installer">Installation (Using the installer):</h2>
 
 <ul>
-  <li>Download the setup package, extract to your machine.</li>
-  <li>Run <code class="highlighter-rouge">Setup.bat</code> and all scripts will be downloaded to this folder.</li>
+  <li>Download the setup package to your machine.</li>
+  <li>Run <code class="highlighter-rouge">pyRevitSetup.exe</code> and all scripts will be downloaded to the installation folder. You need internet access for setup to work.</li>
   <li>Setup script will create the necessary <code class="highlighter-rouge">.addin</code> file for Revit 2015 and 2016 to load the scripts at Revit startup.</li>
   <li>Run Revit and a <code class="highlighter-rouge">pyRevit</code> tab will be added to the Revit ribbon.</li>
 </ul>
-
-<p>This package adds an addin on your Revit that its sole purpose is to run the <code class="highlighter-rouge">__init__.py</code> at Revit startup. This addin is named <a href="https://github.com/eirannejad/revitpythonloader">RevitPythonLoader</a> and is a fork of <a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell</a>.</p>
-
-<p>How does it find the <code class="highlighter-rouge">__init__.py</code> you ask? Through a windows environment variable named <code class="highlighter-rouge">%pyRevit%</code> that it also automatically created by <code class="highlighter-rouge">Setup.bat</code> at installation. This variable points to the folder containing the <code class="highlighter-rouge">__init__.py</code> file which is t he downloaded pyRevit library. This folder can be a local folder or a nework folder (e.g <code class="highlighter-rouge">%pyRevit% = //Server/BIM/Revit/pyRevit/</code></p>
-
-<p>Neil Reilly has prepared a handy video taking you through the installation and showing some of the more useful tools. Click here to go to his Youtube page and watch the video.</p>
-
-<p><a href="https://www.youtube.com/watch?v=71rvCspWNHs"><img src="http://eirannejad.github.io/pyRevit/images/neilreillyvideo1.jpg" alt="NeilReillyVideo" /></a></p>
-
-<p><strong>If you encountered any errors during the installation, please use the manual installation method described below:</strong></p>
 
 <h2 id="installation-manual-installation">Installation (Manual installation):</h2>
 
 <p>This method needs basic knowledge of cloning/downloading git repositories:</p>
 
 <ul>
-  <li>Clone/Download the pyRevit repository onto your machine.</li>
+  <li>Clone/Download the pyRevit repository onto your machine. You would need to install the git tool for windows if you’re comfortable using shell, or you can use the free Github software and clone the pyRevit repository to a folder on your machine.</li>
+  <li>After cloning, browse to pyRevit/release/ folder and run <code class="highlighter-rouge">install_addin.bat</code>. The <code class="highlighter-rouge">.addin</code> files will be added to all installed Revit versions.</li>
+  <li>Run Revit and a <code class="highlighter-rouge">pyRevit</code> tab will be added to the Revit ribbon.</li>
 </ul>
 
-<p><strong>If you DO have <a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell</a> installed on your Revit:</strong></p>
-
-<ul>
-  <li>Go to <code class="highlighter-rouge">RevitPythonShell</code> Configuration, under the <code class="highlighter-rouge">InitScript \ Startup Script</code> tab, click on the browse button for the Startup Script and browse to <code class="highlighter-rouge">__init__.py</code> in the cloned pyRevit folder.</li>
-  <li>Restart your Revit and <code class="highlighter-rouge">RevitPythonShell</code> will load the <code class="highlighter-rouge">__init__.py</code> script and a <code class="highlighter-rouge">pyRevit</code> tab will be added to the ribbon panel.</li>
-</ul>
-
-<p><strong>If you DO NOT have <a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell</a> installed on your Revit:</strong></p>
-
-<ul>
-  <li>Clone/Download the <a href="https://github.com/eirannejad/revitpythonloader">RevitPythonLoader</a> repository onto your machine.</li>
-  <li>Create an environment variable named <code class="highlighter-rouge">%pyrevit%</code> on your machine and assign the location of <code class="highlighter-rouge">__init__.py</code> script to this variable (e.g. <code class="highlighter-rouge">%pyrevit% = "C:\pyrevit\"</code></li>
-  <li>Download this <a href="http://eirannejad.github.io/pyRevit/misc/RevitPythonLoader.addin">template add-in file</a> and add it to your Revit addin folder (usually: <code class="highlighter-rouge">appdata%\Autodesk\Revit\Addins\2016</code> for Revit 2016)</li>
-  <li>Edit the downloaded addin file with a text editor and replace the <code class="highlighter-rouge">&lt;RPL_repo_location&gt;</code> with the folder address of the cloned <code class="highlighter-rouge">RevitPythonLoader</code> repository.</li>
-  <li>Start Revit. Revit will find <code class="highlighter-rouge">RevitPythonLoader</code> with the help of the <code class="highlighter-rouge">addin</code> file, and RevitPythonLoader will read the value of <code class="highlighter-rouge">%pyrevit%</code> and will load the <code class="highlighter-rouge">__init__.py</code> script. A <code class="highlighter-rouge">pyRevit</code> tab will be added to the ribbon panel.</li>
-</ul>
-
-<p><strong>About Versioning:</strong> I’m using semantic versioning with MAJOR.MINOR.PATCH format. (MAJOR: incompatible API changes, MINOR: add functionality and scripts in a backwards-compatible manner, PATCH: backwards-compatible bug fixes). You can see your pyRevit version under <code class="highlighter-rouge">Settings -&gt; aboutPyRevit</code></p>
-
-<h2 id="reinstall--uninstall">Reinstall / Uninstall:</h2>
-<p>Run <code class="highlighter-rouge">Setup.bat</code> and it’ll prompt you that the pyRevit or RevitPythonLoader folders already exist and if you want to Reinstall pyRevit. If you answer yes, it’ll delete the folders and re-clones the github repositories just like a fresh install.</p>
-
-<p><img src="http://eirannejad.github.io/pyRevit/images/reinstall.png" alt="Reinstall" /></p>
-
-<p>If you answer No, It’ll ask you if you want to uninstall the tool. The setup script will remove the <code class="highlighter-rouge">.addin</code> files and <code class="highlighter-rouge">%pyrevit%</code> environment variable when uninstalling pyRevit.</p>
-
-<p><img src="http://eirannejad.github.io/pyRevit/images/uninstallComplete.png" alt="Reinstall" /></p>
+<h2 id="uninstall">Uninstall:</h2>
+<p>You can uninstall pyRevit like any other applciation from Program and Features in Windows Control Panel.</p>
 
   </div>
 
