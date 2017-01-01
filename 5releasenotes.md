@@ -12,7 +12,7 @@ Example: As of writing this text, pyRevit version is: ***4.0 : 8C6C5EA***
 
 You can see the current full version at the top of the About window. From now on Release information will only be published for the core features.
 
-![](http://eirannejad.github.io/pyRevit/images/aboutwithversion.png)
+![]({{ site.url }}/pyRevit/images/aboutwithversion.png)
 
 
 3.0.0 beta (deprecated)
