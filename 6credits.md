@@ -8,7 +8,7 @@ permalink: /credits/
 
 I'd like to thank people listed here for their great contributions:
 
-![]({{ site.url }}/pyRevit/images/aboutwithversion.png)
+![]({{ site.url }}/pyRevit/images/credits.png)
 
 - [Python Software Foundation](https://www.python.org) and - [IronPython Team](http://ironpython.net) for creating and maintaining such a powerful language.
 - [Jetbrains PyCharm Team](https://www.jetbrains.com/pycharm) for the best IDE ever! PyCharm is a python IDE but is truly the best I have ever worked with. Jetbrains team truely knows how to make effective and user friendly software.
