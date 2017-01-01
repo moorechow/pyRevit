@@ -4,7 +4,24 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-2.49.55 (current)
+4.0 (current)
+------
+pyRevit has been completely redesigned from ground up. The semantic versioning now only applies to the core features. The rest of the changes to the library are tracked by adding the latest commit hash value to the version.
+
+Example: As of writing this text, pyRevit version is: ***4.0 : 8C6C5EA***
+
+You can see the current full version at the top of the About window. From now on Release information will only be published for the core features.
+
+![](http://eirannejad.github.io/pyRevit/images/aboutwithversion.png)
+
+
+3.0.0 beta (deprecated)
+------
+During the beta development for version 3, I had extensive discussions with Gui Talarico on how the loader and pyRevit core should be setup. These discussion led to the decision to compeltely redesign the core instead of patching the new features.
+
+under version 4.0:x pyRevit core is an IronPython module and is way more faster, powerful, and extensible than before.
+
+2.49.55
 ------
 -	`Memory > Memory_copyViewportPlacement.py`: Copies the location of the selected viewport to memory. This can be later applied to other viewports on other sheets.
 
@@ -56,4 +73,6 @@ permalink: /releasenotes/
 -   Minor cleanups
 
 
-
+Earlier versions
+------
+pyRevit was my own private tool for almost two years and honestly I never felt the need to write version changes for myself thus none exists :D

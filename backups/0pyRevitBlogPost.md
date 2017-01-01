@@ -12,9 +12,12 @@ Download and install it, launch Revit and you will note the new ***pyRevit*** ta
 
 You can also write your own scripts and add them to the tab.
 
-There is even a Reload button than dynamically adds the new scripts to the current Revit session without the need to restart Revit.
+There is even a Reload Scripts button than dynamically adds the new scripts to the current Revit session without the need to restart Revit.
 
-All the scripts are provided in the `pyRevit/Extensions` folder which is downloaded at installation. You can look into them and learn how to use IronPython for Revit to perform different tasks.
+All the scripts are provided in the `pyRevit` folder which is downloaded at installation.
+You can look into them and learn how to use IronPython for Revit to perform different tasks.
+
+Please refer to the [pyRevit](https://github.com/eirannejad/pyRevit) GitHub repository for links and instructions on how to install on your machine.
 
 
 ## A Quick Look at some pyRevit Scripts
@@ -61,7 +64,7 @@ This one is pretty obvious. Run the script, select your source object to pick up
 
 Now let's take an even quicker and slightly deeper look at setting up [pyRevit](https://github.com/eirannejad/pyRevit):
 
-In it's simplest form, it's a series of IronPython script bundles. Each bundle has a `script.py` and might also include an icon as `icon.png`.
+In it's simplest form, it's a folder filled with `.py` IronPython scripts for Revit.
 
 ![pyrevitFolder](http://eirannejad.github.io/pyRevit/images/pyrevitfolder.png)
 
@@ -73,11 +76,34 @@ run them.
 
 Let's say you have written a script that automatically designs amazing buildings and creates the Revit model and construction documents for it, and let's say you want to run this script as fast as you can and make a whole buncha money really quickly, but it takes time to open the command prompt every time, browse to the script file, open it and run it, so you naturally want something faster!
 
-In order to make [pyRevit](https://github.com/eirannejad/pyRevit) more user friendly, it includes a helper python library (`import pyrevit`) that finds all the other scripts and creates buttons for them in the Revit user interface. This way. you can just click on the buttons instead of using the command prompt.
+In order to make [pyRevit](https://github.com/eirannejad/pyRevit) more user friendly, it includes a helper script that finds all the other scripts and creates buttons for them in the Revit user interface.
+This way. you can just click on the buttons instead of using the command prompt.
 
-What's neat about this is that the user interface buttons only store the address to each script. The script is reloaded and run every time the user clicks on the button.
+This script is appropriately called `__init__.py` and lives in
+the [pyRevit](https://github.com/eirannejad/pyRevit) library root folder.
+
+![initscript](http://eirannejad.github.io/pyRevit/images/initscript.png)
+
+What's neat about this is that the user interface buttons only store the address to each script.
+The script is reloaded and run every time the user clicks on the button.
 
 This means that you can change a script on the fly while Revit is running, and the next time you click on the button, Revit will run the modified script.
+
+But how do you tell Revit to run this script during start-up?
+
+There are two ways to achieve this:
+
+- The easy way:
+[RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell) has
+an option under `Configuration` to run an IronPython script at Revit start-up. Just download
+the [pyRevit](https://github.com/eirannejad/pyRevit) repository,
+set the ***RevitPythonShell*** start-up script address to the file address of the `__init__.py` script, and restart Revit.
+Voila, the ***pyRevit*** tab appears.
+
+- The even easier way:
+Download the setup package from
+the [pyRevit](https://github.com/eirannejad/pyRevit) GitHub repository and install.
+Done! Launch your Revit and ***pyRevit*** will be there.
 
 If you'd like to find out more about ***pyRevit*** and how to add your own scripts, visit the [pyRevit GitHub home page](https://github.com/eirannejad/pyRevit) and everything you want to know about it is provided.
 
