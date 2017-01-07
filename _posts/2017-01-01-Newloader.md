@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Straight to 4! Lots of changes coming up..."
-date:   2016-12-30 13:00:00 -0900
+title:  "Version 4 is available to download"
+date:   2017-01-05 13:00:00 -0900
 categories: pyrevit update
 comments: true
 ---
