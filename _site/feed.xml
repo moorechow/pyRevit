@@ -6,9 +6,29 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 09:52:40 -0800</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 09:52:40 -0800</lastBuildDate>
+    <pubDate>Fri, 06 Jan 2017 17:46:08 -0800</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 17:46:08 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Straight to 4! Lots of changes coming up...</title>
+        <description>&lt;p&gt;Okay. The new installer is available on Github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/Software Box-96.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/download/v4.0-stable/pyRevitSetup-v4.exe&quot;&gt;Please download the setup file from here&lt;/a&gt; or from github &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;release page here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 30 Dec 2016 14:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/12/30/Newloader.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/12/30/Newloader.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Straight to 4! Lots of changes coming up...</title>

@@ -18,6 +18,7 @@ I'd like to thank people listed here for their great contributions:
 - [Jetbrains PyCharm Team](https://www.jetbrains.com/pycharm) for the best IDE ever! PyCharm is a python IDE but is truly the best I have ever worked with. Jetbrains team truely knows how to make effective and user friendly software.
 - [Daren Thomas](https://github.com/daren-thomas) (original version, maintainer of [RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell)) for creating RPS and helping me.
 - [Gui Talarico](https://github.com/gtalarico) for creating the amazing [RevitPythonWrapper Library](http://revitpythonwrapper.readthedocs.io/) and also for testing and new tool ideas and contributing python scripts to the library.
+- [RevitAPIDocs](http://www.revitapidocs.com) for making it much easier for me to develop pyRevit on my own macOS. I had troubles using the old-school chm doc files.
 - [Jeremy Tammik](https://github.com/jeremytammik) (creator and maintainer of [RevitLookup](https://github.com/jeremytammik/RevitLookup)) for publishing about pyRevit and moral support! :D
 - [Icons8](https://icons8.com/) for the beautiful icons.
 - [EMOJIOne](http://emojione.com) for the free emoji icons that are very appropriately named by their unicode numbers.
