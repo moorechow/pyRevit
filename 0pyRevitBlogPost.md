@@ -74,9 +74,7 @@ Now let's take an even quicker and slightly deeper look at [pyRevit](https://git
 	- Library Extensions (IronPython modules shared between tools)
 
 
-#### UI Extensions:
-
-The most basic component of an extension is a command bundle. Each command bundle is a folder that contains a script file (`script.py`) and might also include an icon (`icon.png`) and is named like `Command Name.pushbutton`
+The most basic component of a UI extension is a command bundle. Each command bundle is a folder that contains a script file (`script.py`) and might also include an icon (`icon.png`) and is named like `Command Name.pushbutton`
 
 ![pyrevitFolder]({{ site.url }}/pyRevit/images/bundle.png)
 
