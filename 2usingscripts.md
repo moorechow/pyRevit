@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using and staying updated
+title: Using scripts, staying updated
 permalink: /howtouse/
 ---
 
