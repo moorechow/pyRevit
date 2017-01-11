@@ -162,6 +162,16 @@ if this_script.config.firstparam:
     do_task_A()
 ```
 
+
+&nbsp;
+
+### Most basic Revit utilities:
+You can access the Document, UIDocument, and Selection elements from `revitutils` module. This module also contains other basic tools to help you with writing simple scripts.
+
+``` python
+from revitutils import doc, uidoc, selection
+```
+
 &nbsp;
 
 ### Using temporary files easily:

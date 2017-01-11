@@ -6,9 +6,26 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Jan 2017 22:16:16 -0800</pubDate>
-    <lastBuildDate>Tue, 10 Jan 2017 22:16:16 -0800</lastBuildDate>
+    <pubDate>Tue, 10 Jan 2017 22:28:07 -0800</pubDate>
+    <lastBuildDate>Tue, 10 Jan 2017 22:28:07 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Added Anatomy of a Script page</title>
+        <description>&lt;p&gt;I also added a page describing the basic setup of a pyRevit script and the utilities that are available to it through &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; modules. See the &lt;a href=&quot;http://eirannejad.github.io/pyRevit/anatomyofpyrevitscript&quot;&gt;Anatomy of a Script page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please keep in mind that pyRevit is a work in progress and we are always tweaking these these utilities to improve pyRevit.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Jan 2017 15:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/10/addedscriptanatomy.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/10/addedscriptanatomy.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>What&#39;s pyRevit page updated</title>
