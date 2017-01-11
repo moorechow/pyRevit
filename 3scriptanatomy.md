@@ -47,7 +47,7 @@ __author__ = 'Ehsan Iran-Nejad'
 &nbsp;
 
 ### Logging:
-For all logging, the 'scriptutils' module defines the default logger for each script. Here is how to use it:
+For all logging, the `scriptutils` module defines the default logger for each script. Here is how to use it:
 
 ``` python
 from scriptutils import logger
@@ -88,7 +88,7 @@ else:
 &nbsp;
 
 ### Ctrl-Clicking: Debug Mode:
-CTRL-clicking on a ui button will run the script in DEBUG mode and will allow the script to print all debug messages. Try CTRL Clicking on this button to see debug messages.
+CTRL-clicking on a ui button will run the script in DEBUG mode and will allow the script to print all debug messages.
 
 You can check the value of `__forceddebugmode__` variable to see if the script is running in Debug mode to change script behaviour if neccessary
 
@@ -220,7 +220,7 @@ from scriptutils import this_script
 
 this_script.output.set_height(600)
 this_script.output.get_title()
-this_script.output.set_title('Beautiful title')
+this_script.output.set_title('More control please!')
 ```
 
 &nbsp;
