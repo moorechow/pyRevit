@@ -11,7 +11,7 @@ This is a quick look at a typical pyRevit script and the utilities that are avai
 &nbsp;
 
 ### Basic script parameters:
-```
+``` python
 """You can place the docstring (tooltip) at the top of the script file.
 This serves both as python docstring and also button tooltip in pyRevit.
 You should use triple quotes for standard python docstrings."""
@@ -22,7 +22,9 @@ You should use triple quotes for standard python docstrings."""
 You can also explicitly define the tooltip for this script file,
 independent of the docstring defined at the top by defining `__doc__` parameter.
 
-`__doc__ = 'This is the text for the button tooltip associated with this script.'`
+``` python
+__doc__ = 'This is the text for the button tooltip associated with this script.'
+```
 
 &nbsp;
 
@@ -30,20 +32,24 @@ If you'd like the UI button to have a custom name different from the script name
 For example, the `__title__` parameter is defined as shown below for this script.
 
 
-`__title__ = 'Sample\\nCommand'`
+``` python
+__title__ = 'Sample\\nCommand'
+```
 
 &nbsp;
 
 You can define the script author as shown below. This will show up on the button tooltip.
 
-`__author__ = 'Ehsan Iran-Nejad'`
+``` python
+__author__ = 'Ehsan Iran-Nejad'
+```
 
 &nbsp;
 
 ### Logging:
 For all logging, the 'scriptutils' module defines the default logger for each script. Here is how to use it:
 
-```
+``` python
 from scriptutils import logger
 logger.info('Test Log Level :ok_hand_sign:')
 
@@ -58,7 +64,9 @@ Critical and warning messages are printed in colour for clarity.
 Another logging function is available for logging DEBUG messages. Normally these messages are not printed.
 you can hold CTRL and click on a command button to put that command in DEBUG mode and see all its debug messages
 
-`logger.debug('Yesss! Here is the debug message')`
+``` python 
+logger.debug('Yesss! Here is the debug message')
+```
 
 &nbsp;
 
@@ -70,7 +78,7 @@ Try Shift clicking on the Match tool in pyRevit > Modify panel and see the confi
 If you don't define the configuration script, you can check the value of `__shiftclick__` in your scripts
 to change script behaviour
 
-```
+``` python
 if __shiftclick__:
     do_task_A()
 else:
@@ -84,7 +92,7 @@ CTRL-clicking on a ui button will run the script in DEBUG mode and will allow th
 
 You can check the value of `__forceddebugmode__` variable to see if the script is running in Debug mode to change script behaviour if neccessary
 
-```
+``` python
 if __forceddebugmode__:
 	do_task_A()
 else:
@@ -101,7 +109,7 @@ ALT-clicking on a ui button will show the associated script file in windows expl
 ### Script Information:
 `scriptutils` module also provides a class to access the running script information and utilities:
 
-```
+``` python
 from scriptutils import this_script
 
 # script name
@@ -140,7 +148,7 @@ this_script.pyrevit_version
 ### Custom User Configuration for Scripts:
 Each script can save and load configuration pyRevit's user configuration file:
 
-```
+``` python
 from scriptutils import this_script
 
 # set a new config parameter: firstparam
@@ -162,7 +170,7 @@ Scripts can create 3 different types of data files:
 - **Universal files:** These files are not marked by host Revit version and could be shared between all Revit versions and instances.
 These data files are saved in pyRevit appdata directory and are NOT cleaned up at Revit restarts. Script should manage cleaning up these data files.
 
-```
+``` python
 # provide a unique file id and file extension
 # Method will return full path of the data file
 this_script.get_universal_data_file(file_id, file_ext)
@@ -172,7 +180,7 @@ this_script.get_universal_data_file(file_id, file_ext)
 Data files are saved in pyRevit appdata directory and are NOT cleaned up at Revit restarts.
 Script should manage cleaning up these data files.
 
-```
+``` python
 # provide a unique file id and file extension
 # Method will return full path of the data file
 this_script.get_data_file(file_id, file_ext)
@@ -182,7 +190,7 @@ this_script.get_data_file(file_id, file_ext)
 These files are marked by host Revit version and process Id and are only available to current Revit instance.
 Data files are saved in pyRevit appdata directory and ARE cleaned up at Revit restarts.
 
-```
+``` python
 # provide a unique file id and file extension
 # Method will return full path of the data file
 this_script.get_instance_data_file(file_id, file_ext)
@@ -197,7 +205,7 @@ this_script.instance_data_filename
 ### Controlling Output Window:
 Each script can control its own output window:
 
-```
+``` python
 from scriptutils import this_script
 
 this_script.output.set_height(600)
@@ -208,7 +216,7 @@ this_script.output.set_title('Beautiful title')
 &nbsp;
 
 ### Misc Parameters:
-```
+``` python
 # Revit UIApplication is accessable through:
 __revit__
 
