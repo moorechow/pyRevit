@@ -78,7 +78,7 @@ Now let's take an even quicker and slightly deeper look at [pyRevit](https://git
 
 The most basic component of an extension is a command bundle. Each command bundle is a folder that contains a script file (`script.py`) and might also include an icon (`icon.png`) and is named like `Command Name.pushbutton`
 
-![pyrevitFolder]({{ site.url }}/pyRevit/images/bundle.png =364x118)
+![pyrevitFolder]({{ site.url }}/pyRevit/images/bundle.png)
 
 Command bundles are organzied into Command bundle groups, panels, and tabs that correspond to the well-known UI components in Revit's user interface. pyRevit core uses this structure to create the user interface for the extension.
 
