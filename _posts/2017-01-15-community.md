@@ -8,7 +8,7 @@ comments: true
 
 Hello BIM lovers, python practitioners, pyRevit followers...
 
-I want to know you and hear about the stuff you're doing with scripting in Revit. Github only shows me very limited information on the number of clones and unique visitors and most of the profiles don't have any info on the profile owner. It feels impossible for me to find you and connect to you.
+I want to know you and hear about the stuff you're doing with scripting in Revit. Github only shows me very limited information on the number of clones and unique visitors and most of the profiles don't have any info on the profile owner. It feels impossible for me to find you and connect with you.
 
 &nbsp;
 
