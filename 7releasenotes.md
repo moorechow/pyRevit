@@ -4,7 +4,12 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-4.0 (current)
+4.1 (current)
+------
+Extension system has been finally added to the core and tested. See [Adding your own scripts page]({{ site.url }}/pyRevit/sharingextensions) on how to add or remove extensions.
+
+
+4.0
 ------
 pyRevit has been completely redesigned from ground up. The semantic versioning now only applies to the core features. The rest of the changes to the library are tracked by adding the latest commit hash value to the version.
 

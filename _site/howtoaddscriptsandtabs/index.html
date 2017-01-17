@@ -55,6 +55,10 @@
             
           
             
+            <p class="menu-item"><a class="page-link" href="/pyRevit/sharingextensions/">Sharing Extensions</a></p>
+            
+          
+            
             <p class="menu-item"><a class="page-link" href="/pyRevit/contribute/">Contribute</a></p>
             
           
@@ -84,9 +88,245 @@
   </header> -->
 
   <div class="post-content">
-    <h2 id="adding-your-own-scripts">Adding your own scripts:</h2>
+    <h2 id="adding-your-own-extensions">Adding your own extensions:</h2>
 
-<p>Scripts are now bundles that can be moved around between tabs, pulldowns, and other group button. I have completely redesigned the file system for pyRevit and will update this page with the new information soon.</p>
+<p>pyRevit’s extensions system has evolved again to be more flexible and easier to work with. We’ll dive right into how you can add your own extension, but first let’s answer one important question:</p>
+
+<p><strong>Q:</strong>
+Why would I need to create a separate extension? Why Can’t I just add my scripts to the current pyRevit tools?</p>
+
+<p><strong>A:</strong>
+Because pyRevit is a git repository and the real benefit of that is that you can keep it always updated without the need to unsinstall and install the newer versions. To keep this system running without issues, I highly recommend to messing with the pyRevit git repository folders and contents and pyRevit makes it really easy to add your own extensions. You can even add tools to the standard pyRevit tab in your own extensions. I’ll show you how.</p>
+
+<p>Besides, by creating a separate extension, you’ll have all your precious scripts and tools in a safe place and away from the changes being made to the core pyRevit. They can even live somewhere on your company shared drives and be shared between your teams.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>Each extension is a group of tools, organized in bundles to be easily accessible through the user interface.</p>
+
+<h3 id="bundles">Bundles:</h3>
+<p>A bundle is a folder named in this format:</p>
+
+<p><code class="highlighter-rouge">bundle_name.bundle_type</code></p>
+
+<p>Like these:</p>
+
+<p>[add image here]</p>
+
+<p>The most basic bundle is a command bundle. There are more than one type of command bundles but a <code class="highlighter-rouge">.pushbutton</code> bundle explained here covers %90 of the use cases.</p>
+
+<h3 id="bundlepushbutton">bundle.pushbutton</h3>
+<p>Here is the structure of a command bundle:</p>
+
+<ul>
+  <li>Each command bundle needs to include a script either in python or C#:
+    <ul>
+      <li><code class="highlighter-rouge">script.py</code>: is for python commands</li>
+      <li><code class="highlighter-rouge">script.cs</code>: is for C# commands</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">icon.png</code>: Command bundles can include an icon for their user interface.</li>
+  <li><code class="highlighter-rouge">lib</code>: The can define a python library (a sub-folder named <code class="highlighter-rouge">lib</code> inside the bundle will do). This library will be accessible to the python script in this bundle. This organizes all the python modules that are necessary for this python script to work into one folder.</li>
+</ul>
+
+<p>This is how a command bundle looks like:</p>
+
+<p>[add image here]</p>
+
+<p> </p>
+
+<h2 id="extension-bundle-structure">Extension Bundle Structure:</h2>
+<p>Now that we have explained the command bundles, we need a way to organize these commands into a user-friendly interface. Let’s introduce <strong>Group Bundles</strong>:</p>
+
+<h3 id="basics-of-group-bundles">Basics of Group Bundles:</h3>
+<p>A group bundle is a bundle that can contain command bundles and other group bundles. They come in all different shapes and sizes but they have a few features in common:</p>
+
+<ul>
+  <li>They can contain command bundles and other group bundles. (But I’ve already said that)</li>
+  <li><code class="highlighter-rouge">icon.png</code>: Bundle can include an icon for their user interface.</li>
+  <li><code class="highlighter-rouge">lib</code>: The can define a python library (a sub-folder named <code class="highlighter-rouge">lib</code> inside the bundle will do). This library will be accessible to all the commands in this bundle and other child group bundles. This folder can contain all the python modules that are being shared between the child commands.</li>
+  <li><code class="highlighter-rouge">_layout</code>: This is a text file inside the bundle that defines the order in which the bundle contents should be created in the user interface. The contents of this file should be the names of the component in order.</li>
+</ul>
+
+<p>Here is <code class="highlighter-rouge">_layout</code> file example. This is a layout file for a Group Bundle that has a series of push buttons and other group bundles under itself:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>PushButton A
+PushButton B
+PullDown A
+---
+PullDown B
+Stack3 A
+&gt;&gt;&gt;
+PushButton C
+PullDown C
+</code></pre>
+</div>
+
+<p>Oh, and also:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">---</code>: This line will add a separator to the interface</li>
+  <li><code class="highlighter-rouge">&gt;&gt;&gt;</code>: Any bundle after this line will be created inside a slide-out. This works for panel bundles only.</li>
+</ul>
+
+<p>And this is how a typical Group Bundle looks like:</p>
+
+<p>[add image here]</p>
+
+<p> </p>
+
+<p>Now let’s talk about the different Group Bundles:</p>
+
+<h4 id="bundletab">bundle.tab</h4>
+<p>This bundle creates a Tab in the Ribbon with the bundle name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Example</strong></th>
+      <th style="text-align: left"><strong>Can Contain</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">pyRevit.tab</code></td>
+      <td style="text-align: left">Only <code class="highlighter-rouge">.panel</code> Group Bundles.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="bundlepanel">bundle.panel</h4>
+<p>This bundle creates a Panel in a Ribbon Tab with the bundle name.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Example</strong></th>
+      <th style="text-align: left"><strong>Can Contain</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">pyRevit.panel</code></td>
+      <td style="text-align: left">Any other bundle type</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="bundlepulldown">bundle.pulldown</h4>
+<p>This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Example</strong></th>
+      <th style="text-align: left"><strong>Can Contain</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">pyRevit.pulldown</code></td>
+      <td style="text-align: left">Only command bundles</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="bundlesplitbutton">bundle.splitbutton</h4>
+<p>This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Example</strong></th>
+      <th style="text-align: left"><strong>Can Contain</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">pyRevit.splitbutton</code></td>
+      <td style="text-align: left">Only command bundles</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="bundlesplitpushbutton">bundle.splitpushbutton</h4>
+<p>This bundle creates a Split Push Button button (The sticky split button) in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Example</strong></th>
+      <th style="text-align: left"><strong>Can Contain</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">pyRevit.splitpushbutton</code></td>
+      <td style="text-align: left">Only command bundles</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="bundlestack2">bundle.stack2</h4>
+<p>This bundle creates a stack of 2 buttons in a panel.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Example</strong></th>
+      <th style="text-align: left"><strong>Can Contain</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">pyRevit.splitpushbutton</code></td>
+      <td style="text-align: left">Command bundles, <code class="highlighter-rouge">.pulldown</code>, <code class="highlighter-rouge">.splitbutton</code>, <code class="highlighter-rouge">.splitpushbutton</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="bundlestack3">bundle.stack3</h4>
+<p>Just like the <code class="highlighter-rouge">.stack2</code> bundle but with 3 buttons instead.</p>
+
+<p> </p>
+
+<h2 id="advanced-bundles">Advanced Bundles:</h2>
+<p>There are a few more advanced bundle types in pyRevit as well. Here is some quick intro on these bundles.</p>
+
+<h3 id="bundlesmartbutton">bundle.smartbutton</h3>
+<p>Smart buttons are python scripts that are written like modules. They should define <code class="highlighter-rouge">__selfinit__</code> function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">commandbutton</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
+    <span class="s">"""
+    Args:
+        script_cmp: script component that contains info on this script
+        commandbutton: this is the UI button component
+        __rvt__: Revit UIApplication
+
+    Returns:
+    		bool: Return True if successful
+    """</span>
+
+	<span class="n">run_self_initialization</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<h3 id="bundlelinkbutton">bundle.linkbutton</h3>
+<p>Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles <code class="highlighter-rouge">script.py</code>:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'Addin assembly name'</span>
+<span class="n">__commandclass__</span> <span class="o">=</span> <span class="s">'Class name for the command'</span>
+</code></pre>
+</div>
+
+<p><strong>Note:</strong> For this button to work properly, the target addin must be already loaded when this button is being created, otherwise Revit can not tie the UI button to an assembly that is not loaded.</p>
+
+<p>For example to call the Interactive Python Shell from RevitPythonShell addin:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'RevitPythonShell'</span>
+<span class="n">__commandclass__</span> <span class="o">=</span> <span class="s">'IronPythonConsoleCommand'</span>
+</code></pre>
+</div>
+
 
   </div>
 
