@@ -177,7 +177,7 @@ Just like the `.stack2` bundle but with 3 buttons instead.
 ## Advanced Bundles:
 There are a few more advanced bundle types in pyRevit as well. Here is some quick intro on these bundles.
 
-### bundle.smartbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.smartbutton
 Smart buttons are python scripts that are written like modules. They should define `__selfinit__` function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).
 
 ```python
@@ -196,7 +196,7 @@ def __selfinit__(script_cmp, ui_button_cmp, __rvt__):
 ```
 
 
-### bundle.linkbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.linkbutton
 Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles `script.py`:
 
 ```python

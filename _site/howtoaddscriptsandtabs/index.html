@@ -325,7 +325,7 @@ PullDown C
 <h2 id="advanced-bundles">Advanced Bundles:</h2>
 <p>There are a few more advanced bundle types in pyRevit as well. Here is some quick intro on these bundles.</p>
 
-<h3 id="bundlesmartbutton">bundle.smartbutton</h3>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlesmartbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.smartbutton</h4>
 <p>Smart buttons are python scripts that are written like modules. They should define <code class="highlighter-rouge">__selfinit__</code> function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).</p>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">ui_button_cmp</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
@@ -343,7 +343,7 @@ PullDown C
 </code></pre>
 </div>
 
-<h3 id="bundlelinkbutton">bundle.linkbutton</h3>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlelinkbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.linkbutton</h4>
 <p>Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles <code class="highlighter-rouge">script.py</code>:</p>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'Addin assembly name'</span>
