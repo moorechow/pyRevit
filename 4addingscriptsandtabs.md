@@ -129,14 +129,14 @@ This bundle creates a Tab in the Ribbon with the bundle name.
 | `pyRevit.tab`  |  Only `.panel` Group Bundles.    |
 
 
-#### bundle.panel
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.panel
 This bundle creates a Panel in a Ribbon Tab with the bundle name.
 
 | **Example**      |      **Can Contain**        |
 |:-----------------|:----------------------------|
 | `pyRevit.panel`  |  Any other bundle type      |
 
-#### bundle.pulldown
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.pulldown
 This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bundle name and icon.
 
 | **Example**         |      **Can Contain**        |
@@ -144,7 +144,7 @@ This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bun
 | `pyRevit.pulldown`  |  Only command bundles       |
 
 
-#### bundle.splitbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.splitbutton
 This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the bundle name and icon.
 
 | **Example**            |      **Can Contain**        |
@@ -152,7 +152,7 @@ This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the
 | `pyRevit.splitbutton`  |  Only command bundles       |
 
 
-#### bundle.splitpushbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.splitpushbutton
 This bundle creates a Split Push Button button (The sticky split button) in a Ribbon Panel or a Stack, with the bundle name and icon.
 
 | **Example**                |      **Can Contain**        |
@@ -160,7 +160,7 @@ This bundle creates a Split Push Button button (The sticky split button) in a Ri
 | `pyRevit.splitpushbutton`  |  Only command bundles       |
 
 
-#### bundle.stack2
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.stack2
 This bundle creates a stack of 2 buttons in a panel.
 
 | **Example**                |      **Can Contain**        |
@@ -168,7 +168,7 @@ This bundle creates a stack of 2 buttons in a panel.
 | `pyRevit.splitpushbutton`  |  Command bundles, `.pulldown`, `.splitbutton`, `.splitpushbutton`       |
 
 
-#### bundle.stack3
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.stack3
 Just like the `.stack2` bundle but with 3 buttons instead.
 
 &nbsp;
