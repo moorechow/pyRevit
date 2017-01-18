@@ -121,7 +121,7 @@ And this is how a typical Group Bundle looks like:
 Now let's talk about the different Group Bundles:
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundle.png) bundle.tab
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.tab
 This bundle creates a Tab in the Ribbon with the bundle name.
 
 | **Example**    |      **Can Contain**             |
