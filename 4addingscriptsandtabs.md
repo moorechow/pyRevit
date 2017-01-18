@@ -21,6 +21,7 @@ Besides, by creating a separate extension, you'll have all your precious scripts
 
 - [Extensions](#extensions)
 - [Bundles](#bundles)
+- [Extension Bundles Structure](#extension-bundle-structure)
 - [Library Extensions](#library-extensions)
 
 
@@ -46,7 +47,7 @@ There are two steps that you need to follow to create your own extensions:
 &nbsp;
 
 
-### Bundles:
+## Bundles:
 A bundle is a folder named in this format:
 
 `bundle_name.bundle_type`
@@ -120,7 +121,7 @@ And this is how a typical Group Bundle looks like:
 Now let's talk about the different Group Bundles:
 
 
-#### bundle.tab
+#### ![]({{ site.url }}/pyRevit/images/bundle.png) bundle.tab
 This bundle creates a Tab in the Ribbon with the bundle name.
 
 | **Example**    |      **Can Contain**             |
