@@ -165,7 +165,7 @@ This bundle creates a stack of 2 buttons in a panel.
 
 | **Example**                |      **Can Contain**        |
 |:---------------------------|:----------------------------|
-| `pyRevit.splitpushbutton`  |  Command bundles, `.pulldown`, `.splitbutton`, `.splitpushbutton`       |
+| `pyRevit.stack2`  |  Command bundles, `.pulldown`, `.splitbutton`, `.splitpushbutton`       |
 
 
 #### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.stack3
