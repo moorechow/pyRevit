@@ -143,7 +143,7 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 
 <p>The most basic bundle is a command bundle. There are more than one type of command bundles but a <code class="highlighter-rouge">.pushbutton</code> bundle explained here covers %90 of the use cases.</p>
 
-<h3 id="bundlepushbutton">bundle.pushbutton</h3>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlepushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.pushbutton</h4>
 <p>Here is the structure of a command bundle:</p>
 
 <ul>
@@ -209,7 +209,7 @@ PullDown C
 
 <p>Now let’s talk about the different Group Bundles:</p>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundletab"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.tab</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundletab"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.tab</h4>
 <p>This bundle creates a Tab in the Ribbon with the bundle name.</p>
 
 <table>
@@ -227,7 +227,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlepanel"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.panel</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlepanel"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.panel</h4>
 <p>This bundle creates a Panel in a Ribbon Tab with the bundle name.</p>
 
 <table>
@@ -245,7 +245,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlepulldown"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.pulldown</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlepulldown"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.pulldown</h4>
 <p>This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
 
 <table>
@@ -263,7 +263,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlesplitbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.splitbutton</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlesplitbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.splitbutton</h4>
 <p>This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
 
 <table>
@@ -281,7 +281,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlesplitpushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.splitpushbutton</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlesplitpushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.splitpushbutton</h4>
 <p>This bundle creates a Split Push Button button (The sticky split button) in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
 
 <table>
@@ -299,7 +299,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlestack2"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.stack2</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlestack2"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.stack2</h4>
 <p>This bundle creates a stack of 2 buttons in a panel.</p>
 
 <table>
@@ -317,7 +317,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlestack3"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.stack3</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlestack3"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.stack3</h4>
 <p>Just like the <code class="highlighter-rouge">.stack2</code> bundle but with 3 buttons instead.</p>
 
 <p> </p>
@@ -325,7 +325,7 @@ PullDown C
 <h2 id="advanced-bundles">Advanced Bundles:</h2>
 <p>There are a few more advanced bundle types in pyRevit as well. Here is some quick intro on these bundles.</p>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlesmartbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.smartbutton</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlesmartbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.smartbutton</h4>
 <p>Smart buttons are python scripts that are written like modules. They should define <code class="highlighter-rouge">__selfinit__</code> function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).</p>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">ui_button_cmp</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
@@ -343,7 +343,7 @@ PullDown C
 </code></pre>
 </div>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-bundlelinkbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> bundle.linkbutton</h4>
+<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlelinkbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.linkbutton</h4>
 <p>Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles <code class="highlighter-rouge">script.py</code>:</p>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'Addin assembly name'</span>
@@ -364,11 +364,11 @@ PullDown C
 
 <h2 id="library-extensions">Library Extensions</h2>
 
-<p>Library extensions are create to share IronPython modules between all extensions. They’re in essence module packages. Some users might decide to develop an IronPython library (e.g. RevitPythonWrapper) that other users can use in their tools and benefit from.</p>
+<p>Library extensions are created to share IronPython modules between all extensions. They’re in essence IronPython module packages. Some users might decide to develop an IronPython library (e.g. <a href="http://revitpythonwrapper.readthedocs.io/">RevitPythonWrapper Library</a>) that other users can use in their tools and benefit from.</p>
 
 <p>Library extensions are identified by <code class="highlighter-rouge">.lib</code> postfix. The library extension folder address will be added to the <code class="highlighter-rouge">sys.path</code> of all the other extensions by the loader.</p>
 
-<p>You can install the RevitPythonWrapper package which is a library extension and see how it works.</p>
+<p>You can install the <strong>RevitPythonWrapper</strong> package (which is a library extension) through the pyRevit Extensions tool, and see how it works.</p>
 
 
   </div>

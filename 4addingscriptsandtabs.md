@@ -58,7 +58,7 @@ Like these:
 
 The most basic bundle is a command bundle. There are more than one type of command bundles but a `.pushbutton` bundle explained here covers %90 of the use cases. 
 
-### bundle.pushbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) command_bundle.pushbutton
 Here is the structure of a command bundle:
 
 - Each command bundle needs to include a script either in python or C#:
@@ -121,7 +121,7 @@ And this is how a typical Group Bundle looks like:
 Now let's talk about the different Group Bundles:
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.tab
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.tab
 This bundle creates a Tab in the Ribbon with the bundle name.
 
 | **Example**    |      **Can Contain**             |
@@ -129,14 +129,14 @@ This bundle creates a Tab in the Ribbon with the bundle name.
 | `pyRevit.tab`  |  Only `.panel` Group Bundles.    |
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.panel
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.panel
 This bundle creates a Panel in a Ribbon Tab with the bundle name.
 
 | **Example**      |      **Can Contain**        |
 |:-----------------|:----------------------------|
 | `pyRevit.panel`  |  Any other bundle type      |
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.pulldown
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.pulldown
 This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bundle name and icon.
 
 | **Example**         |      **Can Contain**        |
@@ -144,7 +144,7 @@ This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bun
 | `pyRevit.pulldown`  |  Only command bundles       |
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.splitbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.splitbutton
 This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the bundle name and icon.
 
 | **Example**            |      **Can Contain**        |
@@ -152,7 +152,7 @@ This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the
 | `pyRevit.splitbutton`  |  Only command bundles       |
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.splitpushbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.splitpushbutton
 This bundle creates a Split Push Button button (The sticky split button) in a Ribbon Panel or a Stack, with the bundle name and icon.
 
 | **Example**                |      **Can Contain**        |
@@ -160,7 +160,7 @@ This bundle creates a Split Push Button button (The sticky split button) in a Ri
 | `pyRevit.splitpushbutton`  |  Only command bundles       |
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.stack2
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.stack2
 This bundle creates a stack of 2 buttons in a panel.
 
 | **Example**                |      **Can Contain**        |
@@ -168,7 +168,7 @@ This bundle creates a stack of 2 buttons in a panel.
 | `pyRevit.splitpushbutton`  |  Command bundles, `.pulldown`, `.splitbutton`, `.splitpushbutton`       |
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.stack3
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) group_bundle.stack3
 Just like the `.stack2` bundle but with 3 buttons instead.
 
 &nbsp;
@@ -177,7 +177,7 @@ Just like the `.stack2` bundle but with 3 buttons instead.
 ## Advanced Bundles:
 There are a few more advanced bundle types in pyRevit as well. Here is some quick intro on these bundles.
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.smartbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) command_bundle.smartbutton
 Smart buttons are python scripts that are written like modules. They should define `__selfinit__` function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).
 
 ```python
@@ -196,7 +196,7 @@ def __selfinit__(script_cmp, ui_button_cmp, __rvt__):
 ```
 
 
-#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) bundle.linkbutton
+#### ![]({{ site.url }}/pyRevit/images/bundleicon.png) command_bundle.linkbutton
 Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles `script.py`:
 
 ```python
@@ -219,11 +219,11 @@ __commandclass__ = 'IronPythonConsoleCommand'
 
 ## Library Extensions
 
-Library extensions are create to share IronPython modules between all extensions. They're in essence module packages. Some users might decide to develop an IronPython library (e.g. RevitPythonWrapper) that other users can use in their tools and benefit from.
+Library extensions are created to share IronPython modules between all extensions. They're in essence IronPython module packages. Some users might decide to develop an IronPython library (e.g. [RevitPythonWrapper Library](http://revitpythonwrapper.readthedocs.io/)) that other users can use in their tools and benefit from.
 
 Library extensions are identified by `.lib` postfix. The library extension folder address will be added to the `sys.path` of all the other extensions by the loader.
 
-You can install the RevitPythonWrapper package which is a library extension and see how it works.
+You can install the **RevitPythonWrapper** package (which is a library extension) through the pyRevit Extensions tool, and see how it works.
 
 
 
