@@ -17,8 +17,34 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 Besides, by creating a separate extension, you'll have all your precious scripts and tools in a safe place and away from the changes being made to the core pyRevit. They can even live somewhere on your company shared drives and be shared between your teams.
 
 
+### Contents:
+
+- [Extensions](#extensions)
+- [Bundles](#bundles)
+- [Library Extensions](#library-extensions)
+
+
+&nbsp;
+
+
 ## Extensions
 Each extension is a group of tools, organized in bundles to be easily accessible through the user interface.
+
+Extensions are organized in a bundle with `.extension` postfix. Like this one:
+
+![]({{ site.url }}/pyRevit/images/bundle.png)
+
+There are two steps that you need to follow to create your own extensions:
+
+- First, is to create a separate folder for all your custom extensions and tell pyRevit to load your extensions from this folder. This is done in the Settings window, under the Custom Extension folders section. This way your precious extensions will stay out of the pyRevit installation and are safe.
+
+![]({{ site.url }}/pyRevit/images/customextfolder.png)
+
+- Next, create your `<your extension name>.extension` folder under the custom extensions folder. Read the sections below on how to create bundles for your commands and the user interface.
+
+
+&nbsp;
+
 
 ### Bundles:
 A bundle is a folder named in this format:
@@ -187,7 +213,16 @@ __commandclass__ = 'IronPythonConsoleCommand'
 ```
 
 
+&nbsp;
 
+
+## Library Extensions
+
+Library extensions are create to share IronPython modules between all extensions. They're in essence module packages. Some users might decide to develop an IronPython library (e.g. RevitPythonWrapper) that other users can use in their tools and benefit from.
+
+Library extensions are identified by `.lib` postfix. The library extension folder address will be added to the `sys.path` of all the other extensions by the loader.
+
+You can install the RevitPythonWrapper package which is a library extension and see how it works.
 
 
 
