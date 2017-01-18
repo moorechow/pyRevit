@@ -6,9 +6,30 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Jan 2017 18:04:18 -0800</pubDate>
-    <lastBuildDate>Tue, 17 Jan 2017 18:04:18 -0800</lastBuildDate>
+    <pubDate>Tue, 17 Jan 2017 21:28:58 -0800</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2017 21:28:58 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Core Documentation: Lots of Docs</title>
+        <description>&lt;p&gt;Now that the extension manager has been completed, it’s time for next phase which is documenting the pyRevit core library, so all you Reviteers can dive in and contribute to the core, helping making it better for everyone.&lt;/p&gt;
+
+&lt;p&gt;Just so you know, I’ll be using &lt;a href=&quot;http://www.sphinx-doc.org&quot;&gt;Sphinx&lt;/a&gt; to compile the documentation from the &lt;a href=&quot;http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html&quot;&gt;Google-style docstrings&lt;/a&gt; in the source code. &lt;a href=&quot;https://github.com/gtalarico&quot;&gt;Gui talarico&lt;/a&gt; has also used Sphinx to create the documentation for the &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/&quot;&gt;RevitPythonWrapper&lt;/a&gt; library.&lt;/p&gt;
+
+&lt;p&gt;There are also a few &lt;code class=&quot;highlighter-rouge&quot;&gt;readme.md&lt;/code&gt; files in the folders that gives you a basic understanding of how the repository is structured. They’re markdown file and you can read them on a normal text editor but I highly suggest getting into the habit of using &lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt; which is BTW the best text editor ever! Make sure you watch the video on the home page. It’s brilliant!&lt;/p&gt;
+
+&lt;p&gt;Stay tuned…&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Jan 2017 16:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/17/coredocs.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/17/coredocs.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Extension Packages and v4.1</title>
@@ -240,49 +261,6 @@ The output window now has full emoji support! :D&lt;/p&gt;
         
         
         <category>pyrevit</category>
-        
-      </item>
-    
-      <item>
-        <title>Semantic Versioning and pyRevit v3</title>
-        <description>&lt;p&gt;Today I learned more about &lt;a href=&quot;http://semver.org&quot;&gt;Semantic Versioning &lt;/a&gt; and realized I’m incrementing the version numbers incorrectly in pyRevit.&lt;/p&gt;
-
-&lt;p&gt;Semantic versioning proposes X.Y.Z (Major.Minor.Patch) format but also says when Y is incremented, Z must be reset to zero. But until now, I did not do any such resetting on the values.&lt;/p&gt;
-
-&lt;p&gt;With the current versioning method, the X is for major backward-incompatible changes; Y is for new scripts added to the library; and Z is for all the minor patches and fixes to any of the scripts.&lt;/p&gt;
-
-&lt;p&gt;Now to the more exciting part:&lt;/p&gt;
-
-&lt;p&gt;We’re testing the pyRevit v3.0.0-alpha right now. The beta will be available soon and it has a few important changes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;pyRevit now supports Extensions! There is a package manager that handles installation/update/and removal of thrid-party extensions. &lt;a href=&quot;https://github.com/gtalarico&quot;&gt;Gui Talarico&lt;/a&gt; is working on the first of them and it’s called &lt;strong&gt;&lt;em&gt;PyRevitPlus&lt;/em&gt;&lt;/strong&gt;. Each extension will get its own tab. This means that you can create your own libraries of scripts and share them on github and other users can install them using the package manager.&lt;/li&gt;
-  &lt;li&gt;If the current file naming convention is confusing for you, we’ve modified the startup script to work with scripts organized in folders. This means that instead of properly naming &lt;code class=&quot;highlighter-rouge&quot;&gt;*.png&lt;/code&gt; files to create panels and pulldown buttons, you can throw the scripts in a folder for the pulldown button and place that inside another folder for the panel. I’ll publish the details of this later.  &lt;strong&gt;&lt;em&gt;PyRevitPlus&lt;/em&gt;&lt;/strong&gt; will be organized under this system and it’s a great example.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;pyRevit now has a settings window. You can enable/disable Verbose reporting at startup, and the usage log system as of now.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/2016-08-16 18_18_07-pyRevit user settings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;There is also a nicer About window with links to this website and credits.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/2016-08-16 18_17_54-About pyRevit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;pyRevit v3 also has a better Install and Uninstall system. The setup package is a smaller download, it’s easier to use, and installs pyRevit in the &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%&lt;/code&gt; folder by default. This means that pyRevit lives in the user roaming directory and follows a user about in an Active Directory environment. It is also only available to just the user that installs it. This can be useful if, for example, you have multiple Revit users on the same machine, who may need to run different configurations of pyRevit based on their Revit level of expertise.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Back to the semantic versioning. I’ll use it the right way starting with version 3.0.0 :)&lt;/p&gt;
-
-&lt;p&gt;Stay tuned.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 Aug 2016 10:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/16/semantic-versioning.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/16/semantic-versioning.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
         
       </item>
     
