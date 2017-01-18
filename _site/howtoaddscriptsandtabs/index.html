@@ -110,7 +110,7 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 
 <p>Like these:</p>
 
-<p>[add image here]</p>
+<p><img src="http://eirannejad.github.io/pyRevit/images/bundle.png" alt="" /></p>
 
 <p>The most basic bundle is a command bundle. There are more than one type of command bundles but a <code class="highlighter-rouge">.pushbutton</code> bundle explained here covers %90 of the use cases.</p>
 
@@ -130,7 +130,11 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 
 <p>This is how a command bundle looks like:</p>
 
-<p>[add image here]</p>
+<p><img src="http://eirannejad.github.io/pyRevit/images/commandbundle.png" alt="" /></p>
+
+<p>And this is a more advanced command bundle with a configuration script and configuration window definition file:</p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/advancedcommandbundle.png" alt="" /></p>
 
 <p> </p>
 
@@ -170,7 +174,7 @@ PullDown C
 
 <p>And this is how a typical Group Bundle looks like:</p>
 
-<p>[add image here]</p>
+<p><img src="http://eirannejad.github.io/pyRevit/images/groupbundle1.png" alt="" /></p>
 
 <p> </p>
 
@@ -295,11 +299,11 @@ PullDown C
 <h3 id="bundlesmartbutton">bundle.smartbutton</h3>
 <p>Smart buttons are python scripts that are written like modules. They should define <code class="highlighter-rouge">__selfinit__</code> function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">commandbutton</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">ui_button_cmp</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
     <span class="s">"""
     Args:
         script_cmp: script component that contains info on this script
-        commandbutton: this is the UI button component
+        ui_button_cmp: this is the UI button component
         __rvt__: Revit UIApplication
 
     Returns:

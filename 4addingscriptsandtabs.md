@@ -27,7 +27,7 @@ A bundle is a folder named in this format:
 
 Like these:
 
-[add image here]
+![]({{ site.url }}/pyRevit/images/bundle.png)
 
 The most basic bundle is a command bundle. There are more than one type of command bundles but a `.pushbutton` bundle explained here covers %90 of the use cases. 
 
@@ -42,7 +42,12 @@ Here is the structure of a command bundle:
 
 This is how a command bundle looks like:
 
-[add image here]
+![]({{ site.url }}/pyRevit/images/commandbundle.png)
+
+And this is a more advanced command bundle with a configuration script and configuration window definition file:
+
+![]({{ site.url }}/pyRevit/images/advancedcommandbundle.png)
+
 
 
 &nbsp;
@@ -80,12 +85,14 @@ Oh, and also:
 
 And this is how a typical Group Bundle looks like:
 
-[add image here]
+![]({{ site.url }}/pyRevit/images/groupbundle1.png)
+
 
 &nbsp;
 
 
 Now let's talk about the different Group Bundles:
+
 
 #### bundle.tab
 This bundle creates a Tab in the Ribbon with the bundle name.
@@ -147,11 +154,11 @@ There are a few more advanced bundle types in pyRevit as well. Here is some quic
 Smart buttons are python scripts that are written like modules. They should define `__selfinit__` function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).
 
 ```python
-def __selfinit__(script_cmp, commandbutton, __rvt__):
+def __selfinit__(script_cmp, ui_button_cmp, __rvt__):
     """
     Args:
         script_cmp: script component that contains info on this script
-        commandbutton: this is the UI button component
+        ui_button_cmp: this is the UI button component
         __rvt__: Revit UIApplication
 
     Returns:
