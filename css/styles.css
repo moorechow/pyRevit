@@ -150,7 +150,7 @@ header ul {
 }
 
 header li {
-  width:118px;
+  width:78px;
   float:left;
   text-align: center;
   border-right:1px solid #e0e0e0;
@@ -255,7 +255,7 @@ footer.sidebar {
 
   header ul, header p.view {
     position:static;
-    height: 100px;
+    height: 150px;
     margin-top: 10px;
     margin-bottom: 15px;
   }
