@@ -150,7 +150,7 @@ __context__ = 'Floors'
 __context__ = 'Space Tags'
 ```
 
-See [Appendix A]() for a full list of system categories. You can use the `List` tool under `pyRevit > Spy` and list the standard categories.
+See [Appendix A](#appendix-a-system-category-names) for a full list of system categories. You can use the `List` tool under `pyRevit > Spy` and list the standard categories.
 
 &nbsp;
 
