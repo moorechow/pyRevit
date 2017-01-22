@@ -21,4 +21,4 @@ This method needs basic knowledge of cloning/downloading git repositories:
 
 
 ## Uninstall:
-You can uninstall pyRevit like any other applciation from Program and Features in Windows Control Panel.
+You can uninstall pyRevit like any other application from Program and Features in Windows Control Panel.

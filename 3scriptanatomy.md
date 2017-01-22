@@ -79,7 +79,7 @@ logger.warning('Test Log Level')
 logger.critical('Test Log Level')
 ```
 
-Critical and warning messages are printed in colour for clarity.
+Critical and warning messages are printed in color for clarity.
 
 
 Another logging function is available for logging DEBUG messages. Normally these messages are not printed.
@@ -226,7 +226,7 @@ from revitutils import doc, uidoc, selection
 Scripts can create 3 different types of data files:
 
 - **Universal files:** These files are not marked by host Revit version and could be shared between all Revit versions and instances.
-These data files are saved in pyRevit appdata directory and are NOT cleaned up at Revit restarts.
+These data files are saved in pyRevit's appdata directory and are NOT cleaned up at Revit restarts.
 
 ***Note: Script should take care of cleaning up these data files.***
 
@@ -237,7 +237,7 @@ this_script.get_universal_data_file(file_id, file_ext)
 ```
 
 - **Data files** (Shared only between instances of host Revit version): These files are marked by host Revit version and could be shared between instances of host Revit version
-Data files are saved in pyRevit appdata directory and are NOT cleaned up when Revit restarts.
+Data files are saved in pyRevit's appdata directory and are NOT cleaned up when Revit restarts.
 
 ***Note: Script should take care of cleaning up these data files.***
 
@@ -249,7 +249,7 @@ this_script.get_data_file(file_id, file_ext)
 
 - **Instance Data files** (Accessible only to current Revit instance):
 These files are marked by host Revit version and process Id and are only available to current Revit instance. This avoids any conflicts between similar scripts running under two or more Revit instances.
-Data files are saved in pyRevit appdata directory (with extension `.tmp`) and ARE cleaned up when Revit restarts.
+Data files are saved in pyRevit's appdata directory (with extension `.tmp`) and ARE cleaned up when Revit restarts.
 
 ``` python
 # provide a unique file id and file extension
@@ -278,10 +278,10 @@ this_script.output.set_title('More control please!')
 
 ### Misc Parameters:
 ``` python
-# Revit UIApplication is accessable through:
+# Revit UIApplication is accessible through:
 __revit__
 
-# Command data provided to this command by Revit is accessable through:
+# Command data provided to this command by Revit is accessible through:
 __commandData__
 
 # and UI Controlled application is:
