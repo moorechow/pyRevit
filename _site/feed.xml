@@ -6,9 +6,40 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Jan 2017 10:50:20 -0800</pubDate>
-    <lastBuildDate>Sat, 21 Jan 2017 10:50:20 -0800</lastBuildDate>
+    <pubDate>Sat, 21 Jan 2017 21:33:39 -0800</pubDate>
+    <lastBuildDate>Sat, 21 Jan 2017 21:33:39 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>New print tool and Weekly change report</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/printorderedbutton.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was finally able to sit down and build a tool to print the project sheets in order. It is similar to the &lt;a href=&quot;https://github.com/McCulloughRT/PrintFromIndex&quot;&gt;PrintFromIndex&lt;/a&gt; tool developed by &lt;a href=&quot;https://github.com/McCulloughRT&quot;&gt;Ryan McCullough&lt;/a&gt; but it lists the sheets for the Selected Index in the same order as the index and also allows for quick last minute manual reordering. Update your pyRevit and give it a try. Here is how it looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/printorderedsheets.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also here is a quick list of other misc changes that’s been made in the past week:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevitPlus&lt;/code&gt; extension updated for pyRevit v4 and added to extension manager&lt;/li&gt;
+  &lt;li&gt;Added pages to the pyRevit website on creating and sharing custom extensions.&lt;/li&gt;
+  &lt;li&gt;Default script naming has been revised to be more forgiving and include any script that ends with &lt;code class=&quot;highlighter-rouge&quot;&gt;script.py&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;script.cs&lt;/code&gt;. Same applies to the config scripts. Website documentation has been revised to reflect this change.&lt;/li&gt;
+  &lt;li&gt;Added Revit version information to the startup log&lt;/li&gt;
+  &lt;li&gt;Started core documentation&lt;/li&gt;
+  &lt;li&gt;Resolved issues with Sphinx autodoc system.&lt;/li&gt;
+  &lt;li&gt;pyRevit seed documentation is created on &lt;a href=&quot;https://readthedocs.com&quot;&gt;readthedocs.com&lt;/a&gt; and documentation button added to pyRevit website homepage. pyRevit documentation is still work-in-progress. &lt;code class=&quot;highlighter-rouge&quot;&gt;Readthedocs&lt;/code&gt; will update the docs website based on the latest git repository changes.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 21 Jan 2017 15:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/21/miscchanges.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/21/miscchanges.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Core Documentation: Lots of Docs</title>
@@ -230,37 +261,6 @@ The output window now has full emoji support! :D&lt;/p&gt;
         <category>pyrevit</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Why python?</title>
-        <description>&lt;p&gt;Someone asked me why did I use python to program the tools and create this library. Here are my thoughts:&lt;/p&gt;
-
-&lt;p&gt;You can select between a couple of programming languages to develop addins and tools for Revit. They’re: C#, Visual Basic, Ruby, and python.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ruby is heavily web oriented and has a less readable syntax for a newbie. It’s still no doubt incredibly powerful.&lt;/li&gt;
-  &lt;li&gt;Visual Basic is old. It’s not worth the time investment for a newbie and you can only use it within the Microsoft ecosystem.&lt;/li&gt;
-  &lt;li&gt;C# is a proper language built for enterprise applications. It has a steep learning curve and deals with very complex programming concepts which makes it a hard language use. Also C# programmers are expensive and that increases the overall cost of professional-grade software development and maintenance.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;but python, has a human readable syntax. It’s very easy to learn. It runs on most of the operating systems and is used as the scripting language for many professional CAD/BIM programs. It’s very easy to setup and it even comes pre-installed on Mac and Linux systems. You can use it to program your own personal computer (Mac, Windows, or Linux). It has a very simple I/O framework that you can utilize to keep your files and projects in decent order. You can use it in Revit, Dynamo for Revit, Rhino with Grasshopper, Blender for 3D graphics, and many more. You can even use it as a very powerful and handy calculator…It’s a better language if you’re an Architect…&lt;/p&gt;
-
-&lt;p&gt;In my opinion, learning python is a good start and a better investment for an Architect overall. Of course you still have to learn how to use the Revit API (or API of other software using python for scripting) but still, python, is like a x-acto knife.&lt;/p&gt;
-
-&lt;p&gt;Besides, most architecture companies are not very rich. They can’t afford C# programmers or a software development department and this means that they’re mostly stuck with out-of-the-box software which especially in case of Revit, lack some of the most basic tools (by 2016 standards e.g. proper selection tools). However, by using simple small tools they can save significant production time over the course of a year or so. I’ll publish more data on this in a few months.&lt;/p&gt;
-
-&lt;p&gt;I’m hoping that this library encourages more architects to get into programming and start taking control of the programs that, right now, have a lot of undesired control over the A/E industry.&lt;/p&gt;
-
-&lt;p&gt;Rise hackers, rise.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 Aug 2016 16:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/2016/08/16/whypython.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/2016/08/16/whypython.html</guid>
-        
-        
-        <category>pyrevit</category>
         
       </item>
     

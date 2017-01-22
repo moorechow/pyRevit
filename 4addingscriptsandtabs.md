@@ -62,10 +62,13 @@ The most basic bundle is a command bundle. There are more than one type of comma
 Here is the structure of a command bundle:
 
 - Each command bundle needs to include a script either in python or C#:
-	- `script.py`: is for python commands
-	- `script.cs`: is for C# commands
-- `icon.png`: Command bundles can include an icon for their user interface.
-- `lib`: The can define a python library (a sub-folder named `lib` inside the bundle will do). This library will be accessible to the python script in this bundle. This organizes all the python modules that are necessary for this python script to work into one folder.
+	- **`script.py`**: is for python commands (the first script file under the bundle that ends with `script.py` will be used as the script for this command bundle.
+		- Examples: `BuildWall_script.py` `Analyse-script.py`
+	- **`config.py`**: is for python commands configuration. If this script is provided then Shift-Clicking on the button will run this command instead. Also a black dot will be added to the button name in the user interface to show that this command has a custom configuration tool. See the `Match` tool in pyRevit's default toolset.
+	- **`script.cs`**: is for C# commands and works similarly to python scripts.
+
+- **`icon.png`**: Command bundles can include an icon for their user interface.
+- **`lib`**: The can define a python library (a sub-folder named `lib` inside the bundle will do). This library will be accessible to the python script in this bundle. This organizes all the python modules that are necessary for this python script to work into one folder.
 
 This is how a command bundle looks like:
 
@@ -87,9 +90,9 @@ Now that we have explained the command bundles, we need a way to organize these 
 A group bundle is a bundle that can contain command bundles and other group bundles. They come in all different shapes and sizes but they have a few features in common:
 
 - They can contain command bundles and other group bundles. (But I've already said that)
-- `icon.png`: Bundle can include an icon for their user interface.
-- `lib`: The can define a python library (a sub-folder named `lib` inside the bundle will do). This library will be accessible to all the commands in this bundle and other child group bundles. This folder can contain all the python modules that are being shared between the child commands.
-- `_layout`: This is a text file inside the bundle that defines the order in which the bundle contents should be created in the user interface. The contents of this file should be the names of the component in order.
+- **`icon.png`**: Bundle can include an icon for their user interface.
+- **`lib`**: The can define a python library (a sub-folder named `lib` inside the bundle will do). This library will be accessible to all the commands in this bundle and other child group bundles. This folder can contain all the python modules that are being shared between the child commands.
+- **`_layout`**: This is a text file inside the bundle that defines the order in which the bundle contents should be created in the user interface. The contents of this file should be the names of the component in the order that they should be created in the user interface.
 
 Here is `_layout` file example. This is a layout file for a Group Bundle that has a series of push buttons and other group bundles under itself:
 
@@ -107,8 +110,8 @@ PullDown C
 
 Oh, and also:
 
-- `---`: This line will add a separator to the interface
-- `>>>`: Any bundle after this line will be created inside a slide-out. This works for panel bundles only.
+- **`---`**: This line will add a separator to the interface (You can use more than 3 **`-`** characters. For example `----------` still works as a separator)
+- **`>>>`**: Any bundle after this line will be created inside a slide-out. This works for panel bundles only. (You can use more than 3 **`>`** characters. For example `>>>>>>>>>` still works as a slide-out)
 
 And this is how a typical Group Bundle looks like:
 

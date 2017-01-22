@@ -203,7 +203,7 @@ Data files are saved in pyRevit appdata directory and ARE cleaned up at Revit re
 ``` python
 # provide a unique file id and file extension
 # Method will return full path of the data file
-this_script.get_instance_data_file(file_id, file_ext)
+this_script.get_instance_data_file(file_id)
 
 
 # this is the standard instance data file that is setup by default for this script

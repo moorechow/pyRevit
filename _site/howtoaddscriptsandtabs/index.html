@@ -150,12 +150,17 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 <ul>
   <li>Each command bundle needs to include a script either in python or C#:
     <ul>
-      <li><code class="highlighter-rouge">script.py</code>: is for python commands</li>
-      <li><code class="highlighter-rouge">script.cs</code>: is for C# commands</li>
+      <li><strong><code class="highlighter-rouge">script.py</code></strong>: is for python commands (the first script file under the bundle that ends with <code class="highlighter-rouge">script.py</code> will be used as the script for this command bundle.
+        <ul>
+          <li>Examples: <code class="highlighter-rouge">BuildWall_script.py</code> <code class="highlighter-rouge">Analyse-script.py</code></li>
+        </ul>
+      </li>
+      <li><strong><code class="highlighter-rouge">config.py</code></strong>: is for python commands configuration. If this script is provided then Shift-Clicking on the button will run this command instead. Also a black dot will be added to the button name in the user interface to show that this command has a custom configuration tool. See the <code class="highlighter-rouge">Match</code> tool in pyRevit’s default toolset.</li>
+      <li><strong><code class="highlighter-rouge">script.cs</code></strong>: is for C# commands and works similarly to python scripts.</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">icon.png</code>: Command bundles can include an icon for their user interface.</li>
-  <li><code class="highlighter-rouge">lib</code>: The can define a python library (a sub-folder named <code class="highlighter-rouge">lib</code> inside the bundle will do). This library will be accessible to the python script in this bundle. This organizes all the python modules that are necessary for this python script to work into one folder.</li>
+  <li><strong><code class="highlighter-rouge">icon.png</code></strong>: Command bundles can include an icon for their user interface.</li>
+  <li><strong><code class="highlighter-rouge">lib</code></strong>: The can define a python library (a sub-folder named <code class="highlighter-rouge">lib</code> inside the bundle will do). This library will be accessible to the python script in this bundle. This organizes all the python modules that are necessary for this python script to work into one folder.</li>
 </ul>
 
 <p>This is how a command bundle looks like:</p>
@@ -176,9 +181,9 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 
 <ul>
   <li>They can contain command bundles and other group bundles. (But I’ve already said that)</li>
-  <li><code class="highlighter-rouge">icon.png</code>: Bundle can include an icon for their user interface.</li>
-  <li><code class="highlighter-rouge">lib</code>: The can define a python library (a sub-folder named <code class="highlighter-rouge">lib</code> inside the bundle will do). This library will be accessible to all the commands in this bundle and other child group bundles. This folder can contain all the python modules that are being shared between the child commands.</li>
-  <li><code class="highlighter-rouge">_layout</code>: This is a text file inside the bundle that defines the order in which the bundle contents should be created in the user interface. The contents of this file should be the names of the component in order.</li>
+  <li><strong><code class="highlighter-rouge">icon.png</code></strong>: Bundle can include an icon for their user interface.</li>
+  <li><strong><code class="highlighter-rouge">lib</code></strong>: The can define a python library (a sub-folder named <code class="highlighter-rouge">lib</code> inside the bundle will do). This library will be accessible to all the commands in this bundle and other child group bundles. This folder can contain all the python modules that are being shared between the child commands.</li>
+  <li><strong><code class="highlighter-rouge">_layout</code></strong>: This is a text file inside the bundle that defines the order in which the bundle contents should be created in the user interface. The contents of this file should be the names of the component in the order that they should be created in the user interface.</li>
 </ul>
 
 <p>Here is <code class="highlighter-rouge">_layout</code> file example. This is a layout file for a Group Bundle that has a series of push buttons and other group bundles under itself:</p>
@@ -198,8 +203,8 @@ PullDown C
 <p>Oh, and also:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">---</code>: This line will add a separator to the interface</li>
-  <li><code class="highlighter-rouge">&gt;&gt;&gt;</code>: Any bundle after this line will be created inside a slide-out. This works for panel bundles only.</li>
+  <li><strong><code class="highlighter-rouge">---</code></strong>: This line will add a separator to the interface (You can use more than 3 <strong><code class="highlighter-rouge">-</code></strong> characters. For example <code class="highlighter-rouge">----------</code> still works as a separator)</li>
+  <li><strong><code class="highlighter-rouge">&gt;&gt;&gt;</code></strong>: Any bundle after this line will be created inside a slide-out. This works for panel bundles only. (You can use more than 3 <strong><code class="highlighter-rouge">&gt;</code></strong> characters. For example <code class="highlighter-rouge">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> still works as a slide-out)</li>
 </ul>
 
 <p>And this is how a typical Group Bundle looks like:</p>
