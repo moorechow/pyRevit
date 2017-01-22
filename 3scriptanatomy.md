@@ -10,6 +10,27 @@ This is a quick look at a typical pyRevit script and the utilities that are avai
 
 &nbsp;
 
+### Contents:
+
+- [Basic script parameters](#basic-script-parameters)
+- [Logging](#logging)
+- Modifier Keys:
+	- [Shift-Clicking](#shift-clicking-script-configuration)
+	- [Ctrl-Clicking](#ctrl-clicking-debug-mode)
+	- [Alt-Clicking](#alt-clicking-show-script-file-in-explorer)
+- [Command Availability](#command-availability)
+- [Script Information](#script-information)
+- [Custom User Configuration for Scripts](#custom-user-configuration-for-scripts)
+- [Basic Revit utilities](#most-basic-revit-utilities)
+- [Temporary files](#using-temporary-files-easily)
+- [Controlling Output Window](#controlling-output-window)
+- [Misc Parameters](#misc-parameters)
+- [Appendix A: System Categories](#appendix-a-system-category-names)
+
+
+&nbsp;
+
+
 ### Basic script parameters:
 ``` python
 """You can place the docstring (tooltip) at the top of the script file.
@@ -106,6 +127,33 @@ ALT-clicking on a ui button will show the associated script file in windows expl
 
 &nbsp;
 
+### Command Availability:
+Revit commands use standard `IExternalCommandAvailability` class to let Revit know if they are available in different situations. For example, if a command needs to work on currently selected elements, it can tell Revit to deactivate the button unless the user has selected some elements.
+
+In pyRevit, command availability is set through the `__context__` variable. Currently, pyRevit support two types of command availability types.
+
+- `__context__ = 'Selection'`<br/>(Tool activates when at least one element is selected)
+
+- `__context__ = '<Element Category>'`<br/>(Tool activates when all selected elements are of the given category)
+
+
+**Element Categories:**
+
+`<Element Category>` can be any of the standard Revit element categories. Here are a few examples:
+
+``` python
+# Tool activates when all selected elements are of the given category
+
+__context__ = 'Doors'
+__context__ = 'Walls'
+__context__ = 'Floors'
+__context__ = 'Space Tags'
+```
+
+See [Appendix A]() for a full list of system categories. You can use the `List` tool under `pyRevit > Spy` and list the standard categories.
+
+&nbsp;
+
 ### Script Information:
 `scriptutils` module also provides a class to access the running script information and utilities:
 
@@ -178,7 +226,9 @@ from revitutils import doc, uidoc, selection
 Scripts can create 3 different types of data files:
 
 - **Universal files:** These files are not marked by host Revit version and could be shared between all Revit versions and instances.
-These data files are saved in pyRevit appdata directory and are NOT cleaned up at Revit restarts. Script should manage cleaning up these data files.
+These data files are saved in pyRevit appdata directory and are NOT cleaned up at Revit restarts.
+
+***Note: Script should take care of cleaning up these data files.***
 
 ``` python
 # provide a unique file id and file extension
@@ -187,8 +237,9 @@ this_script.get_universal_data_file(file_id, file_ext)
 ```
 
 - **Data files** (Shared only between instances of host Revit version): These files are marked by host Revit version and could be shared between instances of host Revit version
-Data files are saved in pyRevit appdata directory and are NOT cleaned up at Revit restarts.
-Script should manage cleaning up these data files.
+Data files are saved in pyRevit appdata directory and are NOT cleaned up when Revit restarts.
+
+***Note: Script should take care of cleaning up these data files.***
 
 ``` python
 # provide a unique file id and file extension
@@ -197,8 +248,8 @@ this_script.get_data_file(file_id, file_ext)
 ```
 
 - **Instance Data files** (Accessible only to current Revit instance):
-These files are marked by host Revit version and process Id and are only available to current Revit instance.
-Data files are saved in pyRevit appdata directory and ARE cleaned up at Revit restarts.
+These files are marked by host Revit version and process Id and are only available to current Revit instance. This avoids any conflicts between similar scripts running under two or more Revit instances.
+Data files are saved in pyRevit appdata directory (with extension `.tmp`) and ARE cleaned up when Revit restarts.
 
 ``` python
 # provide a unique file id and file extension
@@ -235,4 +286,288 @@ __commandData__
 
 # and UI Controlled application is:
 __uiControlledApplication__
+```
+
+&nbsp;
+
+### Appendix A: System Category Names:
+``` python
+Part Tags
+MEP Fabrication Hangers
+Pipe Insulation Tags
+Analytical Floors
+Mechanical Equipment Tags
+Ramps
+Cable Tray Fittings
+Foundation Span Direction Symbol
+Communication Device Tags
+Analytical Wall Tags
+Structural Connections
+Planting
+Ceiling Tags
+Annotation Crop Boundary
+Analytical Wall Foundations
+Furniture Tags
+Mass
+Air Terminals
+Pipe Accessory Tags
+Security Device Tags
+Window Tags
+Stair Tread/Riser Numbers
+MEP Fabrication Ductwork Tags
+Communication Devices
+Piping Systems
+Panel Schedule Graphics
+Detail Item Tags
+Reference Lines
+MEP Fabrication Containment
+Analytical Spaces
+Plumbing Fixtures
+Structural Framing Tags
+Ceilings
+Section Boxes
+MEP Fabrication Ductwork
+Elevation Marks
+Data Device Tags
+Pipe Segments
+Crop Boundaries
+Conduit Fittings
+Sprinklers
+Doors
+Lighting Fixture Tags
+Lighting Devices
+Assembly Tags
+Duct Tags
+Curtain Systems
+Structural Rebar Tags
+Parking
+Ducts
+Door Tags
+Internal Area Load Tags
+Revision Clouds
+MEP Fabrication Hanger Tags
+Imports in Families
+Conduits
+Multi-Category Tags
+Analytical Isolated Foundations
+Flex Pipes
+Property Line Segment Tags
+Curtain Panel Tags
+Analytical Links
+Structural Trusses
+HVAC Zones
+Mass Floor Tags
+Electrical Spare/Space Circuits
+Site
+Analytical Columns
+Duct Systems
+Zone Tags
+Duct Placeholders
+Reference Planes
+Cable Tray Tags
+Multi-Rebar Annotations
+Matchline
+Specialty Equipment Tags
+Duct Accessories
+Duct Fitting Tags
+Furniture System Tags
+Callout Heads
+Furniture Systems
+Telephone Devices
+Lines
+Wires
+Pipes
+Structural Stiffener Tags
+Topography
+Casework Tags
+Project Information
+Wall Tags
+Cable Tray Fitting Tags
+Structural Internal Loads
+Electrical Circuits
+Analysis Display Style
+Pipe Insulations
+Flex Ducts
+Duct Insulation Tags
+Rebar Cover References
+Assemblies
+Structural Load Cases
+Stair Support Tags
+Structural Area Reinforcement
+Structural Truss Tags
+Analytical Slab Foundation Tags
+Plan Region
+Structural Framing
+Electrical Fixtures
+Air Terminal Tags
+Data Devices
+Structural Annotations
+Lighting Fixtures
+Duct Insulations
+Span Direction Symbol
+Section Line
+Cable Tray Runs
+Section Marks
+Pipe Color Fill
+Generic Models
+Lighting Device Tags
+Floor Tags
+Sprinkler Tags
+Analysis Results
+Scope Boxes
+Line Load Tags
+Render Regions
+Structural Path Reinforcement Symbols
+Electrical Equipment
+Stair Landing Tags
+MEP Fabrication Containment Tags
+Curtain Panels
+Fire Alarm Devices
+Analytical Braces
+Displacement Path
+Roads
+Duct Lining Tags
+Floors
+Flex Duct Tags
+Point Clouds
+Analytical Wall Foundation Tags
+Analytical Foundation Slabs
+Windows
+Structural Area Reinforcement Tags
+Structural Path Reinforcement
+Stair Run Tags
+Rebar Shape
+Parts
+Nurse Call Device Tags
+Columns
+Area Load Tags
+Routing Preferences
+Generic Annotations
+Area Tags
+View Reference
+Filled region
+Analytical Column Tags
+Structural Fabric Reinforcement
+Connection Symbols
+Conduit Fitting Tags
+Raster Images
+Structural Column Tags
+Analytical Beam Tags
+Adaptive Points
+Grid Heads
+Sections
+Room Tags
+Curtain Wall Mullions
+Stair Tags
+Structural Loads
+Revision Cloud Tags
+Walls
+Conduit Runs
+Duct Accessory Tags
+Spot Slopes
+Keynote Tags
+Space Tags
+Rebar Set Toggle
+Pipe Color Fill Legends
+Pipe Fittings
+Structural Columns
+Pipe Placeholders
+Guide Grid
+Grids
+Fire Alarm Device Tags
+Planting Tags
+Callouts
+Schedule Graphics
+Electrical Fixture Tags
+Telephone Device Tags
+Structural Rebar Couplers
+Cable Trays
+Curtain System Tags
+Structural Stiffeners
+Entourage
+MEP Fabrication Pipework
+Internal Line Load Tags
+Structural Fabric Reinforcement Symbols
+Mass Tags
+Analytical Node Tags
+Property Tags
+Structural Path Reinforcement Tags
+Callout Boundary
+Structural Area Reinforcement Symbols
+Contour Labels
+Nurse Call Devices
+Areas
+Materials
+Roofs
+Structural Fabric Areas
+Structural Rebar
+Reference Points
+Shaft Openings
+Spot Elevation Symbols
+Internal Point Load Tags
+Analytical Isolated Foundation Tags
+Flex Pipe Tags
+Duct Fittings
+Cameras
+Elevations
+Specialty Equipment
+Analytical Floor Tags
+Pipe Accessories
+Structural Connection Tags
+Masking Region
+Structural Rebar Coupler Tags
+Structural Foundations
+Level Heads
+Duct Color Fill Legends
+Analytical Beams
+Curtain Grids
+Levels
+Brace in Plan View Symbols
+Railing Tags
+Structural Foundation Tags
+Wire Tags
+Security Devices
+Site Tags
+Pipe Tags
+Analytical Link Tags
+Spot Coordinates
+Railings
+Viewports
+Title Blocks
+Plumbing Fixture Tags
+Pipe Fitting Tags
+Duct Color Fill
+Stair Paths
+MEP Fabrication Pipework Tags
+Duct Linings
+Structural Beam Systems
+Roof Tags
+Views
+Sheets
+Casework
+Conduit Tags
+Point Load Tags
+Analytical Surfaces
+Structural Fabric Reinforcement Tags
+Material Tags
+View Titles
+Mechanical Equipment
+Parking Tags
+Structural Beam System Tags
+Analytical Brace Tags
+Electrical Equipment Tags
+Generic Model Tags
+Switch System
+Furniture
+Rooms
+Analytical Walls
+Stairs
+Text Notes
+Detail Items
+Spot Elevations
+Analytical Nodes
+Boundary Conditions
+Color Fill Legends
+Spaces
+Dimensions
 ```
