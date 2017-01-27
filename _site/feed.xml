@@ -6,9 +6,91 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Jan 2017 10:18:24 -0800</pubDate>
-    <lastBuildDate>Thu, 26 Jan 2017 10:18:24 -0800</lastBuildDate>
+    <pubDate>Thu, 26 Jan 2017 22:03:29 -0800</pubDate>
+    <lastBuildDate>Thu, 26 Jan 2017 22:03:29 -0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Increment/Decrement Sheet Number</title>
+        <description>&lt;p&gt;re: &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/149&quot;&gt;Issue #149&lt;/a&gt; reported by &lt;a href=&quot;https://github.com/thazell&quot;&gt;thazell&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Renamed and updated:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shift Selected Sheets One Up &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Decrement Selected Sheet Numbers&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Shift Selected Sheets One Up &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Increment Selected Sheet Numbers&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There were two scripts under the &lt;code class=&quot;highlighter-rouge&quot;&gt;Sheets&lt;/code&gt; pulldown that would increment and decrement the sheet number of the selected sheets. I had written these scripts a long time ago for personal use and really didn’t get the chance to revisit and make them smarter. They’re designed to rename sheets that are numbered in &lt;code class=&quot;highlighter-rouge&quot;&gt;A100&lt;/code&gt; format so they’d produce an error with sheets formatted as &lt;code class=&quot;highlighter-rouge&quot;&gt;A100a&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;S-100&lt;/code&gt;, or similar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/thazell&quot;&gt;thazell&lt;/a&gt; created the issue #149 to address this shortcoming. I had a chance this afternoon to create/find a proper increment/decrement function for strings and use it to increment and decrement sheet numbers in a smarter fashion. This new function has been added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;coreutils&lt;/code&gt; module and is available to scripts as well.&lt;/p&gt;
+
+&lt;p&gt;Here is a couple of examples of how it would increment/decrement sheet numbers:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Decremented &amp;lt;&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Original&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;&amp;gt; Incremented&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A099&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A100&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A101&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A099z&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A100a&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A100b&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-101Y&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-101Z&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-102A&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M111-ZZ&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M112-AA&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M112-AB&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</description>
+        <pubDate>Thu, 26 Jan 2017 15:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/sheetincrement.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/sheetincrement.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Updates to print tool</title>
+        <description>&lt;p&gt;Taking to &lt;a href=&quot;https://github.com/ThubanPDX&quot;&gt;Austin Rosenfeld&lt;/a&gt; on printing Architectural sheets to PDF (in order) and combining all drawings from all disciplines into a single PDF, he suggested that the print tool should show the placeholder (non-printable) sheets and allow for indexing space for these sheets.&lt;/p&gt;
+
+&lt;p&gt;As an example, Civil and Landscape drawings usually fall in between Cover sheet and Architectural sheets. By allowing indexing space, these sheets can be manually numbered later and added to the printed Architectural sheets folder so all of them can be combined in one pass into a single PDF document.&lt;/p&gt;
+
+&lt;p&gt;So the Print Ordered Sheets tool has been updated and now shows the placeholder sheets and gives the user the option to allow indexing space:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/printorderedsheetsupdated.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Jan 2017 14:00:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/orderedprintupdate.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/orderedprintupdate.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>New print tool and Weekly change report</title>
@@ -187,75 +269,6 @@ The output window now has full emoji support! :D&lt;/p&gt;
         <pubDate>Fri, 30 Dec 2016 14:00:00 -0800</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/12/30/lotsofchanges.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/12/30/lotsofchanges.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 3 Beta is out!</title>
-        <description>&lt;p&gt;After weeks of work I am pleased to announce that version 3-beta of pyRevit is out.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/Software Box-96.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/download/v3betaSetup/pyRevitSetup-v3beta.exe&quot;&gt;Please download the setup file from here&lt;/a&gt; or from github &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;release page here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can install it anywhere you want however the default installation folder is &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit/&lt;/code&gt; and the package will be installed under &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevit-v3beta&lt;/code&gt; folder. I like the user roaming folder since it makes the repository available at any machine I happen to log into.&lt;/p&gt;
-
-&lt;p&gt;I’m looking forward to hearing your comments…&lt;/p&gt;
-</description>
-        <pubDate>Fri, 09 Sep 2016 15:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/09/09/verthreebetaisout.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/09/09/verthreebetaisout.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>More Updates on v3</title>
-        <description>&lt;p&gt;There are a handful of pyRevit scripts that are pretty much identical and only differ by a line or two. Take the &lt;code class=&quot;highlighter-rouge&quot;&gt;pick&lt;/code&gt; tools for example. There are a couple of them under the &lt;code class=&quot;highlighter-rouge&quot;&gt;Select&lt;/code&gt; pulldown and each picks a centain element type. But the truth is that the underlying logic is the same in all these scripts and the only difference is one line of code that tells the script to pick a door or a window. This creates two problems:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;First is a maintenance issue. Every time I update one of the scripts, I need to make that same adjustment in all the script files.&lt;/li&gt;
-  &lt;li&gt;Second is that I have 7 almost-identical script files that increases the load time and create 7 buttons in Revit UI that take up so much space and make the pulldowns harder to use. It’s not worth the screen real state and the load time overhead.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This problem has been solved now. How? Well, simple. Let’s take the &lt;code class=&quot;highlighter-rouge&quot;&gt;pick&lt;/code&gt; tool again as example. In pyRevit v3, instead of 7 buttons, there is only one pick tool. When clicked, it’ll show a list of options that you can select from. Here is how it looks like:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/combinedpick.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And here is the window that shows all the options for that tool:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pickswitches.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I hate to increase the click count for the tools, so that’s why every one of the options listed in this &lt;strong&gt;&lt;em&gt;Options Window&lt;/em&gt;&lt;/strong&gt; is a button. So in pyRevit v3, one click on the &lt;code class=&quot;highlighter-rouge&quot;&gt;pick&lt;/code&gt; tool and then a click on &lt;code class=&quot;highlighter-rouge&quot;&gt;wall&lt;/code&gt; option button is equal too running the &lt;code class=&quot;highlighter-rouge&quot;&gt;pickWalls&lt;/code&gt; tool in pyRevit v2.&lt;/p&gt;
-
-&lt;p&gt;One extra click, but more efficient and less wasted screen space. It’s also possible to add more options to these tools now without creating more Revit UI buttons.&lt;/p&gt;
-
-&lt;p&gt;Here are a few more examples. All copy and paste tools have been replaced with a single &lt;code class=&quot;highlighter-rouge&quot;&gt;copyState&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;pasteState&lt;/code&gt; button:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/combinedcopypaste.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is the option window for the &lt;code class=&quot;highlighter-rouge&quot;&gt;pasteState&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pasteswitches.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And here are the option window for the &lt;code class=&quot;highlighter-rouge&quot;&gt;list&lt;/code&gt; tool (replacing the many individual &lt;code class=&quot;highlighter-rouge&quot;&gt;listXXX&lt;/code&gt; scripts), and also the &lt;code class=&quot;highlighter-rouge&quot;&gt;isolate&lt;/code&gt; tool:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/listswitches.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/isolateswitches.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 21 Aug 2016 15:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/21/moreupdates.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2016/08/21/moreupdates.html</guid>
         
         
         <category>pyrevit</category>
