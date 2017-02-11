@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Output Window Improvements"
+title:  "Viva progress bars"
 date:   2017-02-11 13:00:00 -0900
 categories: pyrevit update output
 comments: true
