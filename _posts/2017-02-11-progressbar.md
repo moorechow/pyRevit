@@ -6,11 +6,15 @@ categories: pyrevit update output
 comments: true
 ---
 
-The output window now has a progress bar! Yaay! (It's the green line at the bottom of the output window)
+The output window now has a progress bar! Yaay!
 
+(It's the green line at the bottom of the output window)
+
+&nbsp;
 
 ![]({{ site.url }}/pyRevit/images/linkify.png)
 
+&nbsp;
 
 Use it like this:
 
@@ -19,7 +23,8 @@ from scriptutils import this_script
 
 # update_progress( current_value, max_value )
 # so this means 50% progress
-# values can be any int or float. The function will do the math and will calculate the percentage of completion.
+# values can be any int or float. The function will do
+# the math and will calculate the percentage of completion.
 this_script.output.update_progress(50, 100)
 ```
 
