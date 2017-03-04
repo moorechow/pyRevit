@@ -38,7 +38,7 @@ So I made one for pyRevit. Here is how it works:
 
 &nbsp;
 
-![]({{ site.url }}/pyRevit/images/pattern3.png)
+![]({{ site.url }}/pyRevit/images/pattern4.png)
 
 &nbsp;
 
