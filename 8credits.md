@@ -22,6 +22,7 @@ I'd like to thank people listed here for their great contributions:
 - [Jeremy Tammik](https://github.com/jeremytammik) (creator and maintainer of [RevitLookup](https://github.com/jeremytammik/RevitLookup)) for publishing about pyRevit and moral support! :D
 - [Icons8](https://icons8.com/) for the beautiful icons.
 - [EMOJIOne](http://emojione.com) for the free emoji icons that are very appropriately named by their unicode numbers.
+- [Charts.js](http://www.chartjs.org) for making it so simple to integrate beautiful and interactive charts with pyRevit output window.
 - [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) for git and for being my beacon.
 - [git-scm](https://git-scm.com) for the open source, portable git for windows.
 - [LibGit2Sharp](https://github.com/libgit2/libgit2sharp) for the open source git library for C# which I'm also using in IronPython.
