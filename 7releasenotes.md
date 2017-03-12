@@ -4,7 +4,16 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-4.1 (current)
+4.2 (current)
+------
+Addition of interactive Charts to output window
+
+Performance improvements to the output window. (The back-end is a lot cleaner and faster).
+
+pyRevit IronPython engine performance improvements.
+
+
+4.1
 ------
 Extension system has been finally added to the core and tested. See [Adding your own scripts page]({{ site.url }}/pyRevit/sharingextensions) on how to add or remove extensions.
 
