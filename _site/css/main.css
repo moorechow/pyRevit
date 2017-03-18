@@ -145,3 +145,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+.highlighter-rouge .highlight { background: #f6f6f6; }
+
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 2px; background-color: #f6f6f6; }
