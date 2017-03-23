@@ -6,9 +6,44 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Mar 2017 16:14:33 -0700</pubDate>
-    <lastBuildDate>Sat, 18 Mar 2017 16:14:33 -0700</lastBuildDate>
+    <pubDate>Wed, 22 Mar 2017 20:36:10 -0700</pubDate>
+    <lastBuildDate>Wed, 22 Mar 2017 20:36:10 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Two more productivity tools</title>
+        <description>&lt;p&gt;I’m working on a host of new changes to the core this week but I managed to add these two tools. One suggested by &lt;a href=&quot;https://github.com/thazell&quot;&gt;thazel&lt;/a&gt; under &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/166&quot;&gt;issue #166&lt;/a&gt;, and another came out from a conversation I had with a colleague on an easier way to make placeholders and sheets.&lt;/p&gt;
+
+&lt;h2 id=&quot;load-family-types&quot;&gt;Load family types:&lt;/h2&gt;
+
+&lt;p&gt;This tool will look into the original family file of a selected family instance and will get a list of types that are available for that family. The user then selects the family types that are needed and the tool will load them into the model.&lt;/p&gt;
+
+&lt;p&gt;This is especially helpful with families such as Structural Framing that have many types and not all the types need to be loaded in the model.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exceptions:&lt;/strong&gt; There are instances that this tool can not find the original family file since it expects the family to know about its original saved location, which families usually do. I have tried to include descriptive prompts that inform the user on any errors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/loadmorefamtypes1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/loadmorefamtypes2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;batch-sheet-maker&quot;&gt;Batch Sheet Maker:&lt;/h2&gt;
+
+&lt;p&gt;This is really a very simple tool and is helpful in creating a number of sheets or placeholders really quickly or to have a list of standard sheets and use this list to create sheets in many models and keep them consistent.&lt;/p&gt;
+
+&lt;p&gt;The tool is pretty self-explanatory. Type in the sheet number and sheet name (separate them by a single tab), pick the sheet or placeholder options and create the sheets:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/batchsheetmaker.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Mar 2017 16:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/22/moretools.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/22/moretools.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>pyRevit unstable branch or how I learned to love unittest</title>
@@ -656,37 +691,6 @@ The major difference between &lt;code class=&quot;highlighter-rouge&quot;&gt;lin
         <pubDate>Thu, 26 Jan 2017 14:00:00 -0800</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/orderedprintupdate.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/orderedprintupdate.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>New print tool and Weekly change report</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/printorderedbutton.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I was finally able to sit down and build a tool to print the project sheets in order. It is similar to the &lt;a href=&quot;https://github.com/McCulloughRT/PrintFromIndex&quot;&gt;PrintFromIndex&lt;/a&gt; tool developed by &lt;a href=&quot;https://github.com/McCulloughRT&quot;&gt;Ryan McCullough&lt;/a&gt; but it lists the sheets for the Selected Index in the same order as the index and also allows for quick last minute manual reordering. Update your pyRevit and give it a try. Here is how it looks like:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/printorderedsheets.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Also here is a quick list of other misc changes that’s been made in the past week:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevitPlus&lt;/code&gt; extension updated for pyRevit v4 and added to extension manager&lt;/li&gt;
-  &lt;li&gt;Added pages to the pyRevit website on creating and sharing custom extensions.&lt;/li&gt;
-  &lt;li&gt;Default script naming has been revised to be more forgiving and include any script that ends with &lt;code class=&quot;highlighter-rouge&quot;&gt;script.py&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;script.cs&lt;/code&gt;. Same applies to the config scripts. Website documentation has been revised to reflect this change.&lt;/li&gt;
-  &lt;li&gt;Added Revit version information to the startup log&lt;/li&gt;
-  &lt;li&gt;Started core documentation&lt;/li&gt;
-  &lt;li&gt;Resolved issues with Sphinx autodoc system.&lt;/li&gt;
-  &lt;li&gt;pyRevit seed documentation is created on &lt;a href=&quot;https://readthedocs.com&quot;&gt;readthedocs.com&lt;/a&gt; and documentation button added to pyRevit website homepage. pyRevit documentation is still work-in-progress. &lt;code class=&quot;highlighter-rouge&quot;&gt;Readthedocs&lt;/code&gt; will update the docs website based on the latest git repository changes.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 21 Jan 2017 15:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/21/miscchanges.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/21/miscchanges.html</guid>
         
         
         <category>pyrevit</category>
