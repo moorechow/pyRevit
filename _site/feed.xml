@@ -6,9 +6,52 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Mar 2017 12:01:31 -0700</pubDate>
-    <lastBuildDate>Sat, 25 Mar 2017 12:01:31 -0700</lastBuildDate>
+    <pubDate>Sat, 25 Mar 2017 12:20:53 -0700</pubDate>
+    <lastBuildDate>Sat, 25 Mar 2017 12:20:53 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Important: Upcoming core update</title>
+        <description>&lt;p&gt;Please update your pyRevits. Here is why:&lt;/p&gt;
+
+&lt;p&gt;The branch &lt;code class=&quot;highlighter-rouge&quot;&gt;unstable-w12&lt;/code&gt; has a major update to the IronPython core. I’ve updated the IronPython to 2.7.7 which resolves a large number of errors with the IronPython engine including better unicode string support.&lt;/p&gt;
+
+&lt;p&gt;I’ll merge this update at the end of March. But to be able to get this update gracefully you need to update pyRevit now so you can get the new &lt;code class=&quot;highlighter-rouge&quot;&gt;Update&lt;/code&gt; tool that has been made smarter to look for core updates.&lt;/p&gt;
+
+&lt;p&gt;This was my challenge:&lt;/p&gt;
+
+&lt;p&gt;Revit keeps the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevitLoader.dll&lt;/code&gt; open when you’re working with Revit and the pyRevit updater can not overwrite this dll. I had to figure out a way to fix this issue forever.&lt;/p&gt;
+
+&lt;p&gt;So the solution that I came up with was to modify the updates to check the commit messages in the pyRevit repository and check to see if any of them includes &lt;code class=&quot;highlighter-rouge&quot;&gt;COREUPDATE&lt;/code&gt;. This effectively tells the updater that there is an core update available and pyRevit needs to be updated when Revit is closed.&lt;/p&gt;
+
+&lt;p&gt;The updater will show this warning message and won’t update your installed pyRevit repo:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/coreupdatemessage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;So to update pyRevit when Revit is closed, go to the folder below under the installed folder and run the batch tool. The batch script will pull and merge the pyRevit repository.&lt;/p&gt;
+
+&lt;p&gt;After update start Revit again and everything should be good to go.&lt;/p&gt;
+
+&lt;h3 id=&quot;or&quot;&gt;OR&lt;/h3&gt;
+
+&lt;p&gt;You can just remove and reinstall pyRevit :)&lt;/p&gt;
+
+&lt;p&gt;Sorry. Updates are hard!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Mar 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/25/imminentupdate.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/25/imminentupdate.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Fancy forms for your scripts</title>
@@ -706,67 +749,6 @@ The major difference between &lt;code class=&quot;highlighter-rouge&quot;&gt;lin
         <category>update</category>
         
         <category>output</category>
-        
-      </item>
-    
-      <item>
-        <title>Increment/Decrement Sheet Number</title>
-        <description>&lt;p&gt;re: &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/149&quot;&gt;Issue #149&lt;/a&gt; reported by &lt;a href=&quot;https://github.com/thazell&quot;&gt;thazell&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Renamed and updated:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Shift Selected Sheets One Up &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Decrement Selected Sheet Numbers&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Shift Selected Sheets One Up &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Increment Selected Sheet Numbers&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There were two scripts under the &lt;code class=&quot;highlighter-rouge&quot;&gt;Sheets&lt;/code&gt; pulldown that would increment and decrement the sheet number of the selected sheets. I had written these scripts a long time ago for personal use and really didn’t get the chance to revisit and make them smarter. They’re designed to rename sheets that are numbered in &lt;code class=&quot;highlighter-rouge&quot;&gt;A100&lt;/code&gt; format so they’d produce an error with sheets formatted as &lt;code class=&quot;highlighter-rouge&quot;&gt;A100a&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;S-100&lt;/code&gt;, or similar.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/thazell&quot;&gt;thazell&lt;/a&gt; created the issue #149 to address this shortcoming. I had a chance this afternoon to create/find a proper increment/decrement function for strings and use it to increment and decrement sheet numbers in a smarter fashion. This new function has been added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;coreutils&lt;/code&gt; module and is available to scripts as well.&lt;/p&gt;
-
-&lt;p&gt;Here is a couple of examples of how it would increment/decrement sheet numbers:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Decremented &amp;lt;&lt;/strong&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Original&lt;/strong&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;&amp;gt; Incremented&lt;/strong&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A099&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A100&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A101&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A099z&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A100a&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A100b&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-101Y&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-101Z&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;S-102A&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M111-ZZ&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M112-AA&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M112-AB&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-</description>
-        <pubDate>Thu, 26 Jan 2017 15:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/sheetincrement.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/01/26/sheetincrement.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
         
       </item>
     
