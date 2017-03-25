@@ -20,10 +20,10 @@ options = ['Option 1', 'Option 2' , 'Option 3']
 
 # shows the form and returns the selected options
 selected_options = SelectFromList.show(options,
-									   title='Custom Form Title',
-									   width=300,
-									   height=500,
-									   multiselect=True)
+			title='Custom Form Title',
+			width=300,
+			height=500,
+			multiselect=True)
 
 # you can also pass a list of objects
 # the form will show the str(object) of the objects in the list
@@ -41,7 +41,11 @@ selected_options = SelectFromList.show(options)
 
 Currently, the `Load Family Types` tool uses this standard form:
 
+&nbsp;
+
 ![]({{ site.url }}/pyRevit/images/SelectFromList.png)
+
+&nbsp;
 
 
 ### SelectFromCheckBoxes
@@ -50,7 +54,7 @@ This also works very similarly to the `SelectFromList`. The only difference is t
 
 ``` python
 class CheckBoxOption:
-    def __init__(self, name, default_state=False, wipe_action=None):
+    def __init__(self, name, default_state=False):
         self.name = name
         self.state = default_state
 
@@ -75,6 +79,10 @@ for checkbox in all_checkboxes:
 
 I'm revising the `Wipe Model Components` to use this form. It helps the tool to be extensible, allowing all sorts of smart options based on the current model. You'll see this update in the next revision.
 
+&nbsp;
+
 ![]({{ site.url }}/pyRevit/images/SelectFromCheckBoxes1.png)
+
+&nbsp;
 
 ![]({{ site.url }}/pyRevit/images/SelectFromCheckBoxes2.png)
