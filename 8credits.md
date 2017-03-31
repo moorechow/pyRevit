@@ -15,7 +15,7 @@ I'd like to thank people listed here for their great contributions:
 &nbsp;
 
 - [Python Software Foundation](https://www.python.org) and - [IronPython Team](http://ironpython.net) for creating and maintaining such a powerful language.
-- [Jetbrains PyCharm Team](https://www.jetbrains.com/pycharm) for the best IDE ever! PyCharm is a python IDE but is truly the best I have ever worked with. Jetbrains team truely knows how to make effective and user friendly software.
+- [Jetbrains PyCharm Team](https://www.jetbrains.com/pycharm) for the best IDE ever and support of open-source projects! PyCharm is a python IDE but is truly the best I have ever worked with. Jetbrains team truely knows how to make effective and user friendly software. Jetbrains provides free license to their pyCharm IDE for open-source projects and that's how I got to use pyCharm for pyRevit development.
 - [Daren Thomas](https://github.com/daren-thomas) (original version, maintainer of [RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell)) for creating RPS and helping me.
 - [Gui Talarico](https://github.com/gtalarico) for creating the amazing [RevitPythonWrapper Library](http://revitpythonwrapper.readthedocs.io/) and also for testing and new tool ideas and contributing python scripts to the library.
 - [RevitAPIDocs](http://www.revitapidocs.com) for making it much easier for me to develop pyRevit on my own macOS. I had troubles using the old-school chm doc files.
@@ -31,5 +31,6 @@ I'd like to thank people listed here for their great contributions:
 - [Bitbucket](https://bitbucket.org) for their powerful cloud git platform especially the free private repositories.
 - Neil Reilly for the handy introduction and installation [video](https://www.youtube.com/watch?v=71rvCspWNHs).
 - [ThubanPDX](https://github.com/ThubanPDX). For testing and new ideas for tools and scripts.
+- Everyone that is listed on the pyRevit issue tracker for their contributions and bug reports. You all help me make pyRevit better.
 
 **NOTE**: If you are not on this list, but believe you should be, please contact me!
