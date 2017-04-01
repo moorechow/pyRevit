@@ -28,7 +28,7 @@
 </p>
 
         <ul>
-          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/v4.2/pyRevitSetup-v4.exe">Download <strong>Installer</strong></a></li>
+          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/v4.3/pyRevitSetup-v4.exe">Download <strong>Installer</strong></a></li>
           <li><a href="http://pyrevit.readthedocs.io">Read the<br/><strong>Docs</strong></a></li>
           <li><a href="https://github.com/eirannejad/pyRevit">View On <strong>GitHub</strong></a></li>
         </ul>
@@ -334,6 +334,8 @@ PullDown C
 <h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlesmartbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.smartbutton</h4>
 <p>Smart buttons are python scripts that are written like modules. They should define <code class="highlighter-rouge">__selfinit__</code> function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).</p>
 
+<p>The <code class="highlighter-rouge">__selfinit__</code> must return True if the initialization is successful and False if it is not. pyRevit will not create the button if the initialization returns False and is unsuccessful.</p>
+
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">ui_button_cmp</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
     <span class="s">"""
     Args:
@@ -342,7 +344,7 @@ PullDown C
         __rvt__: Revit UIApplication
 
     Returns:
-    		bool: Return True if successful
+    		bool: Return True if successful, False if not
     """</span>
 
 	<span class="n">run_self_initialization</span><span class="p">()</span>

@@ -28,7 +28,7 @@
 </p>
 
         <ul>
-          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/v4.2/pyRevitSetup-v4.exe">Download <strong>Installer</strong></a></li>
+          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/v4.3/pyRevitSetup-v4.exe">Download <strong>Installer</strong></a></li>
           <li><a href="http://pyrevit.readthedocs.io">Read the<br/><strong>Docs</strong></a></li>
           <li><a href="https://github.com/eirannejad/pyRevit">View On <strong>GitHub</strong></a></li>
         </ul>
@@ -106,11 +106,35 @@
 <h2 id="keeping-your-library-up-to-date">Keeping your library up to date:</h2>
 <p>Use the <code class="highlighter-rouge">Update</code> button under the <code class="highlighter-rouge">pyRevit</code> tab slide-out to fetch all the recent changes from the github repository.</p>
 
+<p> </p>
+
 <p><img src="http://eirannejad.github.io/pyRevit/images/2017-01-01 09_46_57-Update.png" alt="" /></p>
+
+<p> </p>
 
 <p><strong>pyRevit</strong> will open a window and will fetch the most recent changes from the github repository. Keep in mind that the changes you have made to the original scripts included in the library will be overwritten. Any extra scripts and file will remain intact. After the update, pyRevit will automatically Reload to reflect the new changes.</p>
 
+<p> </p>
+
 <p><img src="http://eirannejad.github.io/pyRevit/images/2017-01-01 09_46_37-UpdateWindow.png" alt="" /></p>
+
+<p> </p>
+
+<p>Every once in a while there will be a core update. But Revit keeps the <code class="highlighter-rouge">pyRevitLoader.dll</code> open when you’re working with Revit and the pyRevit updater can not overwrite this dll.</p>
+
+<p>So the Update tool will checks the commit messages in the pyRevit repository to see if any of them includes <code class="highlighter-rouge">COREUPDATE</code>. This effectively tells the Update tool that there is an core update available and pyRevit needs to be updated when Revit is closed.</p>
+
+<p>The Update tool will show this warning message and won’t update your installed pyRevit repo:</p>
+
+<p> </p>
+
+<p><img src="http://eirannejad.github.io/pyRevit/images/coreupdatemessage.png" alt="" /></p>
+
+<p> </p>
+
+<p>So to update pyRevit when Revit is closed, go to the folder listed in the message and run the batch tool. The batch script will pull and merge the most current pyRevit repository.</p>
+
+<p>After update start Revit again and everything should be good to go.</p>
 
   </div>
 

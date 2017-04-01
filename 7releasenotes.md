@@ -4,7 +4,16 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-4.2 (current)
+4.3 (current)
+------
+IronPython 2.7.7 update
+
+pyRevit usage logging system
+
+See [pyRevit 4.3 Updates]({{ site.url }}/pyRevit/pyrevit/update/2017/04/01/pyrevitfourthree.html) for a full list.
+
+
+4.2
 ------
 Addition of interactive Charts to output window
 

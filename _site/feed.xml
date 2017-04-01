@@ -6,9 +6,204 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Mar 2017 20:49:27 -0700</pubDate>
-    <lastBuildDate>Thu, 30 Mar 2017 20:49:27 -0700</lastBuildDate>
+    <pubDate>Sat, 01 Apr 2017 13:04:55 -0700</pubDate>
+    <lastBuildDate>Sat, 01 Apr 2017 13:04:55 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>revitutils loves RPW</title>
+        <description>&lt;p&gt;I’ve added some stuff to the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; module but there is something that I need to talk to you about before you start using these features:&lt;/p&gt;
+
+&lt;h3 id=&quot;fact-1&quot;&gt;Fact 1&lt;/h3&gt;
+
+&lt;p&gt;Currently there is a very useful, powerfull, and easy to use python module to interact with Revit API: &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/&quot;&gt;RevitPythonWrapper&lt;/a&gt; by &lt;a href=&quot;https://github.com/gtalarico&quot;&gt;Gui Talarico&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can install this module using the pyRevit extension manager. This module also works in Dynamo environment so it’ll be a good time investment for the user since it could be used in both Revit and Dynamo without any code changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;fact-2&quot;&gt;Fact 2&lt;/h3&gt;
+
+&lt;p&gt;pyRevit includes &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; in its core libraries. The primary purpose of &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; module is to provide the required functionality for the standard pyRevit scripts.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-thing-that-i-wanted-to-talk-to-you-about&quot;&gt;The thing that I wanted to talk to you about:&lt;/h3&gt;
+
+&lt;p&gt;I have started work to incorporate &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; into pyRevit. Yes it is a dependency but I already have other dependencies (&lt;code class=&quot;highlighter-rouge&quot;&gt;Charts.js&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown&lt;/code&gt; module for the output window) and &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; is a very well-designed platform and I intend to use it more and more and have started work to contribute to it.&lt;/p&gt;
+
+&lt;p&gt;Very soon, &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; will be a standard part of pyRevit and without any changes to your code, it won’t be a required dependency for your tools anymore. I think this is great news.&lt;/p&gt;
+
+&lt;p&gt;I’m moving some of the stuff in &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; (Don’t worry I won’t break your code just now). I’ll be a lot more strict about stuff that goes into &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt;. If the idea is generic and it could be incorporated into &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; I will do that.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; will be for the extra functionality that is heavily tied to the pyRevit itself. For example &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; has a sub-module called &lt;code class=&quot;highlighter-rouge&quot;&gt;patmaker&lt;/code&gt; that is the backend for the &lt;code class=&quot;highlighter-rouge&quot;&gt;Make Pattern&lt;/code&gt; tool in pyRevit. This is a very specific module and it kinda is tied to pyRevit. &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; will be home to these type of functionality.&lt;/p&gt;
+
+&lt;p&gt;For you python programmers and Revit radicals out there, I encourage you to invest time, implement your functionality ideas, and improve upon &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt;. It is a very well-designed platform and I intend to use it more and more.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Apr 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>pyRevit v4.3</title>
+        <description>&lt;p&gt;Okay. We’re officially on 4.3 and here is a list of updates.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pyrevitnewipy277.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pyrevitnewipy277output.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h3 id=&quot;quick-links&quot;&gt;Quick links:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#new-ironpython-277&quot;&gt;New IronPython 2.7.7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#pyrevit-usage-logging-system&quot;&gt;pyRevit Usage logging system&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#other-misc-changes&quot;&gt;Other misc changes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;new-ironpython-277&quot;&gt;New IronPython 2.7.7&lt;/h2&gt;
+
+&lt;p&gt;pyRevit is using the IronPython 2.7.7 now. There has been a lot of fixes and improvements to this IronPython version. The unicode improvements is what I’m happy about the most.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;pyrevit-usage-logging-system&quot;&gt;pyRevit Usage logging system&lt;/h2&gt;
+
+&lt;p&gt;By popular demand, this feature is back but has been completely redesigned for flexibility and extensibility.&lt;/p&gt;
+
+&lt;p&gt;For those of you that hadn’t use this feature on pyRevit 3, the usage logging system was used to log every usage of any of the pyRevit tools to a log file so we could calculate the amount of time saved during a time span. I specifically used this to show the management at my company that investing a little on custom tools is useful and saves us a couple of hours per person per week, which is a lot. It also makes users happier since now they have a way of circumventing Revit limitations.&lt;/p&gt;
+
+&lt;p&gt;The usage logging system is back. It collects information about the executed pyRevit commands and logs this info to the destinations set by the user in pyRevit settings.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a deeper look at the log record. It’s composed in JSON format and looks like this:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogjsonrecord.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;As you can see there are a lot of info about the command and the environment it is being executed under (Revit version, pyRevit version, session id,…). Most of the fields listed here are self-explanatory but I’d like to talk about two of the most important ones. The &lt;code class=&quot;highlighter-rouge&quot;&gt;resultcode&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;commandresults&lt;/code&gt; fields.&lt;/p&gt;
+
+&lt;h3 id=&quot;resultcode&quot;&gt;resultcode&lt;/h3&gt;
+
+&lt;p&gt;This is an integer field and contains the result code that was returned by the pyRevit command executor. As of now, here is a list of pre-defined result codes:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;RESULT_DICT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Succeeded&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+               &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;SysExited&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+               &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;ExecutionException&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+               &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;CompileException&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+               &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;UnknownException&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SysExited&lt;/code&gt; means that the pyRevit script used &lt;code class=&quot;highlighter-rouge&quot;&gt;sys.exit()&lt;/code&gt; to exit from the command.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ExecutionException&lt;/code&gt; is when an exception occurs at command runtime.&lt;/li&gt;
+  &lt;li&gt;and &lt;code class=&quot;highlighter-rouge&quot;&gt;CompileException&lt;/code&gt; is errors in compiling code e.g. syntax errors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;command-results&quot;&gt;command results&lt;/h3&gt;
+
+&lt;p&gt;In order to make this logging system more extensible, I added a dictionary to the log record that pyRevit commands can use to store custom parameters and values. You might decide to calculate the amount of time-saved inside each script and then report if to the usage logging system so later it can be used to calculate the total time saved by all your tools.&lt;/p&gt;
+
+&lt;p&gt;For example, the pyRevit Reload command uses this to return the unique identifier of the newly loaded session to the usage logging system. This way the admin that is looking into the usage logs, can understand that this reload command execution, loaded pyRevit into a new session with the provided session id:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogcommandrecord.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;This results dictionary is accessible through the &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; module. Here is how the Reload command is logging the new session id:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# this_script.results is the results dictionary&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# newsession is the name of the custom parameter to be added to results&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newsession&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_session_uuid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see, to make this really easy, I have modified the results dictionary so you can type in the name of your custom return parameter as if it is a pre-existing parameter and assign a value to it.&lt;/p&gt;
+
+&lt;h3 id=&quot;usage-logging-system-configurations&quot;&gt;Usage logging system configurations&lt;/h3&gt;
+
+&lt;p&gt;To setup the usage logging system, go to the pyRevit settings and under the &lt;code class=&quot;highlighter-rouge&quot;&gt;Usage Logging&lt;/code&gt; expander, flick the master switch.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogsettings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;As you can see the log system can write to two different destinations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Logging to file:&lt;/strong&gt; logger will write all usage records to log files in the provided destination folder. The log files are written in JSON format and have &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; extension. pyRevit automatically names the log files based on the Revit version, username and session id so multiple users can log to the same destination:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogfiles.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Logging to server:&lt;/strong&gt; logger will POST the usage records to the provided server url. I’m using &lt;a href=&quot;https://requestb.in&quot;&gt;requestb.in&lt;/a&gt; website in the example below. See how the server url is set in the configuration window and an example of a usage record, posted to the web server:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogsettingsserverurl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogserverrecord.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;viewer-for-usage-logs&quot;&gt;Viewer for usage logs&lt;/h3&gt;
+
+&lt;p&gt;And for you sysadmins who want to review the usage logs, there is also a log viewer tool under the newly created pyRevit Development extension (activate it in the Extension manager).&lt;/p&gt;
+
+&lt;p&gt;This tool helps you browse through log files more easily, colour-codes the log entries based on the result code, shows the human-readable result codes instead of the actual integer values, and provides smart filtering and search. It also allows for parsing log files in a directory different than the currently set file logging directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogviewercommandresults.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagelogviewerfilter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each record, has a context menu that you can use to filter by session or copy information from that log record to clipboard:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/usagerecordcontextmenu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;other-misc-changes&quot;&gt;Other misc changes&lt;/h2&gt;
+
+&lt;p&gt;There are a whole bunch of other changes in this revision. Here is a list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improvements to &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt;: I’ll write another post about this as there are a lot of changes and improvements&lt;/li&gt;
+  &lt;li&gt;pyRevit has a new core extension called &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevitDev&lt;/code&gt;. All the work-in-progress and test tools have been moved into this extension. It is disabled by default since most of you don’t need these tools but you can always activate it from the Extension manager.&lt;/li&gt;
+  &lt;li&gt;The unittests module has also been cleaned up for a better test output.&lt;/li&gt;
+  &lt;li&gt;The pyRevit executor and core has been cleaned up a lot.&lt;/li&gt;
+  &lt;li&gt;I have converted all the explicit &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt; in pyRevit code for unicode consistency.&lt;/li&gt;
+  &lt;li&gt;Misc upgrades to tools. One is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Wipe model components&lt;/code&gt; tool that I’ll write about in a different post.&lt;/li&gt;
+  &lt;li&gt;New environment variables that allow the usage logging system to read the most current logging configuration from the current pyRevit session. The list now also has a context menu to copy the env var value to clipboard:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/newenvvars.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Apr 2017 10:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/pyrevitfourthree.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/pyrevitfourthree.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Important: Upcoming core update</title>
@@ -565,190 +760,6 @@ the pyRevit charts module is &lt;code class=&quot;highlighter-rouge&quot;&gt;pyr
         <category>pyrevit</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Viva progress bars</title>
-        <description>&lt;p&gt;The output window now has a progress bar! Yaay!&lt;/p&gt;
-
-&lt;p&gt;(It’s the green line at the bottom of the output window)&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/linkify.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Use it like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# update_progress( current_value, max_value )&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# so this means 50% progress&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# values can be any int or float. The function will do&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# the math and will calculate the percentage of completion.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update_progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So let’s say your script is deleting some views. Using this method the script can update the progress bar as it is removing the views:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;view_ids&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_views_to_be_deleted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;view_count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Transaction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;delete views&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view_id&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view_ids&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update_progress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view_count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		
-	&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Commit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Awesome isn’t it?&lt;/p&gt;
-</description>
-        <pubDate>Sat, 11 Feb 2017 14:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/output/2017/02/11/progressbar.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/output/2017/02/11/progressbar.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-        <category>output</category>
-        
-      </item>
-    
-      <item>
-        <title>Output Window Improvements</title>
-        <description>&lt;p&gt;re: &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/148&quot;&gt;Issue #148&lt;/a&gt; reported by &lt;a href=&quot;https://github.com/hdm-dt-fb&quot;&gt;hdm-dt-fb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I’m very excited about a new feature. This is the start of work on making the output window more interactive.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;current-output-window-custom-print-methods&quot;&gt;Current output window custom print methods:&lt;/h2&gt;
-
-&lt;p&gt;By now, you probably know that the output window is a &lt;code class=&quot;highlighter-rouge&quot;&gt;System.Windows.Forms.WebBrowser&lt;/code&gt; component. The &lt;code class=&quot;highlighter-rouge&quot;&gt;WebBrowser&lt;/code&gt; uses Internet Explorer as rendering engine. All the output coming from pyRevit are formatted in html and displayed. This means that pyRevit scripts can output images, links, and anything html really.&lt;/p&gt;
-
-&lt;p&gt;There is a catch though. python outputs information about objects in this format:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;type str&amp;gt;
-&amp;lt;object Element Id at --- &amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;These outputs contain &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; characters that confuses the html engine due to their structural similarity with &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;&lt;/code&gt; tags.&lt;/p&gt;
-
-&lt;p&gt;The solution was to use a formatter function that converts the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; characters to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;clt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;cgt;&lt;/code&gt; and then converts them back later when actually printing the output. This helps the system distinguish between the actual html code and the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; characters printed from python itself (Since they won’t be converted to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;clt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;cgt;&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;I’ll write more about this later. Here is the formatter function:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;html_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;&amp;lt;div&amp;gt;contents&amp;lt;/div&amp;gt;&#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# this is the output. &amp;lt; and &amp;gt; are replaced with &amp;amp;clt; and &amp;amp;cgt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# this string is sent to the output window&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;&amp;amp;clt;div&amp;amp;cgt;contents&amp;amp;clt;/div&amp;amp;cgt;&#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Anyways,&lt;/p&gt;
-
-&lt;p&gt;The output window provides two other custom print functions that build on top of this method. pyRevit scripts can import &lt;code class=&quot;highlighter-rouge&quot;&gt;this_script&lt;/code&gt; object from the &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; module and access these output window functions.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;print_code()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# prints contents formatted as a python script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;python_script&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-import sys
-print(sys.paths)
-&quot;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;python_script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;print_md()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# prints contents in mark-down format&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# e.g this script outputs a clickable link&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mark_down_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;[eirannejad](https://github.com/eirannejad)&#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_md&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark_down_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;linkify&quot;&gt;Linkify:&lt;/h2&gt;
-
-&lt;p&gt;Now there is a new method available for printing object element ids (The limitation for element ids is temporary. I’ll add more data types as I test and improve this feature). Using this method, the scripts can print the element ids of Revit elements that they’re working on and the user can select those elements by clicking on the element link. See the green rectangles in the image below:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/linkify.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And this is they’re created:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;revit_element&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ElementId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;123456&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;clickable_link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;revit_element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Here is the element: {}&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clickable_link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;That simple!
-The major difference between &lt;code class=&quot;highlighter-rouge&quot;&gt;linkify&lt;/code&gt; and other print functions is that &lt;code class=&quot;highlighter-rouge&quot;&gt;linkify&lt;/code&gt; doesn’t actually print the element id. It returns the generated properly-formatted html code for the link however. This way the script can format their output better and place the clickable link where they want it.&lt;/p&gt;
-
-&lt;p&gt;Play with it and let me know of your comments. Read the section below if you’d like to know how the output window talks back to Revit.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h4 id=&quot;the-love-affair-between-output-window-and-revit&quot;&gt;The love affair between output window and Revit:&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;linkify&lt;/code&gt; method generates an html link element that contains a special url. In the case of clickable element ids, this is how the url looks like:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;revit://{command=&#39;select&#39;, data=&#39;123456&#39;}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The first piece is the url protocol. This is really how the output window interacts with Revit. Whenever user clicks on a link with &lt;code class=&quot;highlighter-rouge&quot;&gt;revit://&lt;/code&gt; protocol, the output window calls a callback function defined in &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit.coreutils.console&lt;/code&gt; and passes on the url contents.&lt;/p&gt;
-
-&lt;p&gt;From there, the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit.coreutils.console&lt;/code&gt; module cleans up the url and passes it to &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit.coreutils.rvtprotocol&lt;/code&gt; module:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rvtprotocol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;process_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleaned_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rvtprotocol&lt;/code&gt; module processes the json part of the url &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;command=&#39;select&#39;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;data=&#39;123456&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; (let’s call it payload) and calls the &lt;code class=&quot;highlighter-rouge&quot;&gt;select&lt;/code&gt; command and passes the &lt;code class=&quot;highlighter-rouge&quot;&gt;123456&lt;/code&gt; payload to it. It is up to the command to do whatever it needs to do with the provided data.&lt;/p&gt;
-
-&lt;p&gt;I should mention that this json data payload was also created by the &lt;code class=&quot;highlighter-rouge&quot;&gt;rvtprotocol&lt;/code&gt; module in the first place. So when &lt;code class=&quot;highlighter-rouge&quot;&gt;linkify&lt;/code&gt; wants to create the clickable link, it calls &lt;code class=&quot;highlighter-rouge&quot;&gt;rvtprotocol.make_url(args)&lt;/code&gt; and passes on the given arguments (element ids in this case). &lt;code class=&quot;highlighter-rouge&quot;&gt;rvtprotocol&lt;/code&gt; picks the right command based on the input data types and asks the command to process the arguments and generate a json data payload. The command is responsible for generating a payload that it can process and understand later when used clicked on the link.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 11 Feb 2017 14:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/output/2017/02/11/linkify.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/output/2017/02/11/linkify.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-        <category>output</category>
         
       </item>
     

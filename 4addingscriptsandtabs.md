@@ -183,6 +183,8 @@ There are a few more advanced bundle types in pyRevit as well. Here is some quic
 #### ![]({{ site.url }}/pyRevit/images/bundleicon.png) command_bundle.smartbutton
 Smart buttons are python scripts that are written like modules. They should define `__selfinit__` function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).
 
+The `__selfinit__` must return True if the initialization is successful and False if it is not. pyRevit will not create the button if the initialization returns False and is unsuccessful.
+
 ```python
 def __selfinit__(script_cmp, ui_button_cmp, __rvt__):
     """
@@ -192,7 +194,7 @@ def __selfinit__(script_cmp, ui_button_cmp, __rvt__):
         __rvt__: Revit UIApplication
 
     Returns:
-    		bool: Return True if successful
+    		bool: Return True if successful, False if not
     """
 
 	run_self_initialization()
