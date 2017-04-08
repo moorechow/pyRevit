@@ -144,7 +144,7 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 
 <p>The most basic bundle is a command bundle. There are more than one type of command bundles but a <code class="highlighter-rouge">.pushbutton</code> bundle explained here covers %90 of the use cases.</p>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlepushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.pushbutton</h4>
+<h4 id="-command_bundlepushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.pushbutton</h4>
 <p>Here is the structure of a command bundle:</p>
 
 <ul>
@@ -215,7 +215,7 @@ PullDown C
 
 <p>Now let’s talk about the different Group Bundles:</p>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundletab"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.tab</h4>
+<h4 id="-group_bundletab"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.tab</h4>
 <p>This bundle creates a Tab in the Ribbon with the bundle name.</p>
 
 <table>
@@ -233,7 +233,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlepanel"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.panel</h4>
+<h4 id="-group_bundlepanel"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.panel</h4>
 <p>This bundle creates a Panel in a Ribbon Tab with the bundle name.</p>
 
 <table>
@@ -251,7 +251,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlepulldown"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.pulldown</h4>
+<h4 id="-group_bundlepulldown"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.pulldown</h4>
 <p>This bundle creates a Pulldown Button in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
 
 <table>
@@ -269,7 +269,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlesplitbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.splitbutton</h4>
+<h4 id="-group_bundlesplitbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.splitbutton</h4>
 <p>This bundle creates a Split Button button in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
 
 <table>
@@ -287,7 +287,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlesplitpushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.splitpushbutton</h4>
+<h4 id="-group_bundlesplitpushbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.splitpushbutton</h4>
 <p>This bundle creates a Split Push Button button (The sticky split button) in a Ribbon Panel or a Stack, with the bundle name and icon.</p>
 
 <table>
@@ -305,7 +305,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlestack2"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.stack2</h4>
+<h4 id="-group_bundlestack2"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.stack2</h4>
 <p>This bundle creates a stack of 2 buttons in a panel.</p>
 
 <table>
@@ -323,7 +323,7 @@ PullDown C
   </tbody>
 </table>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-groupbundlestack3"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.stack3</h4>
+<h4 id="-group_bundlestack3"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> group_bundle.stack3</h4>
 <p>Just like the <code class="highlighter-rouge">.stack2</code> bundle but with 3 buttons instead.</p>
 
 <p> </p>
@@ -331,7 +331,7 @@ PullDown C
 <h2 id="advanced-bundles">Advanced Bundles:</h2>
 <p>There are a few more advanced bundle types in pyRevit as well. Here is some quick intro on these bundles.</p>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlesmartbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.smartbutton</h4>
+<h4 id="-command_bundlesmartbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.smartbutton</h4>
 <p>Smart buttons are python scripts that are written like modules. They should define <code class="highlighter-rouge">__selfinit__</code> function as shown below. This function gets executed at startup time to give a chance to the button to initialize itself (e.g set its icon based on its state).</p>
 
 <p>The <code class="highlighter-rouge">__selfinit__</code> must return True if the initialization is successful and False if it is not. pyRevit will not create the button if the initialization returns False and is unsuccessful.</p>
@@ -351,7 +351,7 @@ PullDown C
 </code></pre>
 </div>
 
-<h4 id="httpeirannejadgithubiopyrevitimagesbundleiconpng-commandbundlelinkbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.linkbutton</h4>
+<h4 id="-command_bundlelinkbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.linkbutton</h4>
 <p>Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles <code class="highlighter-rouge">script.py</code>:</p>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'Addin assembly name'</span>
