@@ -4,7 +4,9 @@
   <body>
     <header class="site-header"></header>
     <div class="wrapper">
+
       <header class="sidebar">
+
         <a href="{{ site.baseurl }}/">
           <img class="logo" src="{{ "/pyRevitLogo.svg" | prepend: site.baseurl }}">
         </a>
@@ -13,33 +15,58 @@
         <p>{{ site.description }}</p>
 
         <ul>
-          <li><a href="https://github.com/eirannejad/pyRevit/releases/download/v4.3/pyRevitSetup-v4.exe">Download <strong>Installer</strong></a></li>
-          <li><a href="http://pyrevit.readthedocs.io">Read the<br/><strong>Docs</strong></a></li>
-          <li><a href="https://github.com/eirannejad/pyRevit">View On <strong>GitHub</strong></a></li>
+          <li>
+            <a href="https://github.com/eirannejad/pyRevit/releases/download/v4.3/pyRevitSetup-v4.exe">
+              Download <strong>Installer</strong>
+            </a>
+          </li>
+          <li>
+            <a href="http://pyrevit.readthedocs.io">
+              Read the<br/><strong>Docs</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/eirannejad/pyRevit">
+              View On <strong>GitHub</strong>
+            </a>
+          </li>
         </ul>
 
         <div class="trigger">
           {% for my_page in site.pages %}
             {% if my_page.title %}
-            <p class="menu-item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></p>
+            <p class="menu-item">
+              <a class="page-link"
+                 href="{{ my_page.url | prepend: site.baseurl }}">
+                 {{ my_page.title }}
+              </a>
+            </p>
             {% endif %}
           {% endfor %}
         </div>
         <p></p>
       </header>
+
       <section>
         <div class="page-content">
             {{ content }}
         </div>
       </section>
+
       <footer class="sidebar">
         <p><small>
-          This project is maintained by <a href="https://github.com/eirannejad">eirannejad</a><br>
+          Supported by JetBrains
+          <a href="https://www.jetbrains.com">
+            <img src="{{ "/images/jetbrains_logos/logo-variant-4.svg" | prepend: site.baseurl }}"
+                 width="86px" style="margin-top:-28px;">
+          </a><br>
+          Created by <a href="https://github.com/eirannejad">eirannejad</a>
           subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a><br>
           Powered by GitHub Pages and Jekyll<br>
           Theme by <a href="https://github.com/orderedlist">orderedlist</a> with my mods
         </small></p>
       </footer>
+
     </div>
   </body>
 </html>
