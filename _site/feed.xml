@@ -6,9 +6,40 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Apr 2017 08:40:28 -0700</pubDate>
-    <lastBuildDate>Sat, 15 Apr 2017 08:40:28 -0700</lastBuildDate>
+    <pubDate>Wed, 26 Apr 2017 21:44:33 -0700</pubDate>
+    <lastBuildDate>Wed, 26 Apr 2017 21:44:33 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>pdxRUG Presentation</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.meetup.com/Portland-Revit-User-Group/&quot;&gt;Portland Revit User Group (pdxRUG)&lt;/a&gt; kindly allowed me to present pyRevit changes and updates at their April 2017 gathering. It went well except for me saying &lt;strong&gt;‘stuff like that’&lt;/strong&gt; too many times, and other bold statements which I’m sure I need to apologize for some of them someday. Forgive me Autodesk for I have sinned. :P&lt;/p&gt;
+
+&lt;p&gt;Anyway I had a good chance to talk about scripting for Revit basics and introduction to pyRevit tools. I also explained the overall structure of scripts and the usage logging system.&lt;/p&gt;
+
+&lt;p&gt;This partial video is about half-hour of the presentation on the basics of scripting for Revit and introduction to pyRevit, installation and configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=EdDLgSrtOiI&amp;amp;t=39s&quot;&gt;Link to Youtube Video&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I also explained some of the tools but when editing the video, I realized it’s better if I create a pyRevit youtube channel and actually post short videos on some of the more important tools. This way they’ll be easier to find and watch. I was also running Revit in virtual machine on an Macbook and didn’t have a proper Revit file open for tool presentation.&lt;/p&gt;
+
+&lt;p&gt;Therefore:&lt;/p&gt;
+
+&lt;p&gt;I ended up cutting all the tool presentation out of this video and I’ll be posting individual tutorial videos about them shortly.&lt;/p&gt;
+
+&lt;p&gt;Thanks again to &lt;a href=&quot;https://www.meetup.com/Portland-Revit-User-Group/&quot;&gt;pdxRUG&lt;/a&gt; and the attendees for joining me and for their questions and suggestions.&lt;/p&gt;
+
+&lt;p&gt;Please subscribe and stay tuned!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Apr 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/video/2017/04/26/pdxrugpresentation.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/video/2017/04/26/pdxrugpresentation.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>video</category>
+        
+      </item>
     
       <item>
         <title>revitutils loves RPW</title>
@@ -716,45 +747,6 @@ the pyRevit charts module is &lt;code class=&quot;highlighter-rouge&quot;&gt;pyr
         <pubDate>Sat, 04 Mar 2017 15:00:00 -0800</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/04/patternmaker.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/04/patternmaker.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit Log Viewer</title>
-        <description>&lt;p&gt;The log viewer tool is finally in good shape. This tool processes the log files (when logging to external file is activated in settings) and displays the log entries in a list.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/logviewer.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;The viewer, processes the time, date, entry type, and logging module for each log entry and compiles a list of filters that could be used to filter the entry list.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/logviewerfilter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;You can also search for specific terms in log messages:&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/logviewersearch.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;This viewer helps me a lot in debugging the reported issues.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 16 Feb 2017 15:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/02/16/logviewer.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/02/16/logviewer.html</guid>
         
         
         <category>pyrevit</category>
