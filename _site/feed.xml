@@ -6,8 +6,8 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 May 2017 17:35:38 -0700</pubDate>
-    <lastBuildDate>Tue, 16 May 2017 17:35:38 -0700</lastBuildDate>
+    <pubDate>Tue, 16 May 2017 17:39:55 -0700</pubDate>
+    <lastBuildDate>Tue, 16 May 2017 17:39:55 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -22,7 +22,7 @@ This weekend is &lt;a href=&quot;https://us.pycon.org/2017/&quot;&gt;pyCon 2017&
 &lt;h3 id=&quot;youtube-channel&quot;&gt;YouTube Channel:&lt;/h3&gt;
 &lt;p&gt;pyRevit now has a Youtube channel. You can find a link to the channel in the left side bar. I’ve already started posting quick tutorials on the more important tools. I’ll also be gradually compiling a series of videos on python scripting for Autodesk Revit. Please subscribe and stay tunes. I’m looking forward to hearing your feedbacks.&lt;/p&gt;
 
-&lt;h3 id=&quot;pateron-page&quot;&gt;Pateron Page:&lt;/h3&gt;
+&lt;h3 id=&quot;patreon-page&quot;&gt;Patreon Page:&lt;/h3&gt;
 &lt;p&gt;I have also created an account on Patreon website and those of you who are truly in love with pyRevit can sign up there to support the project. All the proceedings will be used to make pyRevit better and to support the community around python scripting for Revit. You can find a link to the Patreon page on the side bar as well.&lt;/p&gt;
 
 &lt;p&gt; &lt;/p&gt;
