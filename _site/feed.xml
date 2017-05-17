@@ -6,9 +6,39 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 May 2017 17:21:37 -0700</pubDate>
-    <lastBuildDate>Tue, 16 May 2017 17:21:37 -0700</lastBuildDate>
+    <pubDate>Tue, 16 May 2017 17:35:38 -0700</pubDate>
+    <lastBuildDate>Tue, 16 May 2017 17:35:38 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>pyCon, YouTube and Patreon</title>
+        <description>&lt;p&gt;&lt;strong&gt;Excitement:&lt;/strong&gt;
+This weekend is &lt;a href=&quot;https://us.pycon.org/2017/&quot;&gt;pyCon 2017&lt;/a&gt; and is happening right here in Portland, Oregon for the second year. I’m really excited to go and learn from python masters.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;And now, to the usual updates:&lt;/p&gt;
+
+&lt;h3 id=&quot;youtube-channel&quot;&gt;YouTube Channel:&lt;/h3&gt;
+&lt;p&gt;pyRevit now has a Youtube channel. You can find a link to the channel in the left side bar. I’ve already started posting quick tutorials on the more important tools. I’ll also be gradually compiling a series of videos on python scripting for Autodesk Revit. Please subscribe and stay tunes. I’m looking forward to hearing your feedbacks.&lt;/p&gt;
+
+&lt;h3 id=&quot;pateron-page&quot;&gt;Pateron Page:&lt;/h3&gt;
+&lt;p&gt;I have also created an account on Patreon website and those of you who are truly in love with pyRevit can sign up there to support the project. All the proceedings will be used to make pyRevit better and to support the community around python scripting for Revit. You can find a link to the Patreon page on the side bar as well.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Stay creative…&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 May 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/pycon/2017/05/16/pyconandpatrons.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/pycon/2017/05/16/pyconandpatrons.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>pycon</category>
+        
+      </item>
     
       <item>
         <title>pdxRUG Presentation</title>
@@ -681,72 +711,6 @@ the pyRevit charts module is &lt;code class=&quot;highlighter-rouge&quot;&gt;pyr
         <pubDate>Tue, 07 Mar 2017 15:00:00 -0800</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/07/charts.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/07/charts.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Pattern Maker for Revit</title>
-        <description>&lt;p&gt;I finally finished a tool that I have been working on for over a week now. I always thought it’s really odd that Revit does not have a native pattern maker and the users have to buy third-party products for a simple vital feature like this.&lt;/p&gt;
-
-&lt;p&gt;So I made one for pyRevit. Here is how it works:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Draw your pattern tile in Revit using detail lines. Cool thing is that you can use all sorts of curves and splines to draw your pattern and the pattern maker will approximate the curves with small line segments later.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pattern1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Select the pattern lines and curves (don’t include your pattern boundary)&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pattern2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; run the &lt;code class=&quot;highlighter-rouge&quot;&gt;Make Pattern&lt;/code&gt; tool under &lt;code class=&quot;highlighter-rouge&quot;&gt;Modify &amp;gt; Edit&lt;/code&gt; pulldown.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pattern3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Type a name for the pattern, select the pattern type (Model or Detail) and select the &lt;code class=&quot;highlighter-rouge&quot;&gt;Create Filled Region&lt;/code&gt; checkbox if you also want a filled region type to be created (with the same name) for this new pattern. Then hit &lt;code class=&quot;highlighter-rouge&quot;&gt;Create Pattern&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pattern4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Select the opposite boundary points. (Normally bottom-left and top-right but it really doesn’t matter which diagonal is picked.)&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pattern5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;And voila, the pattern is created and pattern maker will show a pop-up window when it’s completed.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/pattern6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 04 Mar 2017 15:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/04/patternmaker.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/04/patternmaker.html</guid>
         
         
         <category>pyrevit</category>
