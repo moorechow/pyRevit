@@ -6,9 +6,98 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Jun 2017 21:08:39 -0700</pubDate>
-    <lastBuildDate>Thu, 15 Jun 2017 21:08:39 -0700</lastBuildDate>
+    <pubDate>Tue, 04 Jul 2017 14:18:02 -0700</pubDate>
+    <lastBuildDate>Tue, 04 Jul 2017 14:18:02 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>pyRevit v4.4</title>
+        <description>&lt;p&gt;Finally pyRevit 4.4 is here. Here is a list of the most important changes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Compatible with Revit 2018:&lt;/strong&gt; Yay (finally)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Adopted &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/&quot;&gt;revitpythonwrapper&lt;/a&gt; module&lt;/strong&gt;: This means that you can import rpw in your pyRevit scripts without installing the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitpythonwrapper&lt;/code&gt; extension. You should disable/remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitpythonwrapper&lt;/code&gt; extension if you already have it. It’s not necessary anymore. The rpw inside pyRevit will be updated on a weekly basis to always have the most recent stable version. Read more below.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;pyRevit Installation for All or Current User:&lt;/strong&gt; Installer now has the option to install for &lt;em&gt;All Users&lt;/em&gt; versus for only the &lt;em&gt;Current user&lt;/em&gt;. Read more below.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Config File Naming:&lt;/strong&gt; pyRevit configuration and temporary files no longer include the username in the file naming. (e.g &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevit_eirannejad_config.ini&lt;/code&gt; is now &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevit_config.ini&lt;/code&gt;). This should help sysAdmins to push pyRevit configurations easier.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Zero Document mode:&lt;/strong&gt; A selection of pyRevit tools are now available in zero-document mode (e.g. You can access pyRevit settings even when no documents are open inside Revit. (this is done by setting &lt;code class=&quot;highlighter-rouge&quot;&gt;__context__ = 'zerodoc'&lt;/code&gt; inside your scripts)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;THIS UPDATE INCLUDES A CORE UPDATE AND NEEDS TO BE DONE WHEN REVIT IS CLOSED.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;See this video on how to update pyRevit.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9HIjzfY9xz8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;rpw-revitpythonwrapper&quot;&gt;rpw &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/&quot;&gt;(revitpythonwrapper)&lt;/a&gt;:&lt;/h2&gt;
+
+&lt;p&gt;I talked about the change from &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;rpw&lt;/code&gt; in a previous post &lt;a href=&quot;http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html&quot;&gt;(Read here)&lt;/a&gt;. I have started this process and as of now the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitpythonwrapper&lt;/code&gt; module has been added to the pyRevit standard library. I will be working on upgrading the existing tools to use the rpw for Revit API access. Through this process we will improve the rpw further more so hopefully all you can have access to a more comprehensive wrapper for Revit API.&lt;/p&gt;
+
+&lt;p&gt;As of now, you can import rpw in your scripts. Read the &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/#basic-components&quot;&gt;Basic Components&lt;/a&gt; section on &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/&quot;&gt;revitpythonwrapper website&lt;/a&gt; for more information on rpw’s capabilities.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;pyrevit-installer-update&quot;&gt;pyRevit Installer Update:&lt;/h2&gt;
+
+&lt;p&gt;pyRevit installer now includes an option to install pyRevit for All users or for the Current user only.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/embed/-hIMH_dIUuw&quot;&gt;&lt;strong&gt;See this video on how to install pyRevit using the new installer&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-hIMH_dIUuw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;for-sysadmins&quot;&gt;For sysAdmins:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;For GUI install:&lt;/strong&gt; The installer has the Current User / All Users option now and installation works&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;For Silent install:&lt;/strong&gt; I could not figure out a way to pass an option to the installer for silent installs. However since the &lt;code class=&quot;highlighter-rouge&quot;&gt;install_addin.bat&lt;/code&gt; now has a &lt;code class=&quot;highlighter-rouge&quot;&gt;--alluser&lt;/code&gt; options, the admin can:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-batch&quot;&gt;REM Install using silent installer
+pyRevitSetup-v4.exe /VERYSILENT /DIR=&quot;C:\pyRevit&quot;
+
+REM then change directory to the release directory inside pyrevit repo
+cd \D &quot;C:\pyRevit\pyRevit\release&quot;
+
+REM remove the current addin files
+uninstall_addin.bat
+
+REM re-create the addin files using the --allusers option
+install_addin.bat --allusers
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;other-resolved-issues&quot;&gt;Other Resolved Issues:&lt;/h2&gt;
+
+&lt;p&gt;Here is a list of issues that has been resolved in this update:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/209&quot;&gt;Issue #209&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/208&quot;&gt;Issue #208&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/205&quot;&gt;Issue #205&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/204&quot;&gt;Issue #204&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/200&quot;&gt;Issue #200&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/195&quot;&gt;Issue #195&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/180&quot;&gt;Issue #180&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 04 Jul 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/07/04/pyrevitfourfour.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/07/04/pyrevitfourfour.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Show Nested Groups Update</title>
@@ -537,27 +626,6 @@ table, th, td { border-bottom: 1px solid #aaa; }
         <pubDate>Sat, 18 Mar 2017 10:00:00 -0700</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/18/pyrevitweeklyunstable.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/18/pyrevitweeklyunstable.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit v4.2</title>
-        <description>&lt;p&gt;Till now pyRevit had a big issue. If you would keep using pyRevit for an extensive amount of time without restarting Revit, the IronPython engine would slowly leak memory and would make the C# garbage collector extremely slow. This would cause Revit to slow down, and halt for a few seconds after each command. I ended up using the Windows native Performance Monitor tool and finally figured out that this short halt was due to the garbage collector taking too much time to clean up the unused memory between Revit actions. (Monitored the &lt;code class=&quot;highlighter-rouge&quot;&gt;.NET CLR Memory&lt;/code&gt; usage for Revit, especifically &lt;code class=&quot;highlighter-rouge&quot;&gt;% of Time in GC&lt;/code&gt;)&lt;/p&gt;
-
-&lt;p&gt;Anyways, the problem is solved now. I also added a tool under &lt;code class=&quot;highlighter-rouge&quot;&gt;Labs&lt;/code&gt; pulldown that basically tests the IronPython engine under extreme use (Create an engine and run a script for 500 times). It also measures the execution time and draws a chart at the end.&lt;/p&gt;
-
-&lt;p&gt;There are also code cleanups and improvements to the output window under this new update, and as I posted here before, the addition of the charts module to pyRevit.&lt;/p&gt;
-
-&lt;p&gt;As always, looking forward to hearing your feedbacks.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 11 Mar 2017 15:00:00 -0800</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/11/pyrevitfourtwo.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/11/pyrevitfourtwo.html</guid>
         
         
         <category>pyrevit</category>

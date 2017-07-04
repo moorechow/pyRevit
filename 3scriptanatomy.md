@@ -133,7 +133,7 @@ Revit commands use standard `IExternalCommandAvailability` class to let Revit kn
 In pyRevit, command availability is set through the `__context__` variable. Currently, pyRevit support two types of command availability types.
 
 - `__context__ = 'Selection'`<br/>(Tool activates when at least one element is selected)
-
+- `__context__ = 'zerodoc'`<br/>(Tools are active even when there are not documents open in Revit)
 - `__context__ = '<Element Category>'`<br/>(Tool activates when all selected elements are of the given category)
 
 
@@ -259,6 +259,22 @@ this_script.get_instance_data_file(file_id)
 
 # this is the standard instance data file that is setup by default for this script
 this_script.instance_data_filename
+```
+
+- **Document Data files** (Shared only between instances of host Revit version): These files are marked by host Revit version and name of Active Project and could be shared between instances of host Revit version.
+Data files are saved in pyRevit's appdata directory and are NOT cleaned up when Revit restarts.
+
+***Note: Script should take care of cleaning up these data files.***
+
+``` python
+# provide a unique file id and file extension
+# Method will return full path of the data file
+this_script.get_document_data_file(file_id, file_ext)
+
+# You can also pass a document object to get a data file for that
+# document (use document name in file naming)
+this_script.get_document_data_file(file_id, file_ext, doc)
+
 ```
 
 &nbsp;

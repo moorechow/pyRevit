@@ -4,7 +4,14 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-4.3 (current)
+4.4 (current)
+------
+Revit 2018 Update and adoption of rpw
+
+See [pyRevit 4.4 Updates]({{ site.url }}/pyRevit/pyrevit/update/2017/07/04/pyrevitfourfour.html) for a full list.
+
+
+4.3
 ------
 IronPython 2.7.7 update
 
