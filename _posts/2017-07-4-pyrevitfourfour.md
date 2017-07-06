@@ -20,7 +20,9 @@ Finally pyRevit 4.4 is here. Here is a list of the most important changes:
 
 [**See this video on how to update pyRevit.**]()
 
-<iframe width="100%" src="https://www.youtube.com/embed/9HIjzfY9xz8" frameborder="0" allowfullscreen></iframe>
+<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="https://www.youtube.com/embed/9HIjzfY9xz8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 &nbsp;
 
@@ -39,7 +41,10 @@ pyRevit installer now includes an option to install pyRevit for All users or for
 
 [**See this video on how to install pyRevit using the new installer**](https://www.youtube.com/embed/-hIMH_dIUuw)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-hIMH_dIUuw" frameborder="0" allowfullscreen></iframe>
+<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="https://www.youtube.com/embed/9HIjzfY9xz8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 ### For sysAdmins:
 
