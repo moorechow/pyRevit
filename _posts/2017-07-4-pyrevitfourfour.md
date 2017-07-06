@@ -20,7 +20,7 @@ Finally pyRevit 4.4 is here. Here is a list of the most important changes:
 
 [**See this video on how to update pyRevit.**]()
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9HIjzfY9xz8" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/9HIjzfY9xz8" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 
