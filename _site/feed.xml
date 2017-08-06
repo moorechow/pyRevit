@@ -6,8 +6,8 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Aug 2017 21:40:07 -0700</pubDate>
-    <lastBuildDate>Sat, 05 Aug 2017 21:40:07 -0700</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 21:41:42 -0700</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 21:41:42 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -21,6 +21,8 @@
 &lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
 &lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/L1GFOJAc7qE?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
 
 &lt;p&gt;System admins can also use the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevitgitservices.exe&lt;/code&gt; tool that is shipped with pyRevit to perform basic tasks on the pyRevit repository. &lt;a href=&quot;https://github.com/eirannejad/pyRevit/tree/master/release&quot;&gt;See this page for full documentation of the tool.&lt;/a&gt;&lt;/p&gt;
 
