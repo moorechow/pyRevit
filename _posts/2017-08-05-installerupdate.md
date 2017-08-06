@@ -34,6 +34,7 @@ pyrevitgitservices.exe setversion "C:\pyRevit" 71ec1e5
 ```
 
 This new executive lives under:
+
 `<pyrevit install path>\release\pyrevitgitservices\pyrevitgitservices\bin\Release\`
 
 Hope this change helps managing pyRevit in large environment a bit easier.
