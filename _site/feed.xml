@@ -6,9 +6,49 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Jul 2017 19:15:47 -0700</pubDate>
-    <lastBuildDate>Sat, 08 Jul 2017 19:15:47 -0700</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 21:40:07 -0700</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 21:40:07 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Installer update</title>
+        <description>&lt;p&gt;I just pushed an update for the pyRevit installer to address these two issues:
+&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/209&quot;&gt;Issue #209&lt;/a&gt;
+&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/208&quot;&gt;Issue #208&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;See this video on pyRevit installer updates.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/L1GFOJAc7qE?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;System admins can also use the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevitgitservices.exe&lt;/code&gt; tool that is shipped with pyRevit to perform basic tasks on the pyRevit repository. &lt;a href=&quot;https://github.com/eirannejad/pyRevit/tree/master/release&quot;&gt;See this page for full documentation of the tool.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For example this is how you can set the version of pyRevit repo using this tool:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-batch&quot;&gt;pyrevitgitservices.exe setversion &amp;lt;pyrevit_installation_path&amp;gt; &amp;lt;hash commit&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And as a more specific example, this would set the pyRevit repo version to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/commit/71ec1e5d4588205ae0064e9b35ec10c3dc113248&quot;&gt;this commit&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-batch&quot;&gt;pyrevitgitservices.exe setversion &quot;C:\pyRevit&quot; 71ec1e5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This new executive lives under:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pyrevit install path&amp;gt;\release\pyrevitgitservices\pyrevitgitservices\bin\Release\&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Hope this change helps managing pyRevit in large environment a bit easier.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Aug 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/08/05/installerupdate.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/08/05/installerupdate.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>pyRevit v4.4</title>
@@ -546,90 +586,6 @@ This weekend is &lt;a href=&quot;https://us.pycon.org/2017/&quot;&gt;pyCon 2017&
         <pubDate>Wed, 22 Mar 2017 16:00:00 -0700</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/22/moretools.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/22/moretools.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit unstable branch or how I learned to love unittest</title>
-        <description>&lt;p&gt;I made a rookie mistake this past week. I made some changes to the way output window works and without fully testing it, pushed it to the pyRevit’s github repository. This broke pyRevit for some of you and I deeply apologise for that.&lt;/p&gt;
-
-&lt;p&gt;To make sure this never happens again, I thought I can create a new unstable branch every week (This week’s is &lt;code class=&quot;highlighter-rouge&quot;&gt;unstable-w11&lt;/code&gt;), make my changes and improvements during the week, run tests over the weekend and fix any issue, and then fully commit the changes to the online pyRevit repository on github.&lt;/p&gt;
-
-&lt;p&gt;pyRevit is still in it’s infancy and needs a lot of work. That’s why I like to get you the changes and updates as quickly as possible so you all are involved in the process and can plan your workflows accordingly or give me feedback on how you think certain features should work.&lt;/p&gt;
-
-&lt;h2 id=&quot;revision-report-tool&quot;&gt;Revision report tool:&lt;/h2&gt;
-&lt;p&gt;To showcase some of the power of the output window and also to make a useful tool that I can use during the Construction Admin of my current project, I added a tool to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Revisions&lt;/code&gt; pull down, that reports the current state of the revisions being made to the project.&lt;/p&gt;
-
-&lt;p&gt;This output can be printed directly to a printer using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Print Preview&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Print&lt;/code&gt; options on the output window context menu (right-click).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/revisionreport.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;other-changes&quot;&gt;Other changes:&lt;/h2&gt;
-&lt;p&gt;Anyway, I committed this week’s changes to the master. Here are a list of improvements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pattern maker now can export patterns to PAT files. I also made other changes to the pattern maker to improve performance with very small detail patterns.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/exportpatfile.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You can set the height and width of charts using &lt;code class=&quot;highlighter-rouge&quot;&gt;.set_width()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.set_height()&lt;/code&gt; methods on the chart object:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;chart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make_bar_chart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;chart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		&lt;span class=&quot;c&quot;&gt;# in pixels&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;To better control the output results use these methods on the output window:
-    &lt;ul&gt;
-      &lt;li&gt;Lock the output window size using &lt;code class=&quot;highlighter-rouge&quot;&gt;.lock_size()&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;To add a page break use &lt;code class=&quot;highlighter-rouge&quot;&gt;.next_page()&lt;/code&gt; method. Any contents printed after this method, will be created on the new page when printing.&lt;/li&gt;
-      &lt;li&gt;To add a horizontal line use &lt;code class=&quot;highlighter-rouge&quot;&gt;.insert_divider()&lt;/code&gt; method. This draws a horizontal line in the output window and is a great way to separate content.&lt;/li&gt;
-      &lt;li&gt;If you’re using markdown or html output, you can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;.add_style()&lt;/code&gt; method to add &lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt; styling to the output window (this adds the style to the html head so it applies to html code that has been already printed as well):&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;console&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lock_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'TITLE'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insert_divider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# create a page break in html output&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# adding css styles&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
-table { width:100&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;% &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;}
-table, th, td { border-bottom: 1px solid #aaa; }
-&quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Markdown module was also updated to 2.6.8&lt;/li&gt;
-  &lt;li&gt;I created a pyRevit development tools package and moved the labs and work-in-progress tools into the extension. This extension is disabled by default so if you want to see it please activate it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Extensions&lt;/code&gt; tool. I added a Unit tests button to this extension and will work on creating multiple unit tests to automate testing of pyRevit components before publishing updates.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/devtools.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Untill now, the output window had a output buffer size limit. IronPython’s stream breaks the output stream in chunks of 1024 characters. This means that if a script is printing a large string, or a big chunk of html data (could be a large graph for example), the output stream would break this stream into multiple pieces and in order to show them correctly in the html format, it would wrap each broken piece in a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; tag. This meant that the html code for the graph would be broken and not displayed correctly. I finally found a way to fix this issue.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 18 Mar 2017 10:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/18/pyrevitweeklyunstable.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/18/pyrevitweeklyunstable.html</guid>
         
         
         <category>pyrevit</category>
