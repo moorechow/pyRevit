@@ -6,12 +6,12 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 13:29:21 -0700</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 13:29:21 -0700</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 13:30:57 -0700</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 13:30:57 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>Installer update</title>
+        <title>Managing pyRevit Extensions</title>
         <description>&lt;p&gt;Hello :D&lt;/p&gt;
 
 &lt;p&gt;I just published a video explaining methods to control and manage your company wide extensions. If you’re involved in such a task, I highly encourage you to watch this as it explains the inner workings of the pyRevit Extension Manager and how to control access to your extensions:&lt;/p&gt;
