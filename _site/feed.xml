@@ -6,9 +6,71 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Aug 2017 13:30:57 -0700</pubDate>
-    <lastBuildDate>Sun, 13 Aug 2017 13:30:57 -0700</lastBuildDate>
+    <pubDate>Sat, 14 Oct 2017 11:17:48 -0700</pubDate>
+    <lastBuildDate>Sat, 14 Oct 2017 11:17:48 -0700</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>pyRevit Seed Config</title>
+        <description>&lt;p&gt;Hey all,&lt;/p&gt;
+
+&lt;p&gt;Alongside the continuous updates and bug fixes, one specific change stands out as more important and I’ll describe it here:&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-pyrevit-seed-configuration-file&quot;&gt;Setting pyRevit seed configuration file:&lt;/h3&gt;
+
+&lt;h4 id=&quot;the-change&quot;&gt;The change:&lt;/h4&gt;
+&lt;p&gt;At Revit startup, if pyRevit can not find its configuration file under &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit&lt;/code&gt;, it will look into &lt;code class=&quot;highlighter-rouge&quot;&gt;%programdata%/pyRevit&lt;/code&gt; for any file with extension &lt;code class=&quot;highlighter-rouge&quot;&gt;.ini&lt;/code&gt; and will copy that into &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit&lt;/code&gt; and will use as its default config.&lt;/p&gt;
+
+&lt;p&gt;If no config is found under &lt;code class=&quot;highlighter-rouge&quot;&gt;%programdata%/pyRevit&lt;/code&gt; either, it will default to the hard-coded configuration as before.&lt;/p&gt;
+
+&lt;p&gt;This sets the initial configuration for pyRevit but does not limit the users ability to modify the config using the Settings tools later on (If you want to limit the user access to pyRevit config, you can modify the pyRevitCore extension and remove the settings tool. This is more advanced so make sure you watch the pyRevit YouTube videos on managing extensions).&lt;/p&gt;
+
+&lt;h4 id=&quot;more-info-on-the-change&quot;&gt;More info on the &lt;a href=&quot;https://github.com/eirannejad/pyRevit/commit/1ed3bcf2eb999d48107cbe03dea2efdd9bdf51c2&quot;&gt;change&lt;/a&gt;:&lt;/h4&gt;
+
+&lt;p&gt;The change request came up from a user that is setting up pyRevit with his custom company extensions in a large environment and wanted to set the default initial configuration in pyRevit. Here is the original request, verbatim:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hi Ehsan,&lt;/p&gt;
+
+  &lt;p&gt;Thanks for your comment responses on your blog. I’m going to try explain in a bit more detail what I was suggesting. If you prefer me posting this on Github, please let me know and I will do that.&lt;/p&gt;
+
+  &lt;p&gt;My suggestion is based on how a good number of other addins handle default settings. For example Revit handles the Revit.ini file in a very similar way, where the user settings file is set up by copying a version stored in the UserDataCache folder. So we create a custom file and copy it there (ex: C:\ProgramData\Autodesk\RVT 2018\UserDataCache\Revit.ini) by coding this within the install script. When Revit is opened the first time by the user, it sets up the user version of the Revit.ini file (in %appdata%\Autodesk\Revit\Autodesk Revit 2018 for example) by simply making a copy of the one in UserDataCache.&lt;/p&gt;
+
+  &lt;p&gt;When we push install via SCCM, the install script uses the SYSTEM account and cannot do anything in the user profile (it has no access to %appdata%; there is no User context for that account and in fact can install while the machine is logged off), so the above description of how Revit works enables us to distribute common settings easily. If we need to make changes to the user copy, we have to do that via a separate login script which operates in the User context and thus has access to %appdata%. However that represents a lot of extra work and tracking of things (we have to then be very careful not to alter settings that the user might have customized). A few addins  that utilize a very similar concept of having a firmwide standard settings file somewhere in ProgramData that then becomes the basis of the user settings file in %appdata% are the CTC Revit Express Tools and  Revolution Design’s workFlow tools such as autoLink. The latter actually uses a copy of the settings file located within the application folder (Program Files (x86)) as the “seed” settings file.&lt;/p&gt;
+
+  &lt;p&gt;So my suggestion is to simply provide for the ability to place a settings file somewhere convenient within the pyRevit folder in ProgramData (this could be optional). Once pyRevit starts up the first time and sets up the user profile settings file (in %appdata%), it would simply use a copy of this file if it exists in the ProgramData path and if not, sets up the copy with default settings as it is already doing right now. I hope this clarifies the issue and as always, thanks again for your work!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The current challenge is that pyRevit saves its configuration under &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit&lt;/code&gt; and this means that the sysAdmin needs to write a separate login script which operates in the user context to be able to write the desired initial pyRevit configuration to this directory. (System user does not have access to user private folders that includes the &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;At Revit startup, pyRevit will look into the &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit&lt;/code&gt; folder to find its configuration. If it does NOT find the config, it sets to create a default configuration file. Up to now, pyRevit would create this default config file based on the configuration baked into the pyRevit code.&lt;/p&gt;
+
+&lt;p&gt;But now, at Revit startup, if pyRevit can not find its configuration file under &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit&lt;/code&gt;, it will look into &lt;code class=&quot;highlighter-rouge&quot;&gt;%programdata%/pyRevit&lt;/code&gt; for any file with extension &lt;code class=&quot;highlighter-rouge&quot;&gt;.ini&lt;/code&gt; and will copy that into &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/pyRevit&lt;/code&gt; and will use as its default config.&lt;/p&gt;
+
+&lt;p&gt;If no config is found under &lt;code class=&quot;highlighter-rouge&quot;&gt;%programdata%/pyRevit&lt;/code&gt; either, it will default to the hard-coded configuration as before.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Hope this help setting up pyRevit easier in your work environments.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Happy pyReviting :D&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Oct 2017 11:00:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/10/14/configupdate.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/10/14/configupdate.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Managing pyRevit Extensions</title>
@@ -501,98 +563,6 @@ This weekend is &lt;a href=&quot;https://us.pycon.org/2017/&quot;&gt;pyCon 2017&
         <pubDate>Sat, 25 Mar 2017 11:00:00 -0700</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/25/imminentupdate.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/25/imminentupdate.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Fancy forms for your scripts</title>
-        <description>&lt;p&gt;Recently, I started adding more standard forms to the &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils.userinput&lt;/code&gt; module so simple scripts don’t have to deal with creating forms to ask for simple information. Currently I have developed two standard forms that I’m using on two of the scripts.&lt;/p&gt;
-
-&lt;h3 id=&quot;selectfromlist&quot;&gt;SelectFromList&lt;/h3&gt;
-
-&lt;p&gt;First is &lt;code class=&quot;highlighter-rouge&quot;&gt;SelectFromList&lt;/code&gt;. A script can add a series of options to the form that users can select from. There is also a built-in filter option that filters the list. Here is how it looks and a quick intro on how it works:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils.userinput&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SelectFromList&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Option 1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Option 2'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Option 3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# shows the form and returns the selected options&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;selected_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SelectFromList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Custom Form Title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;multiselect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# you can also pass a list of objects&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# the form will show the str(object) of the objects in the list&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ActionOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    	&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;option&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option_name&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__str__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;option&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ActionOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Option 1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ActionOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Option 2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;selected_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SelectFromList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Currently, the &lt;code class=&quot;highlighter-rouge&quot;&gt;Load Family Types&lt;/code&gt; tool uses this standard form:&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/SelectFromList.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h3 id=&quot;selectfromcheckboxes&quot;&gt;SelectFromCheckBoxes&lt;/h3&gt;
-
-&lt;p&gt;This also works very similarly to the &lt;code class=&quot;highlighter-rouge&quot;&gt;SelectFromList&lt;/code&gt;. The only difference is that since it deals with smarter choices, it needs a list of objects that define &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; parameters. &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; will be the name of the checkbox and &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; will be the state of the checkbox (&lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;False&lt;/code&gt;)&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CheckBoxOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_state&lt;/span&gt;
-
-	&lt;span class=&quot;c&quot;&gt;# define the __nonzero__ method so you can use your objects in an &lt;/span&gt;
-	&lt;span class=&quot;c&quot;&gt;# if statement. e.g. if checkbox_option:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__nonzero__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;
-
-	&lt;span class=&quot;c&quot;&gt;# __bool__ is same as __nonzero__ but is for python 3 compatibility&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__bool__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CheckBoxOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Option 1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CheckBoxOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Option 2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;all_checkboxes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SelectFromCheckBoxes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# now you can check the state of checkboxes in your program&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;checkbox&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all_checkboxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;checkbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;c&quot;&gt;# do stuff&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I’m revising the &lt;code class=&quot;highlighter-rouge&quot;&gt;Wipe Model Components&lt;/code&gt; to use this form. It helps the tool to be extensible, allowing all sorts of smart options based on the current model. You’ll see this update in the next revision.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/SelectFromCheckBoxes1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/SelectFromCheckBoxes2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 25 Mar 2017 10:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/25/standardforms.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/03/25/standardforms.html</guid>
         
         
         <category>pyrevit</category>
