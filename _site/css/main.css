@@ -29,7 +29,7 @@ a:visited { color: #1756a9; }
 a:hover { color: #111; text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #999; border-left: 8px solid #999; padding-left: 15px; font-style: italic; }
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
