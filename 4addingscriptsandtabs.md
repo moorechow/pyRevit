@@ -27,6 +27,11 @@ Besides, by creating a separate extension, you'll have all your precious scripts
 
 &nbsp;
 
+## Video Tutorials
+[Click here for a YouTube playlist of videos on how to setup and use pyRevit extensions.
+](https://www.youtube.com/playlist?list=PLc_1PNcpnV57OIsHFkc-zLFynurA6_jJR
+)
+
 
 ## Extensions
 Each extension is a group of tools, organized in bundles to be easily accessible through the user interface.
@@ -228,7 +233,6 @@ Library extensions are created to share IronPython modules between all extension
 
 Library extensions are identified by `.lib` postfix. The library extension folder address will be added to the `sys.path` of all the other extensions by the loader.
 
-You can install the **RevitPythonWrapper** package (which is a library extension) through the pyRevit Extensions tool, and see how it works.
 
 
 
