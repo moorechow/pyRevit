@@ -164,16 +164,24 @@
   </header> -->
 
   <div class="post-content">
-    <h2 id="installation-using-the-installer">Installation (Using the installer):</h2>
+    <h2 id="installation-using-the-installer">Installation Using the Installer:</h2>
 
 <ul>
   <li>Download the setup package to your machine.</li>
   <li>Run <code class="highlighter-rouge">pyRevitSetup.exe</code> and all scripts will be downloaded to the installation folder. You need internet access for setup to work.</li>
-  <li>Setup script will create the necessary <code class="highlighter-rouge">.addin</code> file for Revit 2015 and 2016 to load the scripts at Revit startup.</li>
+  <li>Setup script will create the necessary <code class="highlighter-rouge">.addin</code> file for installed Revit versions, to load the scripts at Revit startup.</li>
   <li>Run Revit and a <code class="highlighter-rouge">pyRevit</code> tab will be added to the Revit ribbon.</li>
 </ul>
 
-<h2 id="installation-manual-installation">Installation (Manual installation):</h2>
+<div style="position: relative; width: 100%; height: 0px; padding-bottom: 60%;">
+<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/-hIMH_dIUuw?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="uninstall">Uninstall:</h2>
+
+<p>You can uninstall pyRevit like any other application from Program and Features in Windows Control Panel.</p>
+
+<h2 id="manual-installation">Manual installation:</h2>
 
 <p>This method needs basic knowledge of cloning/downloading git repositories:</p>
 
@@ -183,8 +191,59 @@
   <li>Run Revit and a <code class="highlighter-rouge">pyRevit</code> tab will be added to the Revit ribbon.</li>
 </ul>
 
-<h2 id="uninstall">Uninstall:</h2>
-<p>You can uninstall pyRevit like any other application from Program and Features in Windows Control Panel.</p>
+<div style="position: relative; width: 100%; height: 0px; padding-bottom: 60%;">
+<iframe style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%" src="https://www.youtube.com/embed/hrlkPRoUfXc?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="for-administrators">For Administrators:</h2>
+
+<h3 id="silent-install">Silent Install:</h3>
+
+<p>I could not figure out a way to pass an option to the installer for silent installs to set the <em>all user</em> or <em>current user</em> mode.</p>
+
+<p>However pyRevit ships with two batch scripts that create and remove the addin manifest files for installed Revit versions. These batch scripts are under <strong>release</strong> directory in pyRevit installation.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">install_addin.bat</code> creates the addin files.</li>
+  <li><code class="highlighter-rouge">uninstall_addin.bat</code> removes the addin files (from both <code class="highlighter-rouge">%appdata%</code> and <code class="highlighter-rouge">%programdata%</code>).</li>
+</ul>
+
+<p>The <code class="highlighter-rouge">install_addin.bat</code> has <code class="highlighter-rouge">--alluser</code> option, so the admin can:</p>
+
+<pre><code class="language-batch">REM Install using silent installer
+REM The installed path will be C:/Addons/pyRevit
+pyRevitSetup-v4.exe /VERYSILENT /DIR="C:\Addons"
+
+REM then change directory to the release directory inside pyrevit repo
+cd \D "C:\Addons\pyRevit\release"
+
+REM run the addin manifest file uninstaller
+REM and remove the current addin files,
+REM since they're in %appdata% folder
+uninstall_addin.bat
+
+REM re-create the addin files using the --allusers option
+REM this will create the addin files in %programdata%
+install_addin.bat --allusers
+</code></pre>
+
+<h3 id="setting-pyrevit-version">Setting pyRevit version:</h3>
+
+<p>System admins can also use the <code class="highlighter-rouge">pyrevitgitservices.exe</code> tool that is shipped with pyRevit to perform basic tasks on the pyRevit repository. <a href="https://github.com/eirannejad/pyRevit/tree/master/release">See this page for more info on the tool.</a></p>
+
+<p>For example this is how you can set the version of pyRevit repo using this tool:</p>
+
+<pre><code class="language-batch">pyrevitgitservices.exe setversion &lt;pyrevit_installation_path&gt; &lt;hash commit&gt;
+</code></pre>
+
+<p>And as a more specific example, this would set the pyRevit repo version to <a href="https://github.com/eirannejad/pyRevit/commit/71ec1e5d4588205ae0064e9b35ec10c3dc113248">this commit</a>:</p>
+
+<pre><code class="language-batch">pyrevitgitservices.exe setversion "C:\pyRevit" 71ec1e5
+</code></pre>
+
+<p>This new executive lives under this path, inside the pyRevit installation:</p>
+
+<p><code class="highlighter-rouge">release\pyrevitgitservices\pyrevitgitservices\bin\Release\</code></p>
 
   </div>
 
