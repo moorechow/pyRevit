@@ -6,9 +6,29 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Oct 2017 21:31:43 -0700</pubDate>
-    <lastBuildDate>Fri, 27 Oct 2017 21:31:43 -0700</lastBuildDate>
+    <pubDate>Sun, 05 Nov 2017 19:39:50 -0800</pubDate>
+    <lastBuildDate>Sun, 05 Nov 2017 19:39:50 -0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Shhhhh</title>
+        <description>&lt;p&gt;Hey all,
+I’m done with the changes on pyRevit v4.5-beta but making the video and writing the article on the changes is taking longer than expected.&lt;/p&gt;
+
+&lt;p&gt;Basically while writing the article I realized I really need to make a video on this to make it clear. There are not many changes, it’s just that I need to explain some stuff so you understand the reasons better.&lt;/p&gt;
+
+&lt;p&gt;Give me two more days and I’ll publish both soon.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Oct 2017 11:30:00 -0700</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/10/21/Shhhhh.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/10/21/Shhhhh.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>pyRevit Library Extensions</title>
@@ -19,8 +39,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 21 Oct 2017 11:30:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions.html</guid>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions-copy.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions-copy.html</guid>
         
         
         <category>pyrevit</category>
@@ -371,43 +391,6 @@ This weekend is &lt;a href=&quot;https://us.pycon.org/2017/&quot;&gt;pyCon 2017&
         <category>pyrevit</category>
         
         <category>video</category>
-        
-      </item>
-    
-      <item>
-        <title>revitutils loves RPW</title>
-        <description>&lt;p&gt;I’ve added some stuff to the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; module but there is something that I need to talk to you about before you start using these features:&lt;/p&gt;
-
-&lt;h3 id=&quot;fact-1&quot;&gt;Fact 1&lt;/h3&gt;
-
-&lt;p&gt;Currently there is a very useful, powerfull, and easy to use python module to interact with Revit API: &lt;a href=&quot;http://revitpythonwrapper.readthedocs.io/en/latest/&quot;&gt;RevitPythonWrapper&lt;/a&gt; by &lt;a href=&quot;https://github.com/gtalarico&quot;&gt;Gui Talarico&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can install this module using the pyRevit extension manager. This module also works in Dynamo environment so it’ll be a good time investment for the user since it could be used in both Revit and Dynamo without any code changes.&lt;/p&gt;
-
-&lt;h3 id=&quot;fact-2&quot;&gt;Fact 2&lt;/h3&gt;
-
-&lt;p&gt;pyRevit includes &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; in its core libraries. The primary purpose of &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; module is to provide the required functionality for the standard pyRevit scripts.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-thing-that-i-wanted-to-talk-to-you-about&quot;&gt;The thing that I wanted to talk to you about:&lt;/h3&gt;
-
-&lt;p&gt;I have started work to incorporate &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; into pyRevit. Yes it is a dependency but I already have other dependencies (&lt;code class=&quot;highlighter-rouge&quot;&gt;Charts.js&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown&lt;/code&gt; module for the output window) and &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; is a very well-designed platform and I intend to use it more and more and have started work to contribute to it.&lt;/p&gt;
-
-&lt;p&gt;Very soon, &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; will be a standard part of pyRevit and without any changes to your code, it won’t be a required dependency for your tools anymore. I think this is great news.&lt;/p&gt;
-
-&lt;p&gt;I’m moving some of the stuff in &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; (Don’t worry I won’t break your code just now). I’ll be a lot more strict about stuff that goes into &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt;. If the idea is generic and it could be incorporated into &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt; I will do that.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; will be for the extra functionality that is heavily tied to the pyRevit itself. For example &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; has a sub-module called &lt;code class=&quot;highlighter-rouge&quot;&gt;patmaker&lt;/code&gt; that is the backend for the &lt;code class=&quot;highlighter-rouge&quot;&gt;Make Pattern&lt;/code&gt; tool in pyRevit. This is a very specific module and it kinda is tied to pyRevit. &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; will be home to these type of functionality.&lt;/p&gt;
-
-&lt;p&gt;For you python programmers and Revit radicals out there, I encourage you to invest time, implement your functionality ideas, and improve upon &lt;code class=&quot;highlighter-rouge&quot;&gt;RevitPythonWrapper&lt;/code&gt;. It is a very well-designed platform and I intend to use it more and more.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Apr 2017 11:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
         
       </item>
     
