@@ -12,7 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   IronPython scripts for Autodesk Revit
 baseurl: "/pyRevit" # the subpath of your site, e.g. /blog
 url: "http://eirannejad.github.io" # the base hostname & protocol for your site
-twitter_username: eirannejad
+twitter:
+  username: eirannejad
 github_username:  eirannejad
 
 # Build settings
@@ -22,3 +23,6 @@ highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
+
+plugins_dir:
+  - jekyll-seo-tag

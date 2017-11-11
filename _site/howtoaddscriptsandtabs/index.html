@@ -15,6 +15,21 @@
   <link rel="stylesheet" href="/pyRevit/css/styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="/pyRevit/favicon.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="/pyRevit/apple-icon-114x114.png" />
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Adding your own scripts | pyRevit blog</title>
+<meta property="og:title" content="Adding your own scripts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="IronPython scripts for Autodesk Revit" />
+<meta property="og:description" content="IronPython scripts for Autodesk Revit" />
+<link rel="canonical" href="http://eirannejad.github.io/pyRevit/howtoaddscriptsandtabs/" />
+<meta property="og:url" content="http://eirannejad.github.io/pyRevit/howtoaddscriptsandtabs/" />
+<meta property="og:site_name" content="pyRevit blog" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eirannejad" />
+<script type="application/ld+json">
+{"name":null,"description":"IronPython scripts for Autodesk Revit","author":null,"@type":"WebPage","url":"http://eirannejad.github.io/pyRevit/howtoaddscriptsandtabs/","publisher":null,"image":null,"headline":"Adding your own scripts","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 
   <body>
@@ -151,6 +166,8 @@
           
             
           
+            
+          
         </div>
         <p></p>
       </header>
@@ -267,7 +284,7 @@ Because pyRevit is a git repository and the real benefit of that is that you can
 
 <p>Here is <code class="highlighter-rouge">_layout</code> file example. This is a layout file for a Group Bundle that has a series of push buttons and other group bundles under itself:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>PushButton A
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PushButton A
 PushButton B
 PullDown A
 ---
@@ -276,8 +293,7 @@ Stack3 A
 &gt;&gt;&gt;
 PushButton C
 PullDown C
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Oh, and also:</p>
 
@@ -415,7 +431,7 @@ PullDown C
 
 <p>The <code class="highlighter-rouge">__selfinit__</code> must return True if the initialization is successful and False if it is not. pyRevit will not create the button if the initialization returns False and is unsuccessful.</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">ui_button_cmp</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__selfinit__</span><span class="p">(</span><span class="n">script_cmp</span><span class="p">,</span> <span class="n">ui_button_cmp</span><span class="p">,</span> <span class="n">__rvt__</span><span class="p">):</span>
     <span class="s">"""
     Args:
         script_cmp: script component that contains info on this script
@@ -427,25 +443,22 @@ PullDown C
     """</span>
 
 	<span class="n">run_self_initialization</span><span class="p">()</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="-command_bundlelinkbutton"><img src="http://eirannejad.github.io/pyRevit/images/bundleicon.png" alt="" /> command_bundle.linkbutton</h4>
 <p>Link buttons can call a function from another Addin. To make a link button define the parameters below in the bundles <code class="highlighter-rouge">script.py</code>:</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'Addin assembly name'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'Addin assembly name'</span>
 <span class="n">__commandclass__</span> <span class="o">=</span> <span class="s">'Class name for the command'</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>Note:</strong> For this button to work properly, the target addin must be already loaded when this button is being created, otherwise Revit can not tie the UI button to an assembly that is not loaded.</p>
 
 <p>For example to call the Interactive Python Shell from RevitPythonShell addin:</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'RevitPythonShell'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">__assembly__</span> <span class="o">=</span> <span class="s">'RevitPythonShell'</span>
 <span class="n">__commandclass__</span> <span class="o">=</span> <span class="s">'IronPythonConsoleCommand'</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p> </p>
 
