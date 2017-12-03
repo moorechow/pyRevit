@@ -299,283 +299,283 @@ __uiControlledApplication__
 &nbsp;
 
 ### Appendix A: System Category Names:
-``` python
-Part Tags
-MEP Fabrication Hangers
-Pipe Insulation Tags
-Analytical Floors
-Mechanical Equipment Tags
-Ramps
-Cable Tray Fittings
-Foundation Span Direction Symbol
-Communication Device Tags
-Analytical Wall Tags
-Structural Connections
-Planting
-Ceiling Tags
-Annotation Crop Boundary
-Analytical Wall Foundations
-Furniture Tags
-Mass
-Air Terminals
-Pipe Accessory Tags
-Security Device Tags
-Window Tags
-Stair Tread/Riser Numbers
-MEP Fabrication Ductwork Tags
-Communication Devices
-Piping Systems
-Panel Schedule Graphics
-Detail Item Tags
-Reference Lines
-MEP Fabrication Containment
-Analytical Spaces
-Plumbing Fixtures
-Structural Framing Tags
-Ceilings
-Section Boxes
-MEP Fabrication Ductwork
-Elevation Marks
-Data Device Tags
-Pipe Segments
-Crop Boundaries
-Conduit Fittings
-Sprinklers
-Doors
-Lighting Fixture Tags
-Lighting Devices
-Assembly Tags
-Duct Tags
-Curtain Systems
-Structural Rebar Tags
-Parking
-Ducts
-Door Tags
-Internal Area Load Tags
-Revision Clouds
-MEP Fabrication Hanger Tags
-Imports in Families
-Conduits
-Multi-Category Tags
-Analytical Isolated Foundations
-Flex Pipes
-Property Line Segment Tags
-Curtain Panel Tags
-Analytical Links
-Structural Trusses
-HVAC Zones
-Mass Floor Tags
-Electrical Spare/Space Circuits
-Site
-Analytical Columns
-Duct Systems
-Zone Tags
-Duct Placeholders
-Reference Planes
-Cable Tray Tags
-Multi-Rebar Annotations
-Matchline
-Specialty Equipment Tags
-Duct Accessories
-Duct Fitting Tags
-Furniture System Tags
-Callout Heads
-Furniture Systems
-Telephone Devices
-Lines
-Wires
-Pipes
-Structural Stiffener Tags
-Topography
-Casework Tags
-Project Information
-Wall Tags
-Cable Tray Fitting Tags
-Structural Internal Loads
-Electrical Circuits
-Analysis Display Style
-Pipe Insulations
-Flex Ducts
-Duct Insulation Tags
-Rebar Cover References
-Assemblies
-Structural Load Cases
-Stair Support Tags
-Structural Area Reinforcement
-Structural Truss Tags
-Analytical Slab Foundation Tags
-Plan Region
-Structural Framing
-Electrical Fixtures
-Air Terminal Tags
-Data Devices
-Structural Annotations
-Lighting Fixtures
-Duct Insulations
-Span Direction Symbol
-Section Line
-Cable Tray Runs
-Section Marks
-Pipe Color Fill
-Generic Models
-Lighting Device Tags
-Floor Tags
-Sprinkler Tags
-Analysis Results
-Scope Boxes
-Line Load Tags
-Render Regions
-Structural Path Reinforcement Symbols
-Electrical Equipment
-Stair Landing Tags
-MEP Fabrication Containment Tags
-Curtain Panels
-Fire Alarm Devices
-Analytical Braces
-Displacement Path
-Roads
-Duct Lining Tags
-Floors
-Flex Duct Tags
-Point Clouds
-Analytical Wall Foundation Tags
-Analytical Foundation Slabs
-Windows
-Structural Area Reinforcement Tags
-Structural Path Reinforcement
-Stair Run Tags
-Rebar Shape
-Parts
-Nurse Call Device Tags
-Columns
-Area Load Tags
-Routing Preferences
-Generic Annotations
-Area Tags
-View Reference
-Filled region
-Analytical Column Tags
-Structural Fabric Reinforcement
-Connection Symbols
-Conduit Fitting Tags
-Raster Images
-Structural Column Tags
-Analytical Beam Tags
+```
 Adaptive Points
-Grid Heads
-Sections
-Room Tags
-Curtain Wall Mullions
-Stair Tags
-Structural Loads
-Revision Cloud Tags
-Walls
-Conduit Runs
-Duct Accessory Tags
-Spot Slopes
-Keynote Tags
-Space Tags
-Rebar Set Toggle
-Pipe Color Fill Legends
-Pipe Fittings
-Structural Columns
-Pipe Placeholders
-Guide Grid
-Grids
-Fire Alarm Device Tags
-Planting Tags
-Callouts
-Schedule Graphics
-Electrical Fixture Tags
-Telephone Device Tags
-Structural Rebar Couplers
-Cable Trays
-Curtain System Tags
-Structural Stiffeners
-Entourage
-MEP Fabrication Pipework
-Internal Line Load Tags
-Structural Fabric Reinforcement Symbols
-Mass Tags
-Analytical Node Tags
-Property Tags
-Structural Path Reinforcement Tags
-Callout Boundary
-Structural Area Reinforcement Symbols
-Contour Labels
-Nurse Call Devices
-Areas
-Materials
-Roofs
-Structural Fabric Areas
-Structural Rebar
-Reference Points
-Shaft Openings
-Spot Elevation Symbols
-Internal Point Load Tags
-Analytical Isolated Foundation Tags
-Flex Pipe Tags
-Duct Fittings
-Cameras
-Elevations
-Specialty Equipment
-Analytical Floor Tags
-Pipe Accessories
-Structural Connection Tags
-Masking Region
-Structural Rebar Coupler Tags
-Structural Foundations
-Level Heads
-Duct Color Fill Legends
+Air Terminal Tags
+Air Terminals
+Analysis Display Style
+Analysis Results
+Analytical Beam Tags
 Analytical Beams
-Curtain Grids
-Levels
-Brace in Plan View Symbols
-Railing Tags
-Structural Foundation Tags
-Wire Tags
-Security Devices
-Site Tags
-Pipe Tags
-Analytical Link Tags
-Spot Coordinates
-Railings
-Viewports
-Title Blocks
-Plumbing Fixture Tags
-Pipe Fitting Tags
-Duct Color Fill
-Stair Paths
-MEP Fabrication Pipework Tags
-Duct Linings
-Structural Beam Systems
-Roof Tags
-Views
-Sheets
-Casework
-Conduit Tags
-Point Load Tags
-Analytical Surfaces
-Structural Fabric Reinforcement Tags
-Material Tags
-View Titles
-Mechanical Equipment
-Parking Tags
-Structural Beam System Tags
 Analytical Brace Tags
-Electrical Equipment Tags
-Generic Model Tags
-Switch System
-Furniture
-Rooms
-Analytical Walls
-Stairs
-Text Notes
-Detail Items
-Spot Elevations
+Analytical Braces
+Analytical Column Tags
+Analytical Columns
+Analytical Floor Tags
+Analytical Floors
+Analytical Foundation Slabs
+Analytical Isolated Foundation Tags
+Analytical Isolated Foundations
+Analytical Link Tags
+Analytical Links
+Analytical Node Tags
 Analytical Nodes
+Analytical Slab Foundation Tags
+Analytical Spaces
+Analytical Surfaces
+Analytical Wall Foundation Tags
+Analytical Wall Foundations
+Analytical Wall Tags
+Analytical Walls
+Annotation Crop Boundary
+Area Load Tags
+Area Tags
+Areas
+Assemblies
+Assembly Tags
 Boundary Conditions
+Brace in Plan View Symbols
+Cable Tray Fitting Tags
+Cable Tray Fittings
+Cable Tray Runs
+Cable Tray Tags
+Cable Trays
+Callout Boundary
+Callout Heads
+Callouts
+Cameras
+Casework
+Casework Tags
+Ceiling Tags
+Ceilings
 Color Fill Legends
-Spaces
+Columns
+Communication Device Tags
+Communication Devices
+Conduit Fitting Tags
+Conduit Fittings
+Conduit Runs
+Conduit Tags
+Conduits
+Connection Symbols
+Contour Labels
+Crop Boundaries
+Curtain Grids
+Curtain Panel Tags
+Curtain Panels
+Curtain System Tags
+Curtain Systems
+Curtain Wall Mullions
+Data Device Tags
+Data Devices
+Detail Item Tags
+Detail Items
 Dimensions
+Displacement Path
+Door Tags
+Doors
+Duct Accessories
+Duct Accessory Tags
+Duct Color Fill
+Duct Color Fill Legends
+Duct Fitting Tags
+Duct Fittings
+Duct Insulation Tags
+Duct Insulations
+Duct Lining Tags
+Duct Linings
+Duct Placeholders
+Duct Systems
+Duct Tags
+Ducts
+Electrical Circuits
+Electrical Equipment
+Electrical Equipment Tags
+Electrical Fixture Tags
+Electrical Fixtures
+Electrical Spare/Space Circuits
+Elevation Marks
+Elevations
+Entourage
+Filled region
+Fire Alarm Device Tags
+Fire Alarm Devices
+Flex Duct Tags
+Flex Ducts
+Flex Pipe Tags
+Flex Pipes
+Floor Tags
+Floors
+Foundation Span Direction Symbol
+Furniture
+Furniture System Tags
+Furniture Systems
+Furniture Tags
+Generic Annotations
+Generic Model Tags
+Generic Models
+Grid Heads
+Grids
+Guide Grid
+HVAC Zones
+Imports in Families
+Internal Area Load Tags
+Internal Line Load Tags
+Internal Point Load Tags
+Keynote Tags
+Level Heads
+Levels
+Lighting Device Tags
+Lighting Devices
+Lighting Fixture Tags
+Lighting Fixtures
+Line Load Tags
+Lines
+Masking Region
+Mass
+Mass Floor Tags
+Mass Tags
+Matchline
+Material Tags
+Materials
+Mechanical Equipment
+Mechanical Equipment Tags
+MEP Fabrication Containment
+MEP Fabrication Containment Tags
+MEP Fabrication Ductwork
+MEP Fabrication Ductwork Tags
+MEP Fabrication Hanger Tags
+MEP Fabrication Hangers
+MEP Fabrication Pipework
+MEP Fabrication Pipework Tags
+Multi-Category Tags
+Multi-Rebar Annotations
+Nurse Call Device Tags
+Nurse Call Devices
+Panel Schedule Graphics
+Parking
+Parking Tags
+Part Tags
+Parts
+Pipe Accessories
+Pipe Accessory Tags
+Pipe Color Fill
+Pipe Color Fill Legends
+Pipe Fitting Tags
+Pipe Fittings
+Pipe Insulation Tags
+Pipe Insulations
+Pipe Placeholders
+Pipe Segments
+Pipe Tags
+Pipes
+Piping Systems
+Plan Region
+Planting
+Planting Tags
+Plumbing Fixture Tags
+Plumbing Fixtures
+Point Clouds
+Point Load Tags
+Project Information
+Property Line Segment Tags
+Property Tags
+Railing Tags
+Railings
+Ramps
+Raster Images
+Rebar Cover References
+Rebar Set Toggle
+Rebar Shape
+Reference Lines
+Reference Planes
+Reference Points
+Render Regions
+Revision Cloud Tags
+Revision Clouds
+Roads
+Roof Tags
+Roofs
+Room Tags
+Rooms
+Routing Preferences
+Schedule Graphics
+Scope Boxes
+Section Boxes
+Section Line
+Section Marks
+Sections
+Security Device Tags
+Security Devices
+Shaft Openings
+Sheets
+Site
+Site Tags
+Space Tags
+Spaces
+Span Direction Symbol
+Specialty Equipment
+Specialty Equipment Tags
+Spot Coordinates
+Spot Elevation Symbols
+Spot Elevations
+Spot Slopes
+Sprinkler Tags
+Sprinklers
+Stair Landing Tags
+Stair Paths
+Stair Run Tags
+Stair Support Tags
+Stair Tags
+Stair Tread/Riser Numbers
+Stairs
+Structural Annotations
+Structural Area Reinforcement
+Structural Area Reinforcement Symbols
+Structural Area Reinforcement Tags
+Structural Beam System Tags
+Structural Beam Systems
+Structural Column Tags
+Structural Columns
+Structural Connection Tags
+Structural Connections
+Structural Fabric Areas
+Structural Fabric Reinforcement
+Structural Fabric Reinforcement Symbols
+Structural Fabric Reinforcement Tags
+Structural Foundation Tags
+Structural Foundations
+Structural Framing
+Structural Framing Tags
+Structural Internal Loads
+Structural Load Cases
+Structural Loads
+Structural Path Reinforcement
+Structural Path Reinforcement Symbols
+Structural Path Reinforcement Tags
+Structural Rebar
+Structural Rebar Coupler Tags
+Structural Rebar Couplers
+Structural Rebar Tags
+Structural Stiffener Tags
+Structural Stiffeners
+Structural Truss Tags
+Structural Trusses
+Switch System
+Telephone Device Tags
+Telephone Devices
+Text Notes
+Title Blocks
+Topography
+View Reference
+View Titles
+Viewports
+Views
+Wall Tags
+Walls
+Window Tags
+Windows
+Wire Tags
+Wires
+Zone Tags
 ```
