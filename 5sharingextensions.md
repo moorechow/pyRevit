@@ -7,7 +7,7 @@ permalink: /sharingextensions/
 ## Adding extensions from others:
 Use the Extensions tool under pyRevit panel and install third-party extensions as you wish.
 
-![]({{ site.url }}/pyRevit/images/extensionstool.png)
+![]({{ site.url }}/pyRevit/images/extensions45.png)
 
 ## Sharing your extensions with others:
 Create your extension first obviously, publish it to Github, Bitbucket, or other online git cloud.

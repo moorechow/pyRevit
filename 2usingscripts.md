@@ -23,7 +23,7 @@ Use the `Update` button under the `pyRevit` tab slide-out to fetch all the recen
 
 &nbsp;
 
-![]({{ site.url }}/pyRevit/images/2017-01-01 09_46_57-Update.png)
+![]({{ site.url }}/pyRevit/images/update45.png)
 
 &nbsp;
 

@@ -39,14 +39,14 @@ Under the **pyRevit** tab, you'll find MAppend, MAppendOverwrite, MRead, MDeduct
 
 Each tooltip shows the button name, the script that the button is associated with and a description of what the script does.
 
-![MAppendOverWrite]({{ site.url }}/pyRevit/images/selectionmemory.png)
+![MAppendOverWrite]({{ site.url }}/pyRevit/images/mread45.png)
 
 ### Copy and Convert Legend Views
 
 This set of scripts help you copy Legend Views to all other project open within a Revit session.
 You can copy the Legends as Legend views or as Drafting views.
 
-![CopyLegends]({{ site.url }}/pyRevit/images/legends.png)
+![CopyLegends]({{ site.url }}/pyRevit/images/legends45.png)
 
 Two more scripts duplicate and convert Legend views to Drafting views and vice versa within the same project.
 
@@ -54,7 +54,7 @@ Two more scripts duplicate and convert Legend views to Drafting views and vice v
 
 This one is pretty obvious. Run the script, select your source object to pick up the style, and then one by one, select the destination objects to apply the graphic overrides. You can also navigate to other views and apply to objects within that view.
 
-![MatchGraphicOverrides]({{ site.url }}/pyRevit/images/match.png)
+![MatchGraphicOverrides]({{ site.url }}/pyRevit/images/match45.png)
 
 ***pyRevit*** provides many other powerful scripts, and most of them are really useful in a production environment.
 
