@@ -6,9 +6,30 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Nov 2017 11:37:47 -0800</pubDate>
-    <lastBuildDate>Sun, 26 Nov 2017 11:37:47 -0800</lastBuildDate>
+    <pubDate>Sat, 02 Dec 2017 21:12:27 -0800</pubDate>
+    <lastBuildDate>Sat, 02 Dec 2017 21:12:27 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit v4.5-rc</title>
+        <description>&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/C4kL2MQo7rU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;installer&quot;&gt;Installer?&lt;/h2&gt;
+
+&lt;p&gt;Download the v4.5-rc installer from &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/download/v4.5-rc/pyRevitSetup-v45rc.exe&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Dec 2017 10:30:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/12/02/45rc.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/12/02/45rc.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>SUPER IMPORTANT</title>
@@ -548,36 +569,6 @@ install_addin.bat --allusers
         <category>pyrevit</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>pyCon, YouTube and Patreon</title>
-        <description>&lt;p&gt;&lt;strong&gt;Excitement:&lt;/strong&gt;
-This weekend is &lt;a href=&quot;https://us.pycon.org/2017/&quot;&gt;pyCon 2017&lt;/a&gt; and is happening right here in Portland, Oregon for the second year. I’m really excited to go and learn from python masters.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;And now, to the usual updates:&lt;/p&gt;
-
-&lt;h3 id=&quot;youtube-channel&quot;&gt;YouTube Channel:&lt;/h3&gt;
-&lt;p&gt;pyRevit now has a Youtube channel. You can find a link to the channel in the left side bar. I’ve already started posting quick tutorials on the more important tools. I’ll also be gradually compiling a series of videos on python scripting for Autodesk Revit. Please subscribe and stay tunes. I’m looking forward to hearing your feedbacks.&lt;/p&gt;
-
-&lt;h3 id=&quot;patreon-page&quot;&gt;Patreon Page:&lt;/h3&gt;
-&lt;p&gt;I have also created an account on Patreon website and those of you who are truly in love with pyRevit can sign up there to support the project. All the proceedings will be used to make pyRevit better and to support the community around python scripting for Revit. You can find a link to the Patreon page on the side bar as well.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Stay creative…&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 May 2017 11:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/pycon/2017/05/16/pyconandpatrons.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/pycon/2017/05/16/pyconandpatrons.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>pycon</category>
         
       </item>
     
