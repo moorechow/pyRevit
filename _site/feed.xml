@@ -6,8 +6,8 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Jan 2018 12:42:11 -0800</pubDate>
-    <lastBuildDate>Mon, 01 Jan 2018 12:42:11 -0800</lastBuildDate>
+    <pubDate>Mon, 01 Jan 2018 12:47:24 -0800</pubDate>
+    <lastBuildDate>Mon, 01 Jan 2018 12:47:24 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -31,6 +31,12 @@
 &lt;p&gt;I have also moved a few pages from pyRevit blog to the new documentation. The updated pyRevit docs is &lt;a href=&quot;http://pyrevit.readthedocs.io/en/latest/&quot;&gt;here&lt;/a&gt; but it’s still work-in-progress. The documentation is taking a lot longer than expected initially but I’m going to finish this before I touch anything else in pyRevit.&lt;/p&gt;
 
 &lt;p&gt;The next couple of videos will be on updated pyRevit features e.g. charts, logging, controlling output window. Stay tuned.&lt;/p&gt;
+
+&lt;h3 id=&quot;installation&quot;&gt;Installation:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;I’d highly suggest removing all previous pyRevit versions and installing a fresh v4.5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;But, if you decided to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;upgrade.bat&lt;/code&gt; tool to upgrade the v4.4 installation in-place, please make sure to run the &lt;code class=&quot;highlighter-rouge&quot;&gt;install_addin.bat&lt;/code&gt; script after the upgrade to correct the addin manifest file with the new location of the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevitLoader.dll&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;third-party-extensions&quot;&gt;Third-party Extensions:&lt;/h3&gt;
 
