@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation and Removal
+title: Installing, Uninstalling
 permalink: /installation/
 ---
 

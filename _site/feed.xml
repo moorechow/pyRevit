@@ -6,9 +6,46 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Dec 2017 21:37:39 -0800</pubDate>
-    <lastBuildDate>Sat, 02 Dec 2017 21:37:39 -0800</lastBuildDate>
+    <pubDate>Mon, 01 Jan 2018 12:42:11 -0800</pubDate>
+    <lastBuildDate>Mon, 01 Jan 2018 12:42:11 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit v4.5</title>
+        <description>&lt;h2 id=&quot;v45-is-here-happy-2018&quot;&gt;v4.5 is here, Happy 2018&lt;/h2&gt;
+
+&lt;p&gt;Hello!&lt;/p&gt;
+
+&lt;p&gt;As promised, pyRevit v4.5 is here and &lt;strong&gt;v4.4 is officially retired / not supported / not available&lt;/strong&gt;. v4.5 is so much better trust me! :D&lt;/p&gt;
+
+&lt;p&gt;Watch the short video below on the most recent updates.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/ELNpwpAqVaU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;I have also moved a few pages from pyRevit blog to the new documentation. The updated pyRevit docs is &lt;a href=&quot;http://pyrevit.readthedocs.io/en/latest/&quot;&gt;here&lt;/a&gt; but it’s still work-in-progress. The documentation is taking a lot longer than expected initially but I’m going to finish this before I touch anything else in pyRevit.&lt;/p&gt;
+
+&lt;p&gt;The next couple of videos will be on updated pyRevit features e.g. charts, logging, controlling output window. Stay tuned.&lt;/p&gt;
+
+&lt;h3 id=&quot;third-party-extensions&quot;&gt;Third-party Extensions:&lt;/h3&gt;
+
+&lt;p&gt;pyRevit third-party extension still need to be updated so stay tuned until the developers update those for v4.5 and I’ll add them back ASAP.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jan 2018 10:30:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2018/01/01/45final.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2018/01/01/45final.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>pyRevit v4.5-rc</title>
@@ -539,31 +576,6 @@ install_addin.bat --allusers
         <pubDate>Tue, 04 Jul 2017 11:00:00 -0700</pubDate>
         <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/07/04/pyrevitfourfour.html</link>
         <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/07/04/pyrevitfourfour.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Show Nested Groups Update</title>
-        <description>&lt;p&gt;I updated the &lt;code class=&quot;highlighter-rouge&quot;&gt;Show Nested Group Structure&lt;/code&gt; tool today. Now it does what it’s supposed to do and also prints a nicer output with links to the groups:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/shownestedgroupstruct2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This tool works on selected elements of any kind (as long as they’re groupable) and is very helpful in finding out the group structure around selected elements.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;And here is where the tool is:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/shownestedgroupstruct1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 17 May 2017 11:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/05/17/nestedgroupsupdate.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/05/17/nestedgroupsupdate.html</guid>
         
         
         <category>pyrevit</category>

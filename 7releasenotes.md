@@ -4,7 +4,20 @@ title: Release Notes
 permalink: /releasenotes/
 ---
 
-4.4 (current)
+4.5 (current)
+------
+pyRevit Rocket mode
+
+Major core and tool improvements
+
+New UI Look
+
+And many other changes
+
+See [pyRevit 4.5]({{ site.url }}/pyRevit/pyrevit/update/2018/01/01/45final.html).
+
+
+4.4
 ------
 Revit 2018 Update and adoption of rpw
 

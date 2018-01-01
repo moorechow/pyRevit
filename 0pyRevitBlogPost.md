@@ -4,6 +4,8 @@ title: What's pyRevit
 permalink: /whatspyrevit/
 ---
 
+## What is pyRevit?
+
 ***pyRevit*** is an IronPython script library for Revit.
 However, it is not really written as an example library.
 It is a working set of tools fully written in IronPython that explores the power of scripting for Revit and also adds some cool functionality.
@@ -27,7 +29,7 @@ All the scripts are provided in the `pyRevit/extensions` folder which is downloa
 &nbsp;
 &nbsp;
 
-## A Quick Look at some pyRevit Scripts
+## A Quick Look at a few pyRevit Scripts
 
 Let's take a quick look at some of the more useful scripts in this library:
 
@@ -63,7 +65,7 @@ This one is pretty obvious. Run the script, select your source object to pick up
 &nbsp;
 &nbsp;
 
-## An Even Quicker but Deeper Look at pyRevit
+## A Quicker but Deeper Look
 
 Now let's take an even quicker and slightly deeper look at [pyRevit](https://github.com/eirannejad/pyRevit). pyRevit has two main components.
 
