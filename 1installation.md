@@ -71,7 +71,7 @@ System admins can also use the `pyrevitgitservices.exe` tool that is shipped wit
 For example this is how you can set the version of pyRevit repo using this tool:
 
 ```batch
-pyrevitgitservices.exe setversion <pyrevit_installation_path> <hash commit>
+pyrevitgitservices.exe setversion <pyrevit_git_repository_path> <commit_hash>
 ```
 
 And as a more specific example, this would set the pyRevit repo version to [this commit](https://github.com/eirannejad/pyRevit/commit/71ec1e5d4588205ae0064e9b35ec10c3dc113248):
