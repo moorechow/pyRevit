@@ -6,9 +6,32 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 14:54:37 -0800</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 14:54:37 -0800</lastBuildDate>
+    <pubDate>Thu, 01 Mar 2018 14:45:03 -0800</pubDate>
+    <lastBuildDate>Thu, 01 Mar 2018 14:45:03 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Installer Error and Github Security Changes</title>
+        <description>&lt;p&gt;Hey All,&lt;/p&gt;
+
+&lt;p&gt;Github has recently finalized a &lt;a href=&quot;https://blog.github.com/2018-02-23-weak-cryptographic-standards-removed/&quot;&gt;security change&lt;/a&gt; that affects the pyRevit installer among many other Windows apps that connect to Github through WinHTTP (e.g. GitKraken)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in&quot;&gt;Please got to this page&lt;/a&gt; and download the EasyFix installer and install. This is a fix from Microsoft himself. Also please check with your IT before installing this to make sure it doesn’t break anything else.&lt;/p&gt;
+
+&lt;p&gt;After the installation, the pyRevit installer should behave as usual.&lt;/p&gt;
+
+&lt;p&gt;:rolling-eyes-emoji:&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Mar 2018 10:30:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>installer</category>
+        
+      </item>
     
       <item>
         <title>Financial Report and Exciting Announcement</title>
@@ -486,49 +509,6 @@ I posted this video and forgot about posting a blog post on it. Here is the YouT
         <category>pyrevit</category>
         
         <category>extension</category>
-        
-      </item>
-    
-      <item>
-        <title>Installer update</title>
-        <description>&lt;p&gt;I just pushed an update for the pyRevit installer to address these two issues:
-&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/209&quot;&gt;Issue #209&lt;/a&gt;
-&lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/208&quot;&gt;Issue #208&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;&lt;strong&gt;See this video on pyRevit installer updates.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/L1GFOJAc7qE?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;System admins can also use the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevitgitservices.exe&lt;/code&gt; tool that is shipped with pyRevit to perform basic tasks on the pyRevit repository. &lt;a href=&quot;https://github.com/eirannejad/pyRevit/tree/master/release&quot;&gt;See this page for full documentation of the tool.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;For example this is how you can set the version of pyRevit repo using this tool:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-batch&quot;&gt;pyrevitgitservices.exe setversion &amp;lt;pyrevit_installation_path&amp;gt; &amp;lt;hash commit&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And as a more specific example, this would set the pyRevit repo version to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/commit/71ec1e5d4588205ae0064e9b35ec10c3dc113248&quot;&gt;this commit&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-batch&quot;&gt;pyrevitgitservices.exe setversion &quot;C:\pyRevit&quot; 71ec1e5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This new executive lives under:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pyrevit install path&amp;gt;\release\pyrevitgitservices\pyrevitgitservices\bin\Release\&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Hope this change helps managing pyRevit in large environment a bit easier.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 05 Aug 2017 11:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2017/08/05/installerupdate.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2017/08/05/installerupdate.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
         
       </item>
     
