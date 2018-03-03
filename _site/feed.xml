@@ -6,9 +6,56 @@
 </description>
     <link>http://eirannejad.github.io/pyRevit/</link>
     <atom:link href="http://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Mar 2018 14:45:03 -0800</pubDate>
-    <lastBuildDate>Thu, 01 Mar 2018 14:45:03 -0800</lastBuildDate>
+    <pubDate>Sat, 03 Mar 2018 11:37:05 -0800</pubDate>
+    <lastBuildDate>Sat, 03 Mar 2018 11:37:05 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Updates report</title>
+        <description>&lt;p&gt;Here is a list of most recent updates on pyRevit tools:&lt;/p&gt;
+
+&lt;h4 id=&quot;batch-sheet-maker&quot;&gt;Batch Sheet Maker&lt;/h4&gt;
+
+&lt;p&gt;Batch sheet maker now lets you create a range or list of sheets with the same sheet name very easily.&lt;/p&gt;
+
+&lt;p&gt;This example will create a range of sheets (A102 to A108) in the current model:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A102:A108			Sheet Name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also list specific sheet numbers that use the same sheet name. This example creates sheets A100, S100, E100, and M100 all with the same sheet name:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A100,S100,E100,M100			General Notes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/sheetrange.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;copy-sheets-to-open-documents&quot;&gt;Copy Sheets to Open Documents&lt;/h4&gt;
+
+&lt;p&gt;This tool now can copy and set the revisions on the sheets being copied to the destination models as well:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/copysheetrevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;other-misc-updates&quot;&gt;Other Misc Updates&lt;/h4&gt;
+
+&lt;p&gt;Other tools have also been updated to show a list of views instead of relying on view selection in the project browser:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/selectviewsfromlist.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The revision tools have also been updated to allow setting, unsetting multiple revisions at the same time:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://eirannejad.github.io/pyRevit/images/selectmultiplerevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Mar 2018 10:30:00 -0800</pubDate>
+        <link>http://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</link>
+        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Installer Error and Github Security Changes</title>
@@ -471,44 +518,6 @@ I posted this video and forgot about posting a blog post on it. Here is the YouT
         <category>pyrevit</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Managing pyRevit Extensions</title>
-        <description>&lt;p&gt;Hello :D&lt;/p&gt;
-
-&lt;p&gt;I just published a video explaining methods to control and manage your company wide extensions. If you’re involved in such a task, I highly encourage you to watch this as it explains the inner workings of the pyRevit Extension Manager and how to control access to your extensions:&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/v8d5FA-7suw?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Here is the example of the dictionary key to control user access to your extensions (add it inside your own pyRevit extension definition file - watch the video if you don’t know how):&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# add as many users as need access to this extension&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# the usernames are Revit usernames (not necessarily/always the machine user name)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;authusers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;username1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;username2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;username3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;I also posted a video on using git to manage your source codes inside your extension and also as a way to share that with people outside your company:&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/n8K-JXfmv-s?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 13 Aug 2017 11:00:00 -0700</pubDate>
-        <link>http://eirannejad.github.io/pyRevit/pyrevit/extension/2017/08/13/managingextensions.html</link>
-        <guid isPermaLink="true">http://eirannejad.github.io/pyRevit/pyrevit/extension/2017/08/13/managingextensions.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>extension</category>
         
       </item>
     
