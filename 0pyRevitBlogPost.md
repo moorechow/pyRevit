@@ -84,7 +84,7 @@ Command bundles are organzied into Command bundle groups, panels, and tabs that 
 
 ![pyrevitFolder]({{ site.url }}/pyRevit/images/extension.png)
 
-If you'd like to find out more about ***pyRevit*** and how to add your own scripts, visit the [Adding your own scripts page]({{ site.url }}/pyRevit/howtoaddscriptsandtabs) and everything you want to know about it is provided.
+If you'd like to find out more about ***pyRevit*** and how to add your own scripts, visit the [pyRevit Documentation](http://pyrevit.readthedocs.io/en/latest/) and everything you want to know about it is provided.
 
 Happy scripting!
 		
