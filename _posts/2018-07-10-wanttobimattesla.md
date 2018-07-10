@@ -40,6 +40,6 @@ These skills are a plus:
 
 ### Whom to contact
 
-Send your cover letter and resumes to [Lucas Volk and copy Evan Horetsky and me](mailto:lvolk@tesla.com?cc=ehoretsky@tesla.com,eirannejad@tesla.com&subject=BIM Software Engineer Resume for <put your name here>)
+[Send your cover letter and resumes here](mailto:eirannejad@tesla.com?subject=BIM Software Engineer Resume for <put your name here>)
 
 
