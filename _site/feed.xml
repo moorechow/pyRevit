@@ -6,9 +6,59 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jun 2018 17:17:07 -0700</pubDate>
-    <lastBuildDate>Wed, 20 Jun 2018 17:17:07 -0700</lastBuildDate>
+    <pubDate>Tue, 10 Jul 2018 13:30:46 -0700</pubDate>
+    <lastBuildDate>Tue, 10 Jul 2018 13:30:46 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Tesla GigaFactory needs BIM Hackers/Software Engineers</title>
+        <description>&lt;p&gt;To all you BIM hackers (white-hat only) living in this universe…&lt;/p&gt;
+
+&lt;p&gt;Tesla Motors has a battery factory in Sparks (Nevada, USA) that is called the GigaFactory number 1 (GF01) as you might know. Tesla designs the factory in-house and has an open position for a BIM Software Engineer.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-does-a-bim-software-engineer-do&quot;&gt;What does a “BIM Software Engineer” do?&lt;/h3&gt;
+
+&lt;p&gt;She/He improves workflows, saves time &amp;amp; money, increases output quality, by writing custom software with building information (geometric and metadata) in focus. This includes everything from developing add-ons for Autodesk software, 3d scanning of existing construction, working with manufacturing teams, developing team-wide productivity apps, and almost anything you can imagine that is related to buildings, information, and improvements.&lt;/p&gt;
+
+&lt;h3 id=&quot;minimum-requirements&quot;&gt;Minimum Requirements&lt;/h3&gt;
+
+&lt;p&gt;This is not an exhaustive list. The official job post will be available soon but to get your started, you must have a solid experience with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Autodesk Revit and Navisworks API&lt;/li&gt;
+  &lt;li&gt;Autodesk Forge API&lt;/li&gt;
+  &lt;li&gt;C#&lt;/li&gt;
+  &lt;li&gt;python + IronPython&lt;/li&gt;
+  &lt;li&gt;3D mathematics&lt;/li&gt;
+  &lt;li&gt;3 years experience in the AEC industry preferably working with industrial clients&lt;/li&gt;
+  &lt;li&gt;Ready to relocate to Sparks, NV (Telsa has a very good relocation package)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These skills are a plus:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Engineering background&lt;/li&gt;
+  &lt;li&gt;Autodesk AutoCAD API, platform, and its sister applications&lt;/li&gt;
+  &lt;li&gt;SQL for mySQL, MS SQL and other relational databases&lt;/li&gt;
+  &lt;li&gt;Autodesk Dynamo3D&lt;/li&gt;
+  &lt;li&gt;Front-end, back-end web development (html-css-js, node.js and related frameworks)&lt;/li&gt;
+  &lt;li&gt;Experience working with docker, Kubernetes and container-based web apps&lt;/li&gt;
+  &lt;li&gt;Rhino3D + Grasshopper&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;whom-to-contact&quot;&gt;Whom to contact&lt;/h3&gt;
+
+&lt;p&gt;Send your cover letter and resumes to &lt;a href=&quot;mailto:lvolk@tesla.com?cc=ehoretsky@tesla.com,eirannejad@tesla.com&amp;amp;subject=BIM Software Engineer Resume for &amp;lt;put your name here&amp;gt;&quot;&gt;Lucas Volk and copy Evan Horetsky and me&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 10 Jul 2018 11:30:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/tesla/2018/07/10/wanttobimattesla.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/tesla/2018/07/10/wanttobimattesla.html</guid>
+        
+        
+        <category>tesla</category>
+        
+      </item>
     
       <item>
         <title>Upcoming Changes</title>
@@ -451,28 +501,6 @@ I’m done with the changes on pyRevit v4.5-beta but making the video and writin
         <category>pyrevit</category>
         
         <category>extension</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.5 Road Map</title>
-        <description>&lt;p&gt;Hey all,
-I posted this video and forgot about posting a blog post on it. Here is the YouTube video on the pyRevit road map for versions 4.5 and 4.6&lt;/p&gt;
-
-&lt;p&gt;Please feel free to comment here with any improvement ideas.&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/6z_6KmeEc08?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 21 Oct 2017 11:00:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/10/21/45roadmap.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/10/21/45roadmap.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
         
       </item>
     
