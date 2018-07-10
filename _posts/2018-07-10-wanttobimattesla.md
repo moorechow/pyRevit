@@ -40,6 +40,6 @@ These skills are a plus:
 
 ### Whom to contact
 
-[Send your cover letter and resumes here](mailto:eirannejad@tesla.com?subject=BIM Software Engineer Resume for <put your name here>)
+[Send your cover letter and resumes here and I'll forward to the right people](mailto:eirannejad@tesla.com?subject=BIM Software Engineer Resume for <put your name here>)
 
 
