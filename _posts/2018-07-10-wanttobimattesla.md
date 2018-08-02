@@ -2,7 +2,7 @@
 layout: post
 title:  "Tesla GigaFactory needs BIM Hackers/Software Engineers"
 date:   2018-07-10 09:30:00 -0900
-categories: tesla
+categories: tesla job
 comments: true
 ---
 
@@ -40,6 +40,6 @@ These skills are a plus:
 
 ### Whom to contact
 
-[Send your cover letter and resumes here and I'll forward to the right people](mailto:eirannejad@tesla.com?subject=BIM Software Engineer Resume for <put your name here>)
+[Send your cover letter and resumes here and I'll forward to the right people](mailto:eirannejad@gmail.com?subject=BIM Software Engineer Resume for <put your name here>)
 
 
