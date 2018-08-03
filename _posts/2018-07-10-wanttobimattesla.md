@@ -2,7 +2,7 @@
 layout: post
 title:  "Tesla GigaFactory needs BIM Hackers/Software Engineers"
 date:   2018-07-10 09:30:00 -0900
-categories: tesla job
+categories: tesla
 comments: true
 ---
 
