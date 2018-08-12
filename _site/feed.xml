@@ -4,10 +4,10 @@
     <title>pyRevit blog</title>
     <description>IronPython scripts for Autodesk Revit
 </description>
-    <link>http://localhost:4000/pyRevit/</link>
-    <atom:link href="http://localhost:4000/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Aug 2018 01:30:24 -0700</pubDate>
-    <lastBuildDate>Fri, 03 Aug 2018 01:30:24 -0700</lastBuildDate>
+    <link>https://eirannejad.github.io/pyRevit/</link>
+    <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Aug 2018 12:28:40 -0700</pubDate>
+    <lastBuildDate>Sun, 12 Aug 2018 12:28:40 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -21,63 +21,13 @@
 &lt;p&gt;She/He improves workflows, saves time &amp;amp; money, increases output quality, by writing custom software with building information (geometric and metadata) in focus. This includes everything from developing add-ons for Autodesk software, 3d scanning of existing construction, working with manufacturing teams, developing team-wide productivity apps, and almost anything you can imagine that is related to buildings, information, and improvements.&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Aug 2018 11:30:00 -0700</pubDate>
-        <link>http://localhost:4000/pyRevit/ssoe/job/2018/08/02/wanttobimatssoe.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/ssoe/job/2018/08/02/wanttobimatssoe.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/ssoe/job/2018/08/02/wanttobimatssoe.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/ssoe/job/2018/08/02/wanttobimatssoe.html</guid>
         
         
         <category>ssoe</category>
         
         <category>job</category>
-        
-      </item>
-    
-      <item>
-        <title>Tesla GigaFactory needs BIM Hackers/Software Engineers</title>
-        <description>&lt;p&gt;To all you BIM hackers (white-hat only) living in this universe…&lt;/p&gt;
-
-&lt;p&gt;Tesla Motors has a battery factory in Sparks (Nevada, USA) that is called the GigaFactory number 1 (GF01) as you might know. Tesla designs the factory in-house and has an open position for a BIM Software Engineer.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-does-a-bim-software-engineer-do&quot;&gt;What does a “BIM Software Engineer” do?&lt;/h3&gt;
-
-&lt;p&gt;She/He improves workflows, saves time &amp;amp; money, increases output quality, by writing custom software with building information (geometric and metadata) in focus. This includes everything from developing add-ons for Autodesk software, 3d scanning of existing construction, working with manufacturing teams, developing team-wide productivity apps, and almost anything you can imagine that is related to buildings, information, and improvements.&lt;/p&gt;
-
-&lt;h3 id=&quot;minimum-requirements&quot;&gt;Minimum Requirements&lt;/h3&gt;
-
-&lt;p&gt;This is not an exhaustive list. The official job post will be available soon but to get your started, you must have a solid experience with:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Autodesk Revit and Navisworks API&lt;/li&gt;
-  &lt;li&gt;Autodesk Forge API&lt;/li&gt;
-  &lt;li&gt;C#&lt;/li&gt;
-  &lt;li&gt;python + IronPython&lt;/li&gt;
-  &lt;li&gt;3D mathematics&lt;/li&gt;
-  &lt;li&gt;3 years experience in the AEC industry preferably working with industrial clients&lt;/li&gt;
-  &lt;li&gt;Ready to relocate to Sparks, NV (Telsa has a very good relocation package)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These skills are a plus:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Engineering background&lt;/li&gt;
-  &lt;li&gt;Autodesk AutoCAD API, platform, and its sister applications&lt;/li&gt;
-  &lt;li&gt;SQL for mySQL, MS SQL and other relational databases&lt;/li&gt;
-  &lt;li&gt;Autodesk Dynamo3D&lt;/li&gt;
-  &lt;li&gt;Front-end, back-end web development (html-css-js, node.js and related frameworks)&lt;/li&gt;
-  &lt;li&gt;Experience working with docker, Kubernetes and container-based web apps&lt;/li&gt;
-  &lt;li&gt;Rhino3D + Grasshopper&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;whom-to-contact&quot;&gt;Whom to contact&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;mailto:eirannejad@gmail.com?subject=BIM Software Engineer Resume for &amp;lt;put your name here&amp;gt;&quot;&gt;Send your cover letter and resumes here and I’ll forward to the right people&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 10 Jul 2018 11:30:00 -0700</pubDate>
-        <link>http://localhost:4000/pyRevit/tesla/2018/07/10/wanttobimattesla.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/tesla/2018/07/10/wanttobimattesla.html</guid>
-        
-        
-        <category>tesla</category>
         
       </item>
     
@@ -88,8 +38,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 10 Jun 2018 11:30:00 -0700</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</guid>
         
         
         <category>pyrevit</category>
@@ -116,27 +66,27 @@
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A100,S100,E100,M100			General Notes
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pyRevit/images/sheetrange.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/sheetrange.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;copy-sheets-to-open-documents&quot;&gt;Copy Sheets to Open Documents&lt;/h4&gt;
 
 &lt;p&gt;This tool now can copy and set the revisions on the sheets being copied to the destination models as well:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pyRevit/images/copysheetrevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/copysheetrevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;other-misc-updates&quot;&gt;Other Misc Updates&lt;/h4&gt;
 
 &lt;p&gt;Other tools have also been updated to show a list of views instead of relying on view selection in the project browser:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pyRevit/images/selectviewsfromlist.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/selectviewsfromlist.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The revision tools have also been updated to allow setting, unsetting multiple revisions at the same time:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pyRevit/images/selectmultiplerevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/selectmultiplerevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Mar 2018 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</guid>
         
         
         <category>pyrevit</category>
@@ -158,8 +108,8 @@
 &lt;p&gt;:rolling-eyes-emoji:&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Mar 2018 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</guid>
         
         
         <category>pyrevit</category>
@@ -190,11 +140,11 @@
 
 &lt;p&gt; &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/pyRevit/images/finreport20180204.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/finreport20180204.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Feb 2018 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2018/02/04/rewardfortool.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2018/02/04/rewardfortool.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/02/04/rewardfortool.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/02/04/rewardfortool.html</guid>
         
         
         <category>pyrevit</category>
@@ -236,8 +186,8 @@
 &lt;p&gt;pyRevit third-party extension still need to be updated so stay tuned until the developers update those for v4.5 and I’ll add them back ASAP.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jan 2018 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2018/01/01/45final.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2018/01/01/45final.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/01/01/45final.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/01/01/45final.html</guid>
         
         
         <category>pyrevit</category>
@@ -257,8 +207,8 @@
 &lt;p&gt;Download the v4.5-rc installer from &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/download/v4.5-rc/pyRevitSetup-v45rc.exe&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 02 Dec 2017 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2017/12/02/45rc.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2017/12/02/45rc.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/12/02/45rc.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/12/02/45rc.html</guid>
         
         
         <category>pyrevit</category>
@@ -298,7 +248,7 @@
     &lt;p&gt;pyRevit has a new &lt;strong&gt;Rocket mode&lt;/strong&gt;. In this mode, pyRevit runs all the tools in an extension, using a single IronPython engine to increase performance. Currently this feature is experimental &lt;strong&gt;but will be the default pyRevit setting for version 4.6&lt;/strong&gt;. You’ll have the rest of 2017 to revise and adjust your scripts (not many changes)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; have been removed (&lt;a href=&quot;http://localhost:4000/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html&quot;&gt;Read this&lt;/a&gt;). There is a single module for pyRevit now and it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt;. The functionality of &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; modules have been moved inside the main &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt; module. This is related to the changes required to make the &lt;strong&gt;Rocket mode&lt;/strong&gt; work correctly.&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; have been removed (&lt;a href=&quot;https://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html&quot;&gt;Read this&lt;/a&gt;). There is a single module for pyRevit now and it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt;. The functionality of &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; modules have been moved inside the main &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt; module. This is related to the changes required to make the &lt;strong&gt;Rocket mode&lt;/strong&gt; work correctly.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;pyRevit has a new Dynamo compatibility mode. It runs everything under IronPython 2.3.0 which matches the Dynamo IronPython version. You need to test your tools under this mode as well if you want to use it. Everything should be fine but just in case. Watch for &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt; changes specifically if you deal with unicode characters.&lt;/p&gt;
@@ -476,8 +426,8 @@
 &lt;p&gt;Download the v4.5-beta installer from &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/download/v4.5-beta/pyRevitSetup-v45beta.exe&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Nov 2017 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2017/11/08/45beta.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2017/11/08/45beta.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</guid>
         
         
         <category>pyrevit</category>
@@ -496,13 +446,32 @@ I’m done with the changes on pyRevit v4.5-beta but making the video and writin
 &lt;p&gt;Give me two more days and I’ll publish both soon.&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Nov 2017 10:30:00 -0800</pubDate>
-        <link>http://localhost:4000/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</link>
-        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</guid>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</guid>
         
         
         <category>pyrevit</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>pyRevit Library Extensions</title>
+        <description>&lt;p&gt;I have written about the pyRevit library extensions on the pyRevit pages on this blog but this is a video of how to actually setup python libraries that are shared between multiple tools or multiple pyRevit extensions.&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/Z3sFomss6Ks?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 21 Oct 2017 11:30:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions-copy.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions-copy.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>extension</category>
         
       </item>
     
