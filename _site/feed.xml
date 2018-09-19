@@ -6,9 +6,44 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Aug 2018 12:28:40 -0700</pubDate>
-    <lastBuildDate>Sun, 12 Aug 2018 12:28:40 -0700</lastBuildDate>
+    <pubDate>Tue, 18 Sep 2018 22:01:11 -0700</pubDate>
+    <lastBuildDate>Tue, 18 Sep 2018 22:01:11 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Range Divider Revised</title>
+        <description>&lt;h2 id=&quot;fixed-issue-375&quot;&gt;Fixed &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;Issue #375&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Re to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;issue #375&lt;/a&gt;, I have revised the sheet range dividers for &lt;strong&gt;Batch Sheet Maker&lt;/strong&gt; tool to Double-Hyphen &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; and Double-Color &lt;code class=&quot;highlighter-rouge&quot;&gt;::&lt;/code&gt; instead of single ones. This effectively removes the conflict with single hyphen or colon used in sheet numbering (Until someone thinks that using doubles is cool in sheet numbering then we’re in trouble again! :rolling-eyes:)&lt;/p&gt;
+
+&lt;p&gt;So from now on, these are valid single and ranges:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A100    SINGLE SHEET
+PD-100  SINGLE SHEET
+PD100::PD110    SHEET RANGE
+PD100--PD110    SHEET RANGE
+PD-100::PD-110    SHEET RANGE
+PD-100--PD-110    SHEET RANGE
+PD:100::PD:110    SHEET RANGE
+PD:100--PD:110    SHEET RANGE
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hope this helps :)&lt;/p&gt;
+
+&lt;p&gt;Thanks for your continuous support and error reporting. Updating are on the way btw. I’m working on a super cool cli tool for pyrevit that makes your life easier.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Sep 2018 11:30:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/18/issue375.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/18/issue375.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>SSOE (Portland Office) needs BIM Hackers/Software Engineers</title>
@@ -453,25 +488,6 @@ I’m done with the changes on pyRevit v4.5-beta but making the video and writin
         <category>pyrevit</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit Library Extensions</title>
-        <description>&lt;p&gt;I have written about the pyRevit library extensions on the pyRevit pages on this blog but this is a video of how to actually setup python libraries that are shared between multiple tools or multiple pyRevit extensions.&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/Z3sFomss6Ks?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 21 Oct 2017 11:30:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions-copy.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/extension/2017/10/21/libextensions-copy.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>extension</category>
         
       </item>
     
