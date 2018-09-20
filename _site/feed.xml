@@ -6,15 +6,15 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Sep 2018 22:01:11 -0700</pubDate>
-    <lastBuildDate>Tue, 18 Sep 2018 22:01:11 -0700</lastBuildDate>
+    <pubDate>Wed, 19 Sep 2018 20:42:49 -0700</pubDate>
+    <lastBuildDate>Wed, 19 Sep 2018 20:42:49 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Range Divider Revised</title>
         <description>&lt;h2 id=&quot;fixed-issue-375&quot;&gt;Fixed &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;Issue #375&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;Re to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;issue #375&lt;/a&gt;, I have revised the sheet range dividers for &lt;strong&gt;Batch Sheet Maker&lt;/strong&gt; tool to Double-Hyphen &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; and Double-Color &lt;code class=&quot;highlighter-rouge&quot;&gt;::&lt;/code&gt; instead of single ones. This effectively removes the conflict with single hyphen or colon used in sheet numbering (Until someone thinks that using doubles is cool in sheet numbering then we’re in trouble again! :rolling-eyes:)&lt;/p&gt;
+&lt;p&gt;Re to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;issue #375&lt;/a&gt;, I have revised the sheet range dividers for &lt;strong&gt;Batch Sheet Maker&lt;/strong&gt; tool to Double-Hyphen &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; and Double-Colon &lt;code class=&quot;highlighter-rouge&quot;&gt;::&lt;/code&gt; instead of single ones. This effectively removes the conflict with single hyphen or colon used in sheet numbering (Until someone thinks that using doubles is cool in sheet numbering then we’re in trouble again! :rolling-eyes:)&lt;/p&gt;
 
 &lt;p&gt;So from now on, these are valid single and ranges:&lt;/p&gt;
 
@@ -33,6 +33,10 @@ PD:100--PD:110    SHEET RANGE
 &lt;p&gt;Thanks for your continuous support and error reporting. Updating are on the way btw. I’m working on a super cool cli tool for pyrevit that makes your life easier.&lt;/p&gt;
 
 &lt;p&gt;Stay tuned.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Updated: Corrected Double-Color to Double-Colon&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Tue, 18 Sep 2018 11:30:00 -0700</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/18/issue375.html</link>
