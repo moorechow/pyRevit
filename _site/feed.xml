@@ -6,9 +6,40 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Sep 2018 20:42:49 -0700</pubDate>
-    <lastBuildDate>Wed, 19 Sep 2018 20:42:49 -0700</lastBuildDate>
+    <pubDate>Sat, 29 Sep 2018 17:36:44 -0700</pubDate>
+    <lastBuildDate>Sat, 29 Sep 2018 17:36:44 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit is signed!</title>
+        <description>&lt;h3 id=&quot;loaders-are-signed&quot;&gt;Loaders are signed!&lt;/h3&gt;
+
+&lt;p&gt;Thank you for the support. I used some of the money that’s provided by the patrons to buy a code signing license for pyRevit loaders. All loaders are signed (in development branch) and will be available in pyRevit 4.6 that’s coming soon. This means that the pyRevit that you just downloaded and installed, is compiled and signed by me.&lt;/p&gt;
+
+&lt;p&gt;From now on when you’re loading pyRevit for the first time, you’ll see a message like this:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/signedloader2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;And here is a proof of digital signature in file properties:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/signedloader1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 11:30:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/29/signedloaders.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/29/signedloaders.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>Range Divider Revised</title>
@@ -467,26 +498,6 @@ PD:100--PD:110    SHEET RANGE
         <pubDate>Wed, 08 Nov 2017 10:30:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Shhhhh</title>
-        <description>&lt;p&gt;Hey all,
-I’m done with the changes on pyRevit v4.5-beta but making the video and writing the article on the changes is taking longer than expected.&lt;/p&gt;
-
-&lt;p&gt;Basically while writing the article I realized I really need to make a video on this to make it clear. There are not many changes, it’s just that I need to explain some stuff so you understand the reasons better.&lt;/p&gt;
-
-&lt;p&gt;Give me two more days and I’ll publish both soon.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 05 Nov 2017 10:30:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</guid>
         
         
         <category>pyrevit</category>
