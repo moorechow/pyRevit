@@ -6,8 +6,8 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Sep 2018 17:36:44 -0700</pubDate>
-    <lastBuildDate>Sat, 29 Sep 2018 17:36:44 -0700</lastBuildDate>
+    <pubDate>Sat, 29 Sep 2018 17:44:40 -0700</pubDate>
+    <lastBuildDate>Sat, 29 Sep 2018 17:44:40 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -77,27 +77,6 @@ PD:100--PD:110    SHEET RANGE
         <category>pyrevit</category>
         
         <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>SSOE (Portland Office) needs BIM Hackers/Software Engineers</title>
-        <description>&lt;p&gt;To all you BIM hackers (white-hat only) living in this universe…&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ssoe.com&quot;&gt;SSOE, Inc.&lt;/a&gt; is a multi-national full-service architecture and engineering firm that works with an amazing list of very large clients and provides exceptional BIM services. They have an open position for a BIM Software Engineer at their Portland, OR office. &lt;a href=&quot;https://www.linkedin.com/pulse/computer-programmer-software-engineer-wanted-charles-berteaux-iv/&quot;&gt;See here.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-does-a-bim-software-engineer-do&quot;&gt;What does a “BIM Software Engineer” do?&lt;/h3&gt;
-
-&lt;p&gt;She/He improves workflows, saves time &amp;amp; money, increases output quality, by writing custom software with building information (geometric and metadata) in focus. This includes everything from developing add-ons for Autodesk software, 3d scanning of existing construction, working with manufacturing teams, developing team-wide productivity apps, and almost anything you can imagine that is related to buildings, information, and improvements.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Aug 2018 11:30:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/ssoe/job/2018/08/02/wanttobimatssoe.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/ssoe/job/2018/08/02/wanttobimatssoe.html</guid>
-        
-        
-        <category>ssoe</category>
-        
-        <category>job</category>
         
       </item>
     
@@ -498,6 +477,26 @@ PD:100--PD:110    SHEET RANGE
         <pubDate>Wed, 08 Nov 2017 10:30:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Shhhhh</title>
+        <description>&lt;p&gt;Hey all,
+I’m done with the changes on pyRevit v4.5-beta but making the video and writing the article on the changes is taking longer than expected.&lt;/p&gt;
+
+&lt;p&gt;Basically while writing the article I realized I really need to make a video on this to make it clear. There are not many changes, it’s just that I need to explain some stuff so you understand the reasons better.&lt;/p&gt;
+
+&lt;p&gt;Give me two more days and I’ll publish both soon.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Nov 2017 10:30:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</guid>
         
         
         <category>pyrevit</category>
