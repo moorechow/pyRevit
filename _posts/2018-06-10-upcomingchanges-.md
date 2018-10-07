@@ -7,5 +7,5 @@ comments: true
 ---
 
 <div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
-<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="https://www.youtube.com/embed/KfH_ypEJ6oo" frameborder="0" allowfullscreen></iframe>
+<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="" frameborder="0" allowfullscreen></iframe>
 </div>

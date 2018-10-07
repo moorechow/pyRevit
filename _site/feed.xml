@@ -6,9 +6,91 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Sep 2018 17:44:40 -0700</pubDate>
-    <lastBuildDate>Sat, 29 Sep 2018 17:44:40 -0700</lastBuildDate>
+    <pubDate>Sun, 07 Oct 2018 14:36:30 -0700</pubDate>
+    <lastBuildDate>Sun, 07 Oct 2018 14:36:30 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit 4.6 Beta is out!</title>
+        <description>&lt;p&gt;Hey All,
+After much work pyRevit 4.6-beta1 is out. Watch the videos below to get an idea of what is new and what changes need to be made to the code base. There is plenty of information so I’ve divided the videos based on the pyRevit target users. I’ll write a proper article about all the changes when the 4.6 final is published to act as a reference.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;for-basic-users&quot;&gt;For Basic Users&lt;/h4&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/HOGoLHwltSM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h4 id=&quot;for-advanced-users&quot;&gt;For Advanced Users&lt;/h4&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/SGsw_Bbrx0c&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h4 id=&quot;new-pyrevit-cli-tool&quot;&gt;New pyRevit CLI Tool&lt;/h4&gt;
+
+&lt;p&gt;pyRevit CLI tool is a command line tool that helps you manage the pyRevit environment and clones. &lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/releases&quot;&gt;Installers are here&lt;/a&gt;. It’s a project in progress so check periodically for updates.&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/PMc02W-oAo4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 07 Oct 2018 11:40:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/46beta.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/46beta.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
+    
+      <item>
+        <title>pyRevit Distribution Model</title>
+        <description>&lt;h3 id=&quot;the-challenge&quot;&gt;The Challenge&lt;/h3&gt;
+
+&lt;p&gt;Some of you have had a lot of issues getting pyRevit installed on your systems and keeping it updates. In the past 3 months, I’ve done a lot of work to redesign a better way to distribute pyRevit to you.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-new-distribution-model&quot;&gt;The New Distribution Model&lt;/h3&gt;
+
+&lt;p&gt;Prior to 4.6, pyRevit used git as the main distribution method. When I started working on the original pyRevit 4 years ago, I didn’t have much experience with creating installers and the proper distribution models. I also loved the idea of using git to distribute the tools (I still do) but git is hard on windows environment and there is a lot of challenges associated with it.&lt;/p&gt;
+
+&lt;p&gt;pyRevit repository also grew overtime (almost 600MB now) and it doesn’t make sense to push all these content to users that are not planning to use any of the git features.&lt;/p&gt;
+
+&lt;p&gt;Going forward, pyRevit uses new distribution model. The goals are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make it easy for normal users to get pyRevit installed (no git)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make it robust for power-users to manage pyRevit and deploy to their users in their company (pyRevit CLI tool. Using or not using git repositories is completely optional in this method)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this video I’m explaining how the new distribution model works:&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/VZdgrh_US68&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 07 Oct 2018 11:30:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/newdistrib.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/newdistrib.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit is signed!</title>
@@ -83,7 +165,7 @@ PD:100--PD:110    SHEET RANGE
       <item>
         <title>Upcoming Changes</title>
         <description>&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/KfH_ypEJ6oo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 10 Jun 2018 11:30:00 -0700</pubDate>
@@ -258,245 +340,6 @@ PD:100--PD:110    SHEET RANGE
         <pubDate>Sat, 02 Dec 2017 10:30:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/12/02/45rc.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/12/02/45rc.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>SUPER IMPORTANT</title>
-        <description>&lt;p&gt;Whadup whadup whadup!&lt;/p&gt;
-
-&lt;p&gt;Worked really hard this passed two weeks to get pyRevit v4.5-beta ready for y’all. I’m only posting about it here though since this is a beta version and not everyone should install this since it’s a developer test release.&lt;/p&gt;
-
-&lt;p&gt;Watch this video here. I’ll take you through this long article in the video to make it simpler:&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/Szci9_WxDaU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;why-do-i-need-to-install-this&quot;&gt;(Why) Do I need to install this?&lt;/h2&gt;
-
-&lt;p&gt;The purpose of this release is to allow (you) developers to test the new pyRevit core (&lt;a href=&quot;https://www.youtube.com/watch?v=6z_6KmeEc08&quot;&gt;watch this&lt;/a&gt;). There are some changes that might affect your scripts if you have used any of the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; modules from pyRevit.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;IF&lt;/strong&gt; you have developed your own python scripts that run under pyRevit, you need to install this beta version and start modifying and adjusting your scripts.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ELSE IF&lt;/strong&gt; you want to deploy pyRevit in your company DO NOT USE this version since it’s just a beta release. I’ll let you know when v4.5 final release is here.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ELSE&lt;/strong&gt; you don’t develop scripts and want to use the pyRevit standard tools, I’d suggest waiting for the v4.5 final release, although you can install this and test it out. Just don’t get mad if something breaks.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-has-changed&quot;&gt;What has changed?&lt;/h2&gt;
-
-&lt;p&gt;Okay here is a quick list of the major changes. I’ll explain each one in detail:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;pyRevit has a new &lt;strong&gt;Rocket mode&lt;/strong&gt;. In this mode, pyRevit runs all the tools in an extension, using a single IronPython engine to increase performance. Currently this feature is experimental &lt;strong&gt;but will be the default pyRevit setting for version 4.6&lt;/strong&gt;. You’ll have the rest of 2017 to revise and adjust your scripts (not many changes)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; have been removed (&lt;a href=&quot;https://eirannejad.github.io/pyRevit/pyrevit/update/2017/04/01/revitutilsimprovements.html&quot;&gt;Read this&lt;/a&gt;). There is a single module for pyRevit now and it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt;. The functionality of &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; modules have been moved inside the main &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt; module. This is related to the changes required to make the &lt;strong&gt;Rocket mode&lt;/strong&gt; work correctly.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;pyRevit has a new Dynamo compatibility mode. It runs everything under IronPython 2.3.0 which matches the Dynamo IronPython version. You need to test your tools under this mode as well if you want to use it. Everything should be fine but just in case. Watch for &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt; changes specifically if you deal with unicode characters.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;pyRevit does not run IronPython in FullFrame mode anymore. You need to set &lt;code class=&quot;highlighter-rouge&quot;&gt;__fullframeengine__ = True&lt;/code&gt; in your script to request a FullFrame engine for your script. This is usually completely unnecessary unless you’re using complex modules like &lt;code class=&quot;highlighter-rouge&quot;&gt;requests&lt;/code&gt; that require a FullFrame engine&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests&lt;/code&gt; is shipped with pyRevit now.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You can Win+Shift click on pyRevit tools now and it’ll display a context menu with some options. It’ll show useful information about the script and will let you open the help link for the tool (e.g. youtube videos) or copy information about the script to the clipboard.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;This doesn’t affect you but it’s good to know:&lt;/strong&gt; pyRevit used to include all the python standard library in its folder structure under &lt;code class=&quot;highlighter-rouge&quot;&gt;pylib&lt;/code&gt;. Starting with version 4.5 they’ve been moved to a zip file that is attached to the executing IronPython engine and &lt;code class=&quot;highlighter-rouge&quot;&gt;pylib&lt;/code&gt; doesn’t exist anymore. This has two benefits:
-    &lt;ul&gt;
-      &lt;li&gt;One is that it allows pyRevit to switch its IronPython engine easily (e.g. use 2.7.7 or 2.3.0 and include the correct standard library for each engine)&lt;/li&gt;
-      &lt;li&gt;Removing all those files from the installation saves space.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;This also doesn’t affect you but it’s good to know:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;lib&lt;/code&gt; folder inside pyRevit that include third-party modules that I ship with pyRevit, is now renamed to &lt;code class=&quot;highlighter-rouge&quot;&gt;site_packages&lt;/code&gt; to match the standard python folder for third-party packages.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;whats-rocket-mode&quot;&gt;What’s Rocket mode?&lt;/h2&gt;
-
-&lt;p&gt;Let’s talk more about &lt;strong&gt;Rocket mode&lt;/strong&gt; though an example, and I’ll promise it’ll all make sense at the end.&lt;/p&gt;
-
-&lt;h3 id=&quot;why-do-i-need-rocket-mode&quot;&gt;Why do I need Rocket mode?&lt;/h3&gt;
-
-&lt;p&gt;OMG it’s FAST!!!! And also uses less memory.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-do-i-have-to-change-to-make-my-tools-work-under-rocket-mode&quot;&gt;What do I have to change to make my tools work under Rocket mode?&lt;/h3&gt;
-
-&lt;p&gt;Not much. Just don’t use &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;uidoc&lt;/code&gt; globally in your modules. I explain this in detail below. Your scripts are fine since the &lt;code class=&quot;highlighter-rouge&quot;&gt;script.py&lt;/code&gt; in your pyRevit tool is still being executed every time you run the tool. It’s just that if you have modules that are shared between scripts, you need to make sure you’re not using any volatile objects in them globally. This is really a programming best practice and has less to do with the Rocket mode.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-happend-to-scriptutils&quot;&gt;What happend to &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Let’s talk about the more widely used &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; module first.&lt;/p&gt;
-
-&lt;p&gt;For example, here is how you are using the &lt;code class=&quot;highlighter-rouge&quot;&gt;linkify()&lt;/code&gt; method on the pyRevit output:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scriptutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;this_script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some_element_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Rocket mode doesn’t like this. Why? Because &lt;code class=&quot;highlighter-rouge&quot;&gt;this_script&lt;/code&gt; is a python object instance that’s defined globally inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;scriptutils&lt;/code&gt; module so you can import it in your script easily. &lt;code class=&quot;highlighter-rouge&quot;&gt;this_script&lt;/code&gt; represents the currently running script. It provides functionality to support the script running in pyRevit environment like providing information about it or giving access to the output window.&lt;/p&gt;
-
-&lt;p&gt;But Rocket mode shares the IronPython engine with multiple tools and it will keep it in memory so it can run the other tools inside the same engine to speed them up. This means that &lt;code class=&quot;highlighter-rouge&quot;&gt;this_script&lt;/code&gt; will always represent the first script that was executed under the Rocket mode engine and it’ll mess up the behaviour of other tools since it does not represent them!&lt;/p&gt;
-
-&lt;p&gt;The solution is to &lt;strong&gt;not&lt;/strong&gt; have a globally defined instance. So each script needs to ask for an instance of this class, to be able to access the functionality.&lt;/p&gt;
-
-&lt;p&gt;Here is how you would modify the snippet above for the new pyRevit core:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some_element_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;output&lt;/code&gt; object is exactly as it was before. You can still use the same methods for making charts and adjust the window size and whatnot. The only thing that has changed is how you’d ask for this &lt;code class=&quot;highlighter-rouge&quot;&gt;output&lt;/code&gt; object.&lt;/p&gt;
-
-&lt;p&gt;And here is how you need to import other objects from the new &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; module:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# script logger&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# currently:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	from scriptutils import logger&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# in v4.5:&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-
-
-&lt;span class=&quot;c&quot;&gt;# results object to report results for the usage logs&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# currently:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	from scriptutils import this_script&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	this_script.results.timesaved = 10&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# in v4.5:&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timesaved&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
-
-
-
-&lt;span class=&quot;c&quot;&gt;# script configuration&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# currently:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	from scriptutils import this_script&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	this_script.config.somesetting = somevalue&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#	this_script.save_config()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# in v4.5:&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;somesetting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;somevalue&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-
-
-&lt;span class=&quot;c&quot;&gt;# getting script-only data files&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# currently:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	this_script.get_universal_data_file()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# in v4.5:&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;datafile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_universal_data_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-
-
-&lt;span class=&quot;c&quot;&gt;# opening a url in browser&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# currently:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 	from scriptutils import open_url&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#	open_url(url)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# in v4.5:&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;open_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;c&quot;&gt;# info about the script&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyrevit&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;script_info&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;See &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevitlib/pyrevit/script.py&lt;/code&gt; for full functionality. I’m documenting all the core scripts for the v4.5 final release.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-happend-to-revitutils&quot;&gt;What happend to &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Some of you noticed that I had been importing &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;uidoc&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; in my scripts. Well this has radically changed due to the exact same issues with the Rocket mode. I had a global &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; object in &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; module that would remain in memory under the new pyRevit core. This means that if the user closes the current document/model in Revit and opens another one, the &lt;code class=&quot;highlighter-rouge&quot;&gt;doc&lt;/code&gt; object is still pointing to the same document that is closed now and it would break my scripts.&lt;/p&gt;
-
-&lt;p&gt;I have removed the &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt; and moved the functionality inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit&lt;/code&gt; module. You should revise your scripts to use &lt;code class=&quot;highlighter-rouge&quot;&gt;rpw&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;revitutils&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;GENERALLY DONT USE ANY PYREVIT MODULE OTHER THAN &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt;. ALWAYS USE THE &lt;code class=&quot;highlighter-rouge&quot;&gt;rpw&lt;/code&gt; module for anything you need since it’s designed to wrap the Revit API and is also included in pyRevit installation.&lt;/p&gt;
-
-&lt;p&gt;So change this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;revitutils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uidoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UI&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;to this:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rpw&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;revit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UI&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;revit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;doc&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;revit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uidoc&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;what-if-i-dont-want-to-use-the-rocket-mode&quot;&gt;What if I don’t want to use the Rocket mode:&lt;/h3&gt;
-
-&lt;p&gt;You still have to do all the changes above since they’re module changes. If you don’t want to support the Rocket mode you’ve got two ways:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ONE:&lt;/strong&gt; Add this to your script:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;__cleanengine__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This tells pyRevit to run your tool in a clean engine and not a reused engine.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;TWO:&lt;/strong&gt; Set your extension to not-compatible with Rocket mode in your &lt;code class=&quot;highlighter-rouge&quot;&gt;extension.json&lt;/code&gt; file&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rocket_mode_compatible&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;False&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This tells pyRevit that all the tools in this extension are not Rocket mode compatible and they all need to be running in a clean engine.&lt;/p&gt;
-
-&lt;h2 id=&quot;whats-the-deal-about-the-winshift-click&quot;&gt;What’s the deal about the Win+Shift click?&lt;/h2&gt;
-
-&lt;p&gt;Here is how to add a help/youtube link to your tools:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;__helpurl__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'http://link.to.your.help.page.or.youtube.video'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;where-is-the-installer&quot;&gt;Where is the installer?&lt;/h2&gt;
-
-&lt;p&gt;Download the v4.5-beta installer from &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/download/v4.5-beta/pyRevitSetup-v45beta.exe&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Nov 2017 10:30:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/08/45beta.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Shhhhh</title>
-        <description>&lt;p&gt;Hey all,
-I’m done with the changes on pyRevit v4.5-beta but making the video and writing the article on the changes is taking longer than expected.&lt;/p&gt;
-
-&lt;p&gt;Basically while writing the article I realized I really need to make a video on this to make it clear. There are not many changes, it’s just that I need to explain some stuff so you understand the reasons better.&lt;/p&gt;
-
-&lt;p&gt;Give me two more days and I’ll publish both soon.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 05 Nov 2017 10:30:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2017/11/05/Shhhhh.html</guid>
         
         
         <category>pyrevit</category>
