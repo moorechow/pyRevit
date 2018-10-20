@@ -11,7 +11,7 @@ email: eirannejad@gmail.com
 
 # this means to ignore newlines until "baseurl:"
 description: >
-  IronPython scripts for Autodesk Revit
+  Python Rapid-Prototyping Environment for Autodesk Revit®
 
 # the subpath of your site, e.g. /blog
 baseurl: "/pyRevit"
