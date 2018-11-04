@@ -6,9 +6,51 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Oct 2018 19:28:12 -0700</pubDate>
-    <lastBuildDate>Sat, 27 Oct 2018 19:28:12 -0700</lastBuildDate>
+    <pubDate>Sun, 04 Nov 2018 15:04:25 -0800</pubDate>
+    <lastBuildDate>Sun, 04 Nov 2018 15:04:25 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Managing Package and Tags</title>
+        <description>&lt;p&gt;Excisitng new extension for pyRevit:&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/FYNDSAypWlg&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/po0lCldSGmk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 04 Nov 2018 10:40:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/pkgsandtags.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/pkgsandtags.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
+    
+      <item>
+        <title>pyRevit 4.6.5</title>
+        <description>&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/2qfaWGlOG5E&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 04 Nov 2018 10:40:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/465.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/465.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>Hidden Features of Pattern Maker</title>
@@ -263,64 +305,6 @@ PD:100--PD:110    SHEET RANGE
         <pubDate>Sat, 03 Mar 2018 10:30:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Installer Error and Github Security Changes</title>
-        <description>&lt;p&gt;Hey All,&lt;/p&gt;
-
-&lt;p&gt;Github has recently finalized a &lt;a href=&quot;https://blog.github.com/2018-02-23-weak-cryptographic-standards-removed/&quot;&gt;security change&lt;/a&gt; that affects the pyRevit installer among many other Windows apps that connect to Github through WinHTTP (e.g. GitKraken)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in&quot;&gt;Please got to this page&lt;/a&gt; and download the EasyFix installer and install. This is a fix from Microsoft himself. Also please check with your IT before installing this to make sure it doesn’t break anything else.&lt;/p&gt;
-
-&lt;p&gt;After the installation, the pyRevit installer should behave as usual.&lt;/p&gt;
-
-&lt;p&gt;:rolling-eyes-emoji:&lt;/p&gt;
-</description>
-        <pubDate>Thu, 01 Mar 2018 10:30:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/installer/2018/03/01/githubtlschange.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>installer</category>
-        
-      </item>
-    
-      <item>
-        <title>Financial Report and Exciting Announcement</title>
-        <description>&lt;p&gt;Hey All,&lt;/p&gt;
-
-&lt;p&gt;Thank you all for supporting pyRevit especially to all of you who still financially support this project. I’ve opened a proper account for pyRevit with &lt;a href=&quot;https://www.simple.com&quot;&gt;Simple bank&lt;/a&gt; and below is a snapshot of the available funds as of today.&lt;/p&gt;
-
-&lt;h3 id=&quot;pyrevit-rewards-program&quot;&gt;pyRevit Rewards Program&lt;/h3&gt;
-
-&lt;p&gt;So far pyRevit has not used any of these funds but I’m gonna start a rewards program to pay you developers a bit for adding tools and extensions to pyRevit.&lt;/p&gt;
-
-&lt;p&gt;I have never done this before so we’re all gonna figure this out going forwards but for now I thought we can have standard rewards of $10 and $20 (USD) for helping me out making the new tools requested on &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues&quot;&gt;github issue tracker&lt;/a&gt;. I have tagged the issue with their associated rewards.&lt;/p&gt;
-
-&lt;p&gt;I can pay you via &lt;a href=&quot;https://www.paypal.com&quot;&gt;Paypal&lt;/a&gt; or &lt;a href=&quot;https://venmo.com&quot;&gt;Venmo&lt;/a&gt;. They’ve proven to be secure and their reach extends to the farthest corners of this planet. Please suggest any other methods if you know any. pyRevit will cover the transfer costs withing reasonable (?!) range.&lt;/p&gt;
-
-&lt;p&gt;Please don’t treat this as a source of income though. You might think “Well I have a pyRevit extension with 20 tools so 20 x 10 = $200 yeaaaah baby!”. Uhum well don’t be that smart please. Funds are very limited and we’re only replenishing at the speed of $25 a month.&lt;/p&gt;
-
-&lt;p&gt;I’m huge fan of transparency so I’ll also create a page that lists all these contributions and remaining available funds. Everything will be open book but you’ll decide whether your name is listed or to be anonymous.&lt;/p&gt;
-
-&lt;p&gt;Thank you again and keep me posted on your thoughts.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/finreport20180204.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 04 Feb 2018 10:30:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/02/04/rewardfortool.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/02/04/rewardfortool.html</guid>
         
         
         <category>pyrevit</category>
