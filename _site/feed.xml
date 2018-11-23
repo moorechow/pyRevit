@@ -6,9 +6,29 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Nov 2018 12:25:51 -0800</pubDate>
-    <lastBuildDate>Fri, 23 Nov 2018 12:25:51 -0800</lastBuildDate>
+    <pubDate>Fri, 23 Nov 2018 12:47:13 -0800</pubDate>
+    <lastBuildDate>Fri, 23 Nov 2018 12:47:13 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit 4.6.7</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.7 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Please also take a look at the changes from 4.6.5, listed on the page and run a test if you have reported issues and let me know if they were resolved.&lt;/p&gt;
+
+&lt;p&gt;Thank you!&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 23 Nov 2018 10:40:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/23/467.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/23/467.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>Adding Additional Revit Build Numbers</title>
@@ -281,23 +301,6 @@ PD:100--PD:110    SHEET RANGE
         <category>pyrevit</category>
         
         <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>Upcoming Changes</title>
-        <description>&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 10 Jun 2018 11:30:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
         
       </item>
     
