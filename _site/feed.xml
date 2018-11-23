@@ -6,9 +6,44 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Nov 2018 20:23:26 -0800</pubDate>
-    <lastBuildDate>Mon, 05 Nov 2018 20:23:26 -0800</lastBuildDate>
+    <pubDate>Fri, 23 Nov 2018 10:14:36 -0800</pubDate>
+    <lastBuildDate>Fri, 23 Nov 2018 10:14:36 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Adding Additional Revit Build Numbers</title>
+        <description>&lt;p&gt;Hey all pyRevit fans,&lt;/p&gt;
+
+&lt;p&gt;As you might have seen in the videos and the new installations, pyRevit has a CLI tool that helps in installation and management of pyRevit clones on your machines. This tool is capable of recognizing installed Revit versions and attaching pyRevit to them. There are however specific Revit versions out there with build numbers that are not published by Autodesk yet and it makes it hard for pyRevit to know what exact Revit version it is dealing with. I and the pyRevit contributers have built as much as these build numbers as we could in the code but I’m sure we’re still missing a few.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/blob/master/pyRevitLabs/pyRevitLabs.TargetApps.Revit/RevitController.cs#L230&quot;&gt;Please take a look at the listed build numbers here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let us know if your Revit build number is missing and it will be added to the code as well.&lt;/p&gt;
+
+&lt;p&gt;Prepare your Revit info in this format (You can grab this info from Revit About window):&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;complete build number&amp;gt;, &amp;lt;complete version number&amp;gt;, &amp;lt;complete version name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;20170816_0615, 17.0.1146.0, 2017.2.2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and add to the &lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/issues/8&quot;&gt;comments on this issue&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for the support&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Nov 2018 10:10:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+        <category>cli</category>
+        
+      </item>
     
       <item>
         <title>Managing Package and Tags</title>
@@ -258,53 +293,6 @@ PD:100--PD:110    SHEET RANGE
         <pubDate>Sun, 10 Jun 2018 11:30:00 -0700</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/06/10/upcomingchanges.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Updates report</title>
-        <description>&lt;p&gt;Here is a list of most recent updates on pyRevit tools:&lt;/p&gt;
-
-&lt;h4 id=&quot;batch-sheet-maker&quot;&gt;Batch Sheet Maker&lt;/h4&gt;
-
-&lt;p&gt;Batch sheet maker now lets you create a range or list of sheets with the same sheet name very easily.&lt;/p&gt;
-
-&lt;p&gt;This example will create a range of sheets (A102 to A108) in the current model:&lt;/p&gt;
-
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A102:A108			Sheet Name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also list specific sheet numbers that use the same sheet name. This example creates sheets A100, S100, E100, and M100 all with the same sheet name:&lt;/p&gt;
-
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A100,S100,E100,M100			General Notes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/sheetrange.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;copy-sheets-to-open-documents&quot;&gt;Copy Sheets to Open Documents&lt;/h4&gt;
-
-&lt;p&gt;This tool now can copy and set the revisions on the sheets being copied to the destination models as well:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/copysheetrevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;other-misc-updates&quot;&gt;Other Misc Updates&lt;/h4&gt;
-
-&lt;p&gt;Other tools have also been updated to show a list of views instead of relying on view selection in the project browser:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/selectviewsfromlist.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The revision tools have also been updated to allow setting, unsetting multiple revisions at the same time:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/selectmultiplerevisions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 03 Mar 2018 10:30:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/update/2018/03/03/sheetrangeupdate.html</guid>
         
         
         <category>pyrevit</category>
