@@ -6,9 +6,29 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Nov 2018 12:47:13 -0800</pubDate>
-    <lastBuildDate>Fri, 23 Nov 2018 12:47:13 -0800</lastBuildDate>
+    <pubDate>Sat, 24 Nov 2018 10:00:05 -0800</pubDate>
+    <lastBuildDate>Sat, 24 Nov 2018 10:00:05 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit 4.6.8</title>
+        <description>&lt;p&gt;I pushed a piece of test code in pyRevit 4.6.7 that wasn’t supposed to be there. Oh well I guess I had too much foor for thanksgiving, hahahaaa.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.8 is out and is fixed. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you and sorry if this caused any inconveniences.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 24 Nov 2018 09:10:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/24/468.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/24/468.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.7</title>
@@ -257,45 +277,6 @@ After much work pyRevit 4.6-beta1 is out. Watch the videos below to get an idea 
         <pubDate>Sat, 29 Sep 2018 11:30:00 -0700</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/29/signedloaders.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/29/signedloaders.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>Range Divider Revised</title>
-        <description>&lt;h2 id=&quot;fixed-issue-375&quot;&gt;Fixed &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;Issue #375&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Re to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/375&quot;&gt;issue #375&lt;/a&gt;, I have revised the sheet range dividers for &lt;strong&gt;Batch Sheet Maker&lt;/strong&gt; tool to Double-Hyphen &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; and Double-Colon &lt;code class=&quot;highlighter-rouge&quot;&gt;::&lt;/code&gt; instead of single ones. This effectively removes the conflict with single hyphen or colon used in sheet numbering (Until someone thinks that using doubles is cool in sheet numbering then we’re in trouble again! :rolling-eyes:)&lt;/p&gt;
-
-&lt;p&gt;So from now on, these are valid single and ranges:&lt;/p&gt;
-
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A100    SINGLE SHEET
-PD-100  SINGLE SHEET
-PD100::PD110    SHEET RANGE
-PD100--PD110    SHEET RANGE
-PD-100::PD-110    SHEET RANGE
-PD-100--PD-110    SHEET RANGE
-PD:100::PD:110    SHEET RANGE
-PD:100--PD:110    SHEET RANGE
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Hope this helps :)&lt;/p&gt;
-
-&lt;p&gt;Thanks for your continuous support and error reporting. Updating are on the way btw. I’m working on a super cool cli tool for pyrevit that makes your life easier.&lt;/p&gt;
-
-&lt;p&gt;Stay tuned.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Updated: Corrected Double-Color to Double-Colon&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 18 Sep 2018 11:30:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/18/issue375.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/18/issue375.html</guid>
         
         
         <category>pyrevit</category>
