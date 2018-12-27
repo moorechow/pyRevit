@@ -11,7 +11,7 @@ email: eirannejad@gmail.com
 
 # this means to ignore newlines until "baseurl:"
 description: >
-  Python Rapid-Prototyping Environment for Autodesk Revit®
+  python Rapid Application Development (RAD) Environment for Autodesk Revit®
 
 # the subpath of your site, e.g. /blog
 baseurl: "/pyRevit"
