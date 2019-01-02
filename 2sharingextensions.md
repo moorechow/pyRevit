@@ -21,3 +21,8 @@ Then send me an email with the link and I'll add that to the list of standard ex
 - Author's online profile url
 - Website url (Optional)
 - Extension icon/logo url (Optional, PNG file)
+- Is it compatible with Rocket-Mode?
+- Does it have any dependencies?
+
+
+This information will be stored in [this json file](https://github.com/eirannejad/pyRevit/blob/master/extensions/extensions.json) and is used by the extension manager or pyRevit CLI to find information about your extension and install on user machine.

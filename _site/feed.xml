@@ -4,10 +4,10 @@
     <title>pyRevit blog</title>
     <description>python Rapid Application Development (RAD) Environment for Autodesk Revit®
 </description>
-    <link>https://eirannejad.github.io/pyRevit/</link>
-    <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Jan 2019 16:27:29 -0800</pubDate>
-    <lastBuildDate>Tue, 01 Jan 2019 16:27:29 -0800</lastBuildDate>
+    <link>http://localhost:4000/pyRevit/</link>
+    <atom:link href="http://localhost:4000/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 01 Jan 2019 16:31:25 -0800</pubDate>
+    <lastBuildDate>Tue, 01 Jan 2019 16:31:25 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -21,8 +21,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 01 Jan 2019 10:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/01/469.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/01/469.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2019/01/01/469.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2019/01/01/469.html</guid>
         
         
         <category>pyrevit</category>
@@ -40,8 +40,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 
 </description>
         <pubDate>Tue, 01 Jan 2019 09:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</guid>
         
         
         <category>pyrevit</category>
@@ -60,8 +60,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 
 </description>
         <pubDate>Sat, 24 Nov 2018 09:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/24/468.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/24/468.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/11/24/468.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/11/24/468.html</guid>
         
         
         <category>pyrevit</category>
@@ -80,8 +80,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 
 </description>
         <pubDate>Fri, 23 Nov 2018 10:40:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/23/467.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/23/467.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/11/23/467.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/11/23/467.html</guid>
         
         
         <category>pyrevit</category>
@@ -113,8 +113,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 &lt;p&gt;Thanks for the support&lt;/p&gt;
 </description>
         <pubDate>Fri, 23 Nov 2018 10:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</guid>
         
         
         <category>pyrevit</category>
@@ -140,8 +140,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 04 Nov 2018 10:40:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/pkgsandtags.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/pkgsandtags.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/11/04/pkgsandtags.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/11/04/pkgsandtags.html</guid>
         
         
         <category>pyrevit</category>
@@ -157,8 +157,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 04 Nov 2018 10:40:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/465.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/04/465.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/11/04/465.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/11/04/465.html</guid>
         
         
         <category>pyrevit</category>
@@ -182,8 +182,8 @@ For many years I have been using Disqus as the commenting platform for users to 
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 14 Oct 2018 11:40:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/14/patmakerhiddenfeatures.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/14/patmakerhiddenfeatures.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/10/14/patmakerhiddenfeatures.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/10/14/patmakerhiddenfeatures.html</guid>
         
         
         <category>pyrevit</category>
@@ -202,8 +202,8 @@ pyRevit 4.6 beta 2 is out and has a series of fixes and improvements:&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 14 Oct 2018 11:30:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/14/46beta2.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/14/46beta2.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/10/14/46beta2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/10/14/46beta2.html</guid>
         
         
         <category>pyrevit</category>
@@ -244,8 +244,8 @@ After much work pyRevit 4.6-beta1 is out. Watch the videos below to get an idea 
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 07 Oct 2018 11:40:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/46beta.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/46beta.html</guid>
+        <link>http://localhost:4000/pyRevit/pyrevit/updates/2018/10/07/46beta.html</link>
+        <guid isPermaLink="true">http://localhost:4000/pyRevit/pyrevit/updates/2018/10/07/46beta.html</guid>
         
         
         <category>pyrevit</category>
