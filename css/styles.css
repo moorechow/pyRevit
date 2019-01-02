@@ -190,7 +190,19 @@ header ul {
   border:1px solid #e9e9e9;
 }
 
-header li {
+header ul.mainpyrevit li {
+  width:78px;
+  float:left;
+  text-align: center;
+  border-right:1px solid #e9e9e9;
+  height:40px;
+}
+
+header ul.maincli {
+  border:1px solid #e9e9e9;
+}
+
+header ul.maincli li {
   width:118px;
   float:left;
   text-align: center;
@@ -198,12 +210,11 @@ header li {
   height:40px;
 }
 
-header li:first-child {
+header ul li:first-child {
   border-radius:5px 0 0 5px;
 }
 
-header li:last-child {
-  border-radius:0 5px 5px 0;
+header ul li:last-child {
   border-right:none;
 }
 

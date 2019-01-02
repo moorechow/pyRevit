@@ -6,9 +6,28 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Dec 2018 22:56:36 -0800</pubDate>
-    <lastBuildDate>Wed, 26 Dec 2018 22:56:36 -0800</lastBuildDate>
+    <pubDate>Tue, 01 Jan 2019 16:07:02 -0800</pubDate>
+    <lastBuildDate>Tue, 01 Jan 2019 16:07:02 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Retiring Disqus</title>
+        <description>&lt;p&gt;Hey all,
+For many years I have been using Disqus as the commenting platform for users to be able to leave comments on these blog posts. But in order to simplify my life a little and focus all communications and issue reporting to the github issue tracker, I’ve removed Disqus and placed links on the side panel to the issue trackers for both pyRevit and pyRevit CLI instead. I’ll add more issue templates to the github repo so please direct all questions and issue reporting there. This also has the addet benefit of faster blog page loads since Disqus communicates with many other social media platforms in the background.&lt;/p&gt;
+
+&lt;p&gt;Thanks a lot!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 01 Jan 2019 09:10:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.8</title>
@@ -246,37 +265,6 @@ After much work pyRevit 4.6-beta1 is out. Watch the videos below to get an idea 
         <pubDate>Sun, 07 Oct 2018 11:30:00 -0700</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/newdistrib.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/newdistrib.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit is signed!</title>
-        <description>&lt;h3 id=&quot;loaders-are-signed&quot;&gt;Loaders are signed!&lt;/h3&gt;
-
-&lt;p&gt;Thank you for the support. I used some of the money that’s provided by the patrons to buy a code signing license for pyRevit loaders. All loaders are signed (in development branch) and will be available in pyRevit 4.6 that’s coming soon. This means that the pyRevit that you just downloaded and installed, is compiled and signed by me.&lt;/p&gt;
-
-&lt;p&gt;From now on when you’re loading pyRevit for the first time, you’ll see a message like this:&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/signedloader2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;And here is a proof of digital signature in file properties:&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/signedloader1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Sep 2018 11:30:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/29/signedloaders.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/09/29/signedloaders.html</guid>
         
         
         <category>pyrevit</category>
