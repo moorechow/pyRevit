@@ -6,9 +6,34 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Jan 2019 18:34:09 -0800</pubDate>
-    <lastBuildDate>Sat, 05 Jan 2019 18:34:09 -0800</lastBuildDate>
+    <pubDate>Wed, 09 Jan 2019 22:50:41 -0800</pubDate>
+    <lastBuildDate>Wed, 09 Jan 2019 22:50:41 -0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>pyRevit 4.6.10</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.10 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As always, each new pyRevit version also includes the pyRevit CLI updates which for this release is CLI v0.2.18&lt;/p&gt;
+
+&lt;p&gt;Numerous issues and bugs were resolved, especifically for the new Keynote Manager beta. Per &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/465&quot;&gt;Issue #465&lt;/a&gt; request, the keynote manager now shows the # of times each keynote has been referenced in the project. Full list release notes are listed on the &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;Releases&lt;/a&gt; page page.&lt;/p&gt;
+
+&lt;p&gt;In addition, The import mechanism now supports both UTF-8 and UTF-16 text files.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanagerrefcount.png&quot; alt=&quot;KManagerRefCount&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Jan 2019 10:10:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/09/4610.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/09/4610.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.9</title>
@@ -204,48 +229,6 @@ pyRevit 4.6 beta 2 is out and has a series of fixes and improvements:&lt;/p&gt;
         <pubDate>Sun, 14 Oct 2018 11:30:00 -0700</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/14/46beta2.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/14/46beta2.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6 Beta is out!</title>
-        <description>&lt;p&gt;Hey All,
-After much work pyRevit 4.6-beta1 is out. Watch the videos below to get an idea of what is new and what changes need to be made to the code base. There is plenty of information so I’ve divided the videos based on the pyRevit target users. I’ll write a proper article about all the changes when the 4.6 final is published to act as a reference.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;for-basic-users&quot;&gt;For Basic Users&lt;/h4&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/HOGoLHwltSM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h4 id=&quot;for-advanced-users&quot;&gt;For Advanced Users&lt;/h4&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/SGsw_Bbrx0c&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h4 id=&quot;new-pyrevit-cli-tool&quot;&gt;New pyRevit CLI Tool&lt;/h4&gt;
-
-&lt;p&gt;pyRevit CLI tool is a command line tool that helps you manage the pyRevit environment and clones. &lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/releases&quot;&gt;Installers are here&lt;/a&gt;. It’s a project in progress so check periodically for updates.&lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/PMc02W-oAo4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 07 Oct 2018 11:40:00 -0700</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/46beta.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/10/07/46beta.html</guid>
         
         
         <category>pyrevit</category>
