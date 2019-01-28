@@ -6,9 +6,32 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Jan 2019 20:23:12 -0800</pubDate>
-    <lastBuildDate>Mon, 21 Jan 2019 20:23:12 -0800</lastBuildDate>
+    <pubDate>Mon, 28 Jan 2019 15:01:33 -0800</pubDate>
+    <lastBuildDate>Mon, 28 Jan 2019 15:01:33 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.13 (CLI 0.9.0)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.13 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As always, each new pyRevit version also includes the pyRevit CLI updates which for this release is CLI v0.9.0. Installer is provided on the same path.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/tc3W9zrGR6s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 28 Jan 2019 11:00:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/28/4613.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/28/4613.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.12 (CLI 0.6.0)</title>
@@ -479,41 +502,6 @@ For many years I have been using Disqus as the commenting platform for users to 
         <category>pyrevit</category>
         
         <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>Adding Additional Revit Build Numbers</title>
-        <description>&lt;p&gt;Hey all pyRevit fans,&lt;/p&gt;
-
-&lt;p&gt;As you might have seen in the videos and the new installations, pyRevit has a CLI tool that helps in installation and management of pyRevit clones on your machines. This tool is capable of recognizing installed Revit versions and attaching pyRevit to them. There are however specific Revit versions out there with build numbers that are not published by Autodesk yet and it makes it hard for pyRevit to know what exact Revit version it is dealing with. I and the pyRevit contributers have built as much as these build numbers as we could in the code but I’m sure we’re still missing a few.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/blob/master/pyRevitLabs/pyRevitLabs.TargetApps.Revit/RevitController.cs#L230&quot;&gt;Please take a look at the listed build numbers here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Let us know if your Revit build number is missing and it will be added to the code as well.&lt;/p&gt;
-
-&lt;p&gt;Prepare your Revit info in this format (You can grab this info from Revit About window):&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;complete build number&amp;gt;, &amp;lt;complete version number&amp;gt;, &amp;lt;complete version name&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;20170816_0615, 17.0.1146.0, 2017.2.2&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and add to the &lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/issues/8&quot;&gt;comments on this issue&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Thanks for the support&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Nov 2018 10:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/cli/2018/11/23/revitbuildnumbers.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-        <category>cli</category>
         
       </item>
     
