@@ -6,8 +6,8 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Feb 2019 08:28:00 -0800</pubDate>
-    <lastBuildDate>Sat, 02 Feb 2019 08:28:00 -0800</lastBuildDate>
+    <pubDate>Sat, 02 Feb 2019 08:46:59 -0800</pubDate>
+    <lastBuildDate>Sat, 02 Feb 2019 08:46:59 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -91,7 +91,7 @@
         <title>BasicFileInfo &amp; PartAtom</title>
         <description>&lt;h1 id=&quot;basicfileinfo-stream&quot;&gt;BasicFileInfo Stream&lt;/h1&gt;
 
-&lt;p&gt;As many of you might now, Revit files are &lt;a href=&quot;https://en.wikipedia.org/wiki/COM_Structured_Storage&quot;&gt;Structured Storage&lt;/a&gt; files (which is basically like a bundled file system) and have multiple data streams (files?) written inside this bundle.&lt;/p&gt;
+&lt;p&gt;As many of you might know, Revit files are &lt;a href=&quot;https://en.wikipedia.org/wiki/COM_Structured_Storage&quot;&gt;Structured Storage&lt;/a&gt; files (which is basically like a bundled file system) and have multiple data streams (files?) written inside this bundle.&lt;/p&gt;
 
 &lt;p&gt;You can use an application like &lt;a href=&quot;http://www.mitec.cz/ssv.html&quot;&gt;SSView&lt;/a&gt; to peek into this file structure&lt;/p&gt;
 

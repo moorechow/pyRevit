@@ -8,7 +8,7 @@ comments: true
 
 # BasicFileInfo Stream
 
-As many of you might now, Revit files are [Structured Storage](https://en.wikipedia.org/wiki/COM_Structured_Storage) files (which is basically like a bundled file system) and have multiple data streams (files?) written inside this bundle.
+As many of you might know, Revit files are [Structured Storage](https://en.wikipedia.org/wiki/COM_Structured_Storage) files (which is basically like a bundled file system) and have multiple data streams (files?) written inside this bundle.
 
 You can use an application like [SSView](http://www.mitec.cz/ssv.html) to peek into this file structure
 
