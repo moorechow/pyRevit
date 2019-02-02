@@ -6,9 +6,46 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Feb 2019 06:35:35 -0800</pubDate>
-    <lastBuildDate>Fri, 01 Feb 2019 06:35:35 -0800</lastBuildDate>
+    <pubDate>Sat, 02 Feb 2019 08:28:00 -0800</pubDate>
+    <lastBuildDate>Sat, 02 Feb 2019 08:28:00 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.14</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.14 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a new tool courtesy of &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/498&quot;&gt;Robbo1234&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Match Paint&lt;/strong&gt; can match the surface paints between geometries.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/matchpaint.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;I closed a series of issues in this release as well. There has been a good set of updates to the tools for finding unreferenced and unsheeted views. The new interface is simpler to user and has more options.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/findreferringviews.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/queryreferencing.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Feb 2019 08:00:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/02/4614.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/02/4614.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.13 (CLI 0.9.0)</title>
@@ -477,26 +514,6 @@ For many years I have been using Disqus as the commenting platform for users to 
         <pubDate>Sat, 24 Nov 2018 09:10:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/24/468.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/24/468.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.7</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.7 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Please also take a look at the changes from 4.6.5, listed on the page and run a test if you have reported issues and let me know if they were resolved.&lt;/p&gt;
-
-&lt;p&gt;Thank you!&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 23 Nov 2018 10:40:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/23/467.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2018/11/23/467.html</guid>
         
         
         <category>pyrevit</category>
