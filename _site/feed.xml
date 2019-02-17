@@ -6,9 +6,49 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Feb 2019 23:32:31 -0800</pubDate>
-    <lastBuildDate>Fri, 08 Feb 2019 23:32:31 -0800</lastBuildDate>
+    <pubDate>Sat, 16 Feb 2019 16:07:05 -0800</pubDate>
+    <lastBuildDate>Sat, 16 Feb 2019 16:07:05 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.7.0-beta (Finally CPython!!!)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.7.0-beta is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A new version of the pyRevit CLI (v0.12.0.0) is included as usual.&lt;/p&gt;
+
+&lt;h4 id=&quot;new-features&quot;&gt;New Features&lt;/h4&gt;
+
+&lt;p&gt;Watch the video below for an introduction to the new features.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cpython Execution Engine
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/blob/develop/extensions/pyRevitDevTools.extension/pyRevitDev.tab/Debug.panel/Misc%20Tests.pulldown/Test%20CPython%20Command.pushbutton/script.py&quot;&gt;See This Example Script&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;pyRevit &lt;strong&gt;Run&lt;/strong&gt; Extensions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/jU16j99JRtc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <pubDate>Sat, 16 Feb 2019 08:00:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/cpython/2019/02/16/47beta.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/cpython/2019/02/16/47beta.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+        <category>cpython</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.15</title>
@@ -499,25 +539,6 @@ Document Increment: 1
         <category>pyrevit</category>
         
         <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>Retiring Disqus</title>
-        <description>&lt;p&gt;Hey all,
-For many years I have been using Disqus as the commenting platform for users to be able to leave comments on these blog posts. But in order to simplify my life a little and focus all communications and issue reporting to the github issue tracker, I’ve removed Disqus and placed links on the side panel to the issue trackers for both pyRevit and pyRevit CLI instead. I’ll add more issue templates to the github repo so please direct all questions and issue reporting there. This also has the addet benefit of faster blog page loads since Disqus communicates with many other social media platforms in the background.&lt;/p&gt;
-
-&lt;p&gt;Thanks a lot!&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 01 Jan 2019 09:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/blog/2019/01/01/disablingcomments.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>blog</category>
         
       </item>
     
