@@ -6,8 +6,8 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Feb 2019 19:29:02 -0800</pubDate>
-    <lastBuildDate>Mon, 25 Feb 2019 19:29:02 -0800</lastBuildDate>
+    <pubDate>Mon, 25 Feb 2019 21:23:19 -0800</pubDate>
+    <lastBuildDate>Mon, 25 Feb 2019 21:23:19 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -19,7 +19,7 @@
 &lt;p&gt;This version includes a few improvements to the Keynote Manager.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Unused keynotes are not shown as gray (users rightfully commented that they look like they are disabled). Used keynotes are shown with darker font now.&lt;/li&gt;
+  &lt;li&gt;Unused keynotes are not shown as gray (users rightfully commented that they look like they are disabled. &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/529&quot;&gt;See conversation here&lt;/a&gt;). Instead, used keynotes are shown with darker font now.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt; &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The filter button now includes an option for filtering keynotes using Regular Expressions&lt;/li&gt;
+  &lt;li&gt;The filter button now includes an option for filtering keynotes using &lt;a href=&quot;https://regexr.com&quot;&gt;Regular Expressions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;/p&gt;
