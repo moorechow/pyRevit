@@ -6,9 +6,112 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Feb 2019 21:23:19 -0800</pubDate>
-    <lastBuildDate>Mon, 25 Feb 2019 21:23:19 -0800</lastBuildDate>
+    <pubDate>Sat, 02 Mar 2019 10:50:39 -0800</pubDate>
+    <lastBuildDate>Sat, 02 Mar 2019 10:50:39 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.17</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.17 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/tag/v4.6.17&quot;&gt;See full release notes here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;keynote-manager-improvements&quot;&gt;Keynote Manager Improvements&lt;/h4&gt;
+
+&lt;p&gt;This version includes a series of improvements to the Keynote Manager and a few to other tools.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Re &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/529&quot;&gt;Issue 529&lt;/a&gt; Keynote manager now sorts keynotes using an alphanumeric system. This sorting is based on the keynote key and not the keynote contents.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-alphasorting.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The reference count symbol has been adjusted to be less prominent. The tooltip now includes a list of referencing views as well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-refcount.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The keyntoe type selector has been adjusted for less clicks and ease of switching&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-knotetypes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Small adjustment is made to the edit keynote window. The two ‘Reserved’ and ‘Not used’ buttons were replaced with a templates button. This system allows templates for keynote in the near future.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-knotetemplatesbutton.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-knotetemplates.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Filters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A series of new filters have been added to the filtering system as well.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Filtering keynotes by visible in active view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kamnager-filterviews.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Regular expression filter has been expanded to support CSI MasterFormat search (both inclusive and exclusive). This filter uses the previously release regex filter option to filter for keynotes that include any CSI MasterFormat division number. When filter is active you can see the regex pattern used for the search in filter box.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-csifilter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Inclusive regex filter (lists any keynote matching the filter)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-regexnew.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Exclusive regex filter (lists any keynote NOT matching the filter)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanager-regexnot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h4 id=&quot;misc-improvements&quot;&gt;Misc Improvements&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Manage Packages&lt;/strong&gt; tool now supports sheet ordering index parameters. The parameter needs to be of type &lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt; and applied to sheets. The package manager automatically detects such parameters and will activate the new sorting option if finds any matches.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/pkgmgr-sortparam.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/pkgmgr-sortparamdef.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Mar 2019 08:00:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/03/02/4617.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/03/02/4617.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.16</title>
@@ -545,31 +648,6 @@ Document Increment: 1
         <pubDate>Sat, 12 Jan 2019 10:10:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/4611.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/4611.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.10</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.10 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As always, each new pyRevit version also includes the pyRevit CLI updates which for this release is CLI v0.2.18&lt;/p&gt;
-
-&lt;p&gt;Numerous issues and bugs were resolved, especifically for the new Keynote Manager beta. Per &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/465&quot;&gt;Issue #465&lt;/a&gt; request, the keynote manager now shows the # of times each keynote has been referenced in the project. Full list release notes are listed on the &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;Releases&lt;/a&gt; page page.&lt;/p&gt;
-
-&lt;p&gt;In addition, The import mechanism now supports both UTF-8 and UTF-16 text files.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/kmanagerrefcount.png&quot; alt=&quot;KManagerRefCount&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 09 Jan 2019 10:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/09/4610.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/09/4610.html</guid>
         
         
         <category>pyrevit</category>
