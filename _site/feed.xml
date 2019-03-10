@@ -6,9 +6,43 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Mar 2019 10:30:22 -0800</pubDate>
-    <lastBuildDate>Mon, 04 Mar 2019 10:30:22 -0800</lastBuildDate>
+    <pubDate>Sat, 09 Mar 2019 16:40:56 -0800</pubDate>
+    <lastBuildDate>Sat, 09 Mar 2019 16:40:56 -0800</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.18 (CLI 0.9.6)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.18 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/tag/v4.6.18&quot;&gt;See full release notes here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;make-pattern&quot;&gt;Make Pattern&lt;/h4&gt;
+
+&lt;p&gt;The Make Pattern tool now has Rotation and Mirroring options (can be used incombination and with Scaling). This will give you more flexibility for editing existing patterns into various rotations and sizes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/mpattern-rotation.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h4 id=&quot;convert-line-styles&quot;&gt;Convert Line Styles&lt;/h4&gt;
+
+&lt;p&gt;The Convert Line Styles tool has been updated for a better user interface and more options. The tool is pretty straight forward to use. One thing to note is that the conversions list shows a tree structure with the target style as the parent, since multiple source styles can be converted to a target style in one move.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/convlinestyles.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Mar 2019 08:00:00 -0800</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/03/09/4618.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/03/09/4618.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.17</title>
@@ -622,32 +656,6 @@ Document Increment: 1
         <pubDate>Sat, 12 Jan 2019 10:10:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/pyrevitlabsmerge.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/pyrevitlabsmerge.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.11</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.11 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is an update to support the new functionality added in CLI 0.3.0&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevitLabs/blob/master/README_CLI.md#cli-execution-of-python-scripts&quot;&gt;See the updated help on this new functionality here&lt;/a&gt;. The video is shared below.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/_HldsaHA8i8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Sat, 12 Jan 2019 10:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/4611.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/4611.html</guid>
         
         
         <category>pyrevit</category>
