@@ -6,9 +6,26 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Mar 2019 16:40:56 -0800</pubDate>
-    <lastBuildDate>Sat, 09 Mar 2019 16:40:56 -0800</lastBuildDate>
+    <pubDate>Sun, 17 Mar 2019 12:55:17 -0700</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2019 12:55:17 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.19 (CLI 0.7.6)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.19 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/tag/v4.6.19&quot;&gt;See full release notes here&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Mar 2019 09:00:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/03/17/4619.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/03/17/4619.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.18 (CLI 0.9.6)</title>
@@ -633,29 +650,6 @@ Document Increment: 1
         <pubDate>Sat, 19 Jan 2019 10:00:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/19/basicfileinfo.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/19/basicfileinfo.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevitLabs Merge</title>
-        <description>&lt;p&gt;Long time ago, when I started the effort to revise some core functionality in pyRevit and increase code sharing and performance, I decided to start a private repository named &lt;code class=&quot;highlighter-rouge&quot;&gt;pyRevitLabs&lt;/code&gt;. As you might know this is a C# only repo that build many of the libraries that are shared between pyRevit and the CLI tool. The repo was finally made public this year with the release of the CLI tool. Now that the pyRevitLabs is matured, it is time for me to finally merge pyRevitLabs into pyRevit.&lt;/p&gt;
-
-&lt;p&gt;Previously pyRevit was being installed as a git repository and was already a fairly large repo. It did not make sense to add more content to it and increase the install size. But now, the modern pyRevit is being deployed as a package (no git repo) the size is much smaller and I have granular control over what content to include in each package. It’s faily easy now to add the pyRevitLabs to pyRevit repo &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;After the merge, both pyRevit and pyRevit CLI installers will be available at the same link which is a lot easier for end-users.&lt;/p&gt;
-
-&lt;p&gt;If you have a clone of the pyRevitLabs please watch for this change soon. The &lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit help&lt;/code&gt; link in the older CLI versions will break obviously (&lt;code class=&quot;highlighter-rouge&quot;&gt;pyrevit --help&lt;/code&gt; still works) but it will be replaced with a more forward-dependable link in the new version.&lt;/p&gt;
-
-&lt;p&gt;I’ll update you again when merge is complete.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 12 Jan 2019 10:10:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/pyrevitlabsmerge.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/12/pyrevitlabsmerge.html</guid>
         
         
         <category>pyrevit</category>
