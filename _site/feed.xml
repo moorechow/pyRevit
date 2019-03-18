@@ -6,12 +6,12 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Mar 2019 12:55:17 -0700</pubDate>
-    <lastBuildDate>Sun, 17 Mar 2019 12:55:17 -0700</lastBuildDate>
+    <pubDate>Sun, 17 Mar 2019 19:58:09 -0700</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2019 19:58:09 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
-        <title>pyRevit 4.6.19 (CLI 0.7.6)</title>
+        <title>pyRevit 4.6.19 (CLI 0.9.7)</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.19 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/tag/v4.6.19&quot;&gt;See full release notes here&lt;/a&gt;&lt;/p&gt;
