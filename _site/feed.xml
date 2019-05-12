@@ -6,9 +6,38 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 May 2019 10:16:28 -0700</pubDate>
-    <lastBuildDate>Sat, 11 May 2019 10:16:28 -0700</lastBuildDate>
+    <pubDate>Sun, 12 May 2019 12:33:06 -0700</pubDate>
+    <lastBuildDate>Sun, 12 May 2019 12:33:06 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.20 (CLI 0.9.8)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.20 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I mentioned in the previous post this is the final version of pyRevit v4.6&lt;/p&gt;
+
+&lt;p&gt;Here is the thing though: As I started planning features and improvements for the v4.7, I realized I need to do a lot of code cleanups and simplification in the process that is going to break more than a few APIs. There are part of the pyRevit code that are ancient and poorly designed and I don’t want to build the next pyRevit on top of them. They need to get fixed and this is the time.&lt;/p&gt;
+
+&lt;p&gt;So plans for v4.7 is going to merge into v5.0! 😃&lt;/p&gt;
+
+&lt;p&gt;However I need considerable amount of time before publishing the v5.0-beta so meanwhile I will continue providing bug fixes (no new features) support for the v4.6 until v5.0 is ready.&lt;/p&gt;
+
+&lt;p&gt;If you have any feature suggestions (all core changes are welcome) for v5.0 please head over to &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues&quot;&gt;project issues&lt;/a&gt; and submit your request.&lt;/p&gt;
+
+&lt;p&gt;I’m excited to push pyRevit into its next phase. This will be the 5th time that I will completely renovate pyRevit from scratch (hence v5).&lt;/p&gt;
+
+&lt;p&gt;Thank you for all the support.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 May 2019 09:00:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/12/4620.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/12/4620.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>Retiring pyRevit 4.6</title>
@@ -402,23 +431,6 @@
         <pubDate>Mon, 28 Jan 2019 11:00:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/28/4613.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/28/4613.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.12 (CLI 0.6.0)</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.12 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As always, each new pyRevit version also includes the pyRevit CLI updates which for this release is CLI v0.6.0. Installer is provided on the same path.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 19 Jan 2019 11:00:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/19/4612.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/19/4612.html</guid>
         
         
         <category>pyrevit</category>
