@@ -6,9 +6,26 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 May 2019 12:33:06 -0700</pubDate>
-    <lastBuildDate>Sun, 12 May 2019 12:33:06 -0700</lastBuildDate>
+    <pubDate>Sun, 19 May 2019 12:26:15 -0700</pubDate>
+    <lastBuildDate>Sun, 19 May 2019 12:26:15 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.21 (CLI 0.10.0)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.21 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a few important changes in this release that could break your code. Please read the &lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/tag/v4.6.21&quot;&gt;release notes&lt;/a&gt; before installing and run tests before deploying for your teams.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 May 2019 09:00:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/19/4621.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/19/4621.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.20 (CLI 0.9.8)</title>
@@ -408,29 +425,6 @@
         <pubDate>Sat, 02 Feb 2019 08:00:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/02/4614.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/02/4614.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.13 (CLI 0.9.0)</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.13 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As always, each new pyRevit version also includes the pyRevit CLI updates which for this release is CLI v0.9.0. Installer is provided on the same path.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0px; padding-bottom: 60%;&quot;&gt;
-&lt;iframe style=&quot;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%&quot; src=&quot;https://www.youtube.com/embed/tc3W9zrGR6s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 28 Jan 2019 11:00:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/28/4613.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/01/28/4613.html</guid>
         
         
         <category>pyrevit</category>
