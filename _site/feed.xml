@@ -6,9 +6,27 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 May 2019 12:26:15 -0700</pubDate>
-    <lastBuildDate>Sun, 19 May 2019 12:26:15 -0700</lastBuildDate>
+    <pubDate>Mon, 20 May 2019 09:58:14 -0700</pubDate>
+    <lastBuildDate>Mon, 20 May 2019 09:58:14 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>pyRevit 4.6.22 (CLI 0.10.0)</title>
+        <description>&lt;p&gt;Messed up as usual. 🤦🏻‍♂️&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.22 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 20 May 2019 09:00:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/20/4622.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/20/4622.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
     
       <item>
         <title>pyRevit 4.6.21 (CLI 0.10.0)</title>
@@ -388,43 +406,6 @@
         <pubDate>Fri, 08 Feb 2019 08:00:00 -0800</pubDate>
         <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/08/4615.html</link>
         <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/08/4615.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.14</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.14 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;There is a new tool courtesy of &lt;a href=&quot;https://github.com/eirannejad/pyRevit/issues/498&quot;&gt;Robbo1234&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Match Paint&lt;/strong&gt; can match the surface paints between geometries.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/matchpaint.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;I closed a series of issues in this release as well. There has been a good set of updates to the tools for finding unreferenced and unsheeted views. The new interface is simpler to user and has more options.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/findreferringviews.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://eirannejad.github.io/pyRevit/images/queryreferencing.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-</description>
-        <pubDate>Sat, 02 Feb 2019 08:00:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/02/4614.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/02/4614.html</guid>
         
         
         <category>pyrevit</category>
