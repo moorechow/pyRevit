@@ -6,12 +6,30 @@
 </description>
     <link>https://eirannejad.github.io/pyRevit/</link>
     <atom:link href="https://eirannejad.github.io/pyRevit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 May 2019 09:58:14 -0700</pubDate>
-    <lastBuildDate>Mon, 20 May 2019 09:58:14 -0700</lastBuildDate>
+    <pubDate>Mon, 27 May 2019 14:33:34 -0700</pubDate>
+    <lastBuildDate>Mon, 27 May 2019 14:33:34 -0700</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
-        <title>pyRevit 4.6.22 (CLI 0.10.0)</title>
+        <title>pyRevit 4.6.23 (CLI 0.11.0)</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.23 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases/tag/v4.6.23&quot;&gt;See full release notes here&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 May 2019 09:00:00 -0700</pubDate>
+        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/27/4623.html</link>
+        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/05/27/4623.html</guid>
+        
+        
+        <category>pyrevit</category>
+        
+        <category>updates</category>
+        
+      </item>
+    
+      <item>
+        <title>pyRevit 4.6.22</title>
         <description>&lt;p&gt;Messed up as usual. 🤦🏻‍♂️&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.22 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
@@ -392,25 +410,6 @@
         <category>updates</category>
         
         <category>cpython</category>
-        
-      </item>
-    
-      <item>
-        <title>pyRevit 4.6.15</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/eirannejad/pyRevit/releases&quot;&gt;pyRevit 4.6.15 is out. Download the installer from here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A few issues have been fixed including “Make Pattern” broken compatibility with Revit 2014.&lt;/p&gt;
-
-&lt;p&gt;The “Find and Select Entities without Tags” tool is updated as well to include more categories.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 08 Feb 2019 08:00:00 -0800</pubDate>
-        <link>https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/08/4615.html</link>
-        <guid isPermaLink="true">https://eirannejad.github.io/pyRevit/pyrevit/updates/2019/02/08/4615.html</guid>
-        
-        
-        <category>pyrevit</category>
-        
-        <category>updates</category>
         
       </item>
     
