@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Helper functions to query info and elements from Revit."""
 #pylint: disable=W0703,C0103
 from collections import namedtuple
@@ -258,7 +259,7 @@ def get_elements_by_categories(element_bicats, elements=None, doc=None):
                 in element_bicats]
 
     # otherwise collect from model
-    cat_filters = [DB.ElementCategoryFilter(x) for x in element_bicats]
+    cat_filters = [DB.ElementCategoryFilter(x) for x in element_bicats if x]
     elcats_filter = \
         DB.LogicalOrFilter(framework.List[DB.ElementFilter](cat_filters))
     return DB.FilteredElementCollector(doc or HOST_APP.doc)\
@@ -781,6 +782,32 @@ def get_builtincategory(cat_name_or_id, doc=None):
                 return bicat
 
 
+def get_subcategories(doc=None, purgable=False, filterfunc=None):
+    doc = doc or HOST_APP.doc
+    # collect custom categories
+    subcategories = []
+    for cat in doc.Settings.Categories:
+        for subcat in cat.SubCategories:
+            if purgable:
+                if subcat.Id.IntegerValue > 1:
+                    subcategories.append(subcat)
+            else:
+                subcategories.append(subcat)
+    if filterfunc:
+        subcategories = filter(filterfunc, subcategories)
+
+    return subcategories
+
+
+def get_subcategory(cat_name_or_builtin, subcategory_name, doc=None):
+    doc = doc or HOST_APP.doc
+    cat = get_category(cat_name_or_builtin)
+    if cat:
+        for subcat in cat.SubCategories:
+            if subcat.Name == subcategory_name:
+                return subcat
+
+
 def get_builtinparameter(element, param_name, doc=None):
     doc = doc or HOST_APP.doc
     eparam = element.LookupParameter(param_name)
@@ -814,6 +841,7 @@ def get_all_linkeddocs(doc=None):
                       .ToElements()
     docs = [x.GetLinkDocument() for x in linkinstances]
     return [x for x in docs if x]
+
 
 def get_all_grids(group_by_direction=False,
                   include_linked_models=False, doc=None):
@@ -962,7 +990,11 @@ def get_sheet_sets(doc=None):
     return list(viewsheetsets)
 
 
-def get_rev_number(revision):
+def get_rev_number(revision, sheet=None):
+    # if sheet is provided, get number on sheet
+    if sheet and isinstance(sheet, DB.ViewSheet):
+        return sheet.GetRevisionNumberOnSheet(revision.Id)
+    # otherwise get number from revision
     revnum = revision.SequenceNumber
     if hasattr(revision, 'RevisionNumber'):
         revnum = revision.RevisionNumber
@@ -1013,32 +1045,6 @@ def get_all_fillpattern_elements(fillpattern_target, doc=None):
 
     return [x for x in existing_fp_elements
             if x.GetFillPattern().Target == fillpattern_target]
-
-
-def get_subcategories(doc=None, purgable=False, filterfunc=None):
-    doc = doc or HOST_APP.doc
-    # collect custom categories
-    subcategories = []
-    for cat in doc.Settings.Categories:
-        for subcat in cat.SubCategories:
-            if purgable:
-                if subcat.Id.IntegerValue > 1:
-                    subcategories.append(subcat)
-            else:
-                subcategories.append(subcat)
-    if filterfunc:
-        subcategories = filter(filterfunc, subcategories)
-
-    return subcategories
-
-
-def get_subcategory(category_name, subcategory_name, doc=None):
-    doc = doc or HOST_APP.doc
-    for cat in doc.Settings.Categories:
-        if cat.Name == category_name:
-            for subcat in cat.SubCategories:
-                if subcat.Name == subcategory_name:
-                    return subcat
 
 
 def get_keynote_file(doc=None):
@@ -1375,33 +1381,45 @@ def find_paper_size_by_name(paper_size_name, doc=None):
             return psize
 
 
-def find_paper_sizes_by_dims(paper_width, paper_height, doc=None):
+def find_paper_sizes_by_dims(printer_name, paper_width, paper_height, doc=None):
     # paper_width, paper_height must be in inch
     doc = doc or HOST_APP.doc
     paper_sizes = []
-    for sys_psize in coreutils.get_paper_sizes():
+    system_paper_sizes = coreutils.get_paper_sizes(printer_name)
+    mlogger.debug('looking for paper size W:%s H:%s', paper_width, paper_height)
+    mlogger.debug('system paper sizes: %s -> %s',
+                  printer_name, [x.PaperName for x in system_paper_sizes])
+    for sys_psize in system_paper_sizes:
+        sys_pname = sys_psize.PaperName
+        sys_pwidth = int(sys_psize.Width / 100.00)
+        sys_pheight = int(sys_psize.Height / 100.00)
         # system paper dims are in inches
-        wxd = paper_width == int(sys_psize.Width / 100.00) \
-                and paper_height == int(sys_psize.Height / 100.00)
-        dxw = paper_width == int(sys_psize.Height / 100.00) \
-                and paper_height == int(sys_psize.Width / 100.00)
+        wxd = paper_width == sys_pwidth and paper_height == sys_pheight
+        dxw = paper_width == sys_pheight and paper_height == sys_pwidth
+        mlogger.debug('%s \"%s\" W:%s H:%s',
+                      '✓' if wxd or dxw else ' ',
+                      sys_pname, sys_pwidth, sys_pheight)
         if wxd or dxw:
-            psize = find_paper_size_by_name(sys_psize.PaperName)
+            psize = find_paper_size_by_name(sys_pname)
             if psize:
                 paper_sizes.append(psize)
+                mlogger.debug('found matching paper \"\"', psize.Name)
+
     return paper_sizes
 
 
-def get_sheet_print_settings(tblock, doc_psettings):
+def get_sheet_print_settings(tblock, printer_name, doc_psettings):
     doc = tblock.Document
     # find paper sizes used in print settings of this doc
     page_width_param = tblock.Parameter[DB.BuiltInParameter.SHEET_WIDTH]
     page_height_param = tblock.Parameter[DB.BuiltInParameter.SHEET_HEIGHT]
+    # calculate paper size in inch
     page_width = int(round(page_width_param.AsDouble() * 12.0))
     page_height = int(round(page_height_param.AsDouble() * 12.0))
     tform = tblock.GetTotalTransform()
     is_portrait = (page_width < page_height) or (int(tform.BasisX.Y) == -1)
     paper_sizes = find_paper_sizes_by_dims(
+        printer_name,
         page_width,
         page_height,
         doc=doc

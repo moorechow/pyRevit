@@ -1392,10 +1392,18 @@ def split_words(input_string):
     return parts
 
 
-def get_paper_sizes():
+def get_paper_sizes(printer_name=None):
     """Get paper sizes defined on this system
 
     Returns:
         list[]: list of papersize instances
     """
-    return list(framework.Drawing.Printing.PrinterSettings().PaperSizes)
+    print_settings = framework.Drawing.Printing.PrinterSettings()
+    if printer_name:
+        print_settings.PrinterName = printer_name
+    return list(print_settings.PaperSizes)
+
+
+def get_integer_length(number):
+    """Return digit length of given number."""
+    return 1 if number == 0 else (math.floor(math.log10(number)) + 1)
