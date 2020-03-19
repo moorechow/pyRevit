@@ -37,14 +37,18 @@ class PropPair(object):
         return self.rightp.Definition.Name
 
     def compare(self):
-        leftv = revit.query.get_param_value(self.leftp)
-        rightv = revit.query.get_param_value(self.rightp)
-        if leftv == rightv:
-            print(":white_heavy_check_mark: {} == {}"
+        if not self.leftp.StorageType and not self.rightp.StorageType:
+            print(":white_question_mark: {} ? {}"
                   .format(self.leftp_name, self.rightp_name))
         else:
-            print(":cross_mark: {} != {}"
-                  .format(self.leftp_name, self.rightp_name))
+            leftv = revit.query.get_param_value(self.leftp)
+            rightv = revit.query.get_param_value(self.rightp)
+            if leftv == rightv:
+                print(":white_heavy_check_mark: {} == {}"
+                    .format(self.leftp_name, self.rightp_name))
+            else:
+                print(":cross_mark: {} != {}"
+                    .format(self.leftp_name, self.rightp_name))
 
 
 def grab_props(src_element):
@@ -109,10 +113,40 @@ def compare_props(src_element, tgt_element):
 
 # main
 source_element = None
-with forms.WarningBar(title="Pick source object:"):
-    source_element = revit.pick_element()
+
+# try to get source element from selection
+selection = revit.get_selection()
+if selection and len(selection) == 1:
+    source_element = selection.first
+    if isinstance(source_element, DB.View):
+        target_type = "Views"
+    else:
+        target_type = "Elements"
+
+if not source_element:
+    # ask for type of elements to match
+    # some are not selectable in graphical views
+    target_type = \
+        forms.CommandSwitchWindow.show(
+            ["Elements", "Views"],
+            message="Pick type of targets:")
+
+    # determine source element
+    if target_type == "Elements":
+        with forms.WarningBar(title="Pick first element:"):
+            source_element = revit.pick_element()
+    elif target_type == "Views":
+        source_element = \
+            forms.select_views(title="Select first View", multiple=False)
 
 # grab parameters from source element
 if source_element:
-    target_element = revit.pick_element(message="Pick target element:")
-    compare_props(source_element, target_element)
+    if target_type == "Elements":
+        with forms.WarningBar(title="Pick second element:"):
+            target_element = revit.pick_element()
+    elif target_type == "Views":
+        target_element = \
+            forms.select_views(title="Select second View", multiple=False)
+
+    if target_element:
+        compare_props(source_element, target_element)

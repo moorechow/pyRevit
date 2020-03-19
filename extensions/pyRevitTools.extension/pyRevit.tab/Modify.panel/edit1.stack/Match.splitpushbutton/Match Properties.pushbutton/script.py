@@ -76,21 +76,27 @@ def get_source_properties(src_element):
 
     src_type = revit.query.get_type(src_element)
 
+
     selected_params = forms.select_parameters(
         src_element,
         title="Select Parameters",
         multiple=True,
+        filterfunc=filter_func,
         include_instance=True,
         include_type=True
     ) or []
 
     logger.debug("Selected parameters: %s", [x.name for x in selected_params])
 
+
     for sparam in selected_params:
         logger.debug("Reading %s", sparam.name)
         target = src_type if sparam.istype else src_element
         tparam = target.LookupParameter(sparam.name)
         if tparam:
+            if tparam.Definition.BuiltInParameter \
+                and int(tparam.Definition.BuiltInParameter) in ignore_bi_parameters:
+                continue
             if tparam.StorageType == DB.StorageType.Integer:
                 value = tparam.AsInteger()
             elif tparam.StorageType == DB.StorageType.Double:
@@ -152,20 +158,30 @@ if __shiftclick__:    #pylint: disable=undefined-variable
 if not source_props:
     source_element = None
 
-    # ask for type of elements to match
-    # some are not selectable in graphical views
-    target_type = \
-        forms.CommandSwitchWindow.show(
-            ["Elements", "Views"],
-            message="Pick type of targets:")
+    # try to get source element from selection
+    selection = revit.get_selection()
+    if selection and len(selection) == 1:
+        source_element = selection.first
+        if isinstance(source_element, DB.View):
+            target_type = "Views"
+        else:
+            target_type = "Elements"
 
-    # determine source element
-    if target_type == "Elements":
-        with forms.WarningBar(title="Pick source object:"):
-            source_element = revit.pick_element()
-    elif target_type == "Views":
-        source_element = \
-            forms.select_views(title="Select Source View", multiple=False)
+    if not source_element:
+        # ask for type of elements to match
+        # some are not selectable in graphical views
+        target_type = \
+            forms.CommandSwitchWindow.show(
+                ["Elements", "Views"],
+                message="Pick type of targets:")
+
+        # determine source element
+        if target_type == "Elements":
+            with forms.WarningBar(title="Pick source object:"):
+                source_element = revit.pick_element()
+        elif target_type == "Views":
+            source_element = \
+                forms.select_views(title="Select Source View", multiple=False)
 
     # grab properties from source element
     if source_element:
